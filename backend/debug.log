@@ -2173,3 +2173,36 @@ WARNING 2026-01-24 16:21:37,646 log 20677 123915059426880 Not Found: /api/posts/
 WARNING 2026-01-24 16:21:37,647 log 20677 123915049985600 Not Found: /api/pages/home/
 WARNING 2026-01-24 16:21:37,657 log 20677 123915049985600 Not Found: /api/posts/
 WARNING 2026-01-24 16:21:37,662 log 20677 123915067819584 Not Found: /api/pages/home/
+INFO 2026-01-26 10:54:16,141 autoreload 30260 128193261367424 Watching for file changes with StatReloader
+INFO 2026-01-26 10:55:44,606 autoreload 30483 133232059207808 Watching for file changes with StatReloader
+INFO 2026-01-26 10:56:28,179 autoreload 30595 132904251269248 Watching for file changes with StatReloader
+INFO 2026-01-26 10:57:07,232 autoreload 30698 123968864358528 Watching for file changes with StatReloader
+INFO 2026-01-26 10:57:44,749 autoreload 30791 133695873908864 Watching for file changes with StatReloader
+INFO 2026-01-26 10:58:13,530 autoreload 30893 123989186621568 Watching for file changes with StatReloader
+INFO 2026-01-26 10:58:43,476 autoreload 30999 136365307203712 Watching for file changes with StatReloader
+INFO 2026-01-26 10:59:19,564 autoreload 31101 127772875960448 Watching for file changes with StatReloader
+INFO 2026-01-26 10:59:50,204 autoreload 31202 131218088775808 Watching for file changes with StatReloader
+INFO 2026-01-26 11:00:24,402 autoreload 31296 131634795413632 Watching for file changes with StatReloader
+INFO 2026-01-26 11:01:03,007 autoreload 31406 132823711592576 Watching for file changes with StatReloader
+WARNING 2026-01-26 11:01:29,774 log 31406 132823630046912 Not Found: /favicon.ico
+WARNING 2026-01-26 11:01:52,894 log 31406 132823630046912 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-26 11:02:30,108 log 31406 132823630046912 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+INFO 2026-01-26 11:17:07,621 autoreload 31973 129402713809024 Watching for file changes with StatReloader
+WARNING 2026-01-26 11:18:46,549 log 31973 129402631972544 Not Found: /api/public/pages/by-page/
+WARNING 2026-01-26 11:18:46,554 log 31973 129402631972544 Not Found: /api/public/pages/by-page/
+WARNING 2026-01-26 11:18:50,599 log 31973 129402631972544 Not Found: /api/pages/history/
+WARNING 2026-01-26 11:18:50,605 log 31973 129402631972544 Not Found: /api/pages/history/
+WARNING 2026-01-26 11:18:51,946 log 31973 129402631972544 Not Found: /api/pages/organization/
+WARNING 2026-01-26 11:18:51,953 log 31973 129402622531264 Not Found: /api/pages/organization/
+WARNING 2026-01-26 11:18:53,022 log 31973 129402622531264 Not Found: /api/public/pages/by-page/
+WARNING 2026-01-26 11:18:53,026 log 31973 129402622531264 Not Found: /api/public/pages/by-page/
+WARNING 2026-01-26 11:31:15,209 log 31973 129402622531264 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+INFO 2026-01-28 09:02:58,309 autoreload 7162 134409054883968 Watching for file changes with StatReloader
+WARNING 2026-01-28 09:04:27,051 log 7162 134408964757184 Not Found: /api/posts/
+WARNING 2026-01-28 09:04:27,051 log 7162 134408973149888 Not Found: /api/pages/home/
+WARNING 2026-01-28 09:04:27,057 log 7162 134408973149888 Not Found: /api/posts/
+WARNING 2026-01-28 09:04:27,060 log 7162 134408964757184 Not Found: /api/pages/home/
+WARNING 2026-01-28 10:08:56,996 log 7162 134408973149888 Not Found: /api/posts/
+WARNING 2026-01-28 10:08:56,999 log 7162 134408964757184 Not Found: /api/pages/home/
+WARNING 2026-01-28 10:08:57,007 log 7162 134408973149888 Not Found: /api/pages/home/
+WARNING 2026-01-28 10:08:57,011 log 7162 134408964757184 Not Found: /api/posts/
