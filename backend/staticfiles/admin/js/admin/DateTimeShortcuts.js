@@ -91,10 +91,14 @@
             message = interpolate(message, [timezoneOffset]);
 
             const warning = document.createElement('div');
+<<<<<<< HEAD
             const id = inp.id;
             const field_id = inp.closest('p.datetime') ? id.slice(0, id.lastIndexOf("_")) : id;
             warning.classList.add('help', warningClass);
             warning.id = `${field_id}_timezone_warning_helptext`;
+=======
+            warning.classList.add('help', warningClass);
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
             warning.textContent = message;
             inp.parentNode.appendChild(warning);
         },
@@ -111,7 +115,10 @@
             const now_link = document.createElement('a');
             now_link.href = "#";
             now_link.textContent = gettext('Now');
+<<<<<<< HEAD
             now_link.role = 'button';
+=======
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
             now_link.addEventListener('click', function(e) {
                 e.preventDefault();
                 DateTimeShortcuts.handleClockQuicklink(num, -1);
@@ -167,7 +174,11 @@
             // where name is the name attribute of the <input>.
             const name = typeof DateTimeShortcuts.clockHours[inp.name] === 'undefined' ? 'default_' : inp.name;
             DateTimeShortcuts.clockHours[name].forEach(function(element) {
+<<<<<<< HEAD
                 const time_link = quickElement('a', quickElement('li', time_list), gettext(element[0]), 'role', 'button', 'href', '#');
+=======
+                const time_link = quickElement('a', quickElement('li', time_list), gettext(element[0]), 'href', '#');
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
                 time_link.addEventListener('click', function(e) {
                     e.preventDefault();
                     DateTimeShortcuts.handleClockQuicklink(num, element[1]);
@@ -176,7 +187,11 @@
 
             const cancel_p = quickElement('p', clock_box);
             cancel_p.className = 'calendar-cancel';
+<<<<<<< HEAD
             const cancel_link = quickElement('a', cancel_p, gettext('Cancel'), 'role', 'button', 'href', '#');
+=======
+            const cancel_link = quickElement('a', cancel_p, gettext('Cancel'), 'href', '#');
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
             cancel_link.addEventListener('click', function(e) {
                 e.preventDefault();
                 DateTimeShortcuts.dismissClock(num);
@@ -239,7 +254,10 @@
             inp.parentNode.insertBefore(shortcuts_span, inp.nextSibling);
             const today_link = document.createElement('a');
             today_link.href = '#';
+<<<<<<< HEAD
             today_link.role = 'button';
+=======
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
             today_link.appendChild(document.createTextNode(gettext('Today')));
             today_link.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -314,19 +332,31 @@
             // calendar shortcuts
             const shortcuts = quickElement('div', cal_box);
             shortcuts.className = 'calendar-shortcuts';
+<<<<<<< HEAD
             let day_link = quickElement('a', shortcuts, gettext('Yesterday'), 'role', 'button', 'href', '#');
+=======
+            let day_link = quickElement('a', shortcuts, gettext('Yesterday'), 'href', '#');
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
             day_link.addEventListener('click', function(e) {
                 e.preventDefault();
                 DateTimeShortcuts.handleCalendarQuickLink(num, -1);
             });
             shortcuts.appendChild(document.createTextNode('\u00A0|\u00A0'));
+<<<<<<< HEAD
             day_link = quickElement('a', shortcuts, gettext('Today'), 'role', 'button', 'href', '#');
+=======
+            day_link = quickElement('a', shortcuts, gettext('Today'), 'href', '#');
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
             day_link.addEventListener('click', function(e) {
                 e.preventDefault();
                 DateTimeShortcuts.handleCalendarQuickLink(num, 0);
             });
             shortcuts.appendChild(document.createTextNode('\u00A0|\u00A0'));
+<<<<<<< HEAD
             day_link = quickElement('a', shortcuts, gettext('Tomorrow'), 'role', 'button', 'href', '#');
+=======
+            day_link = quickElement('a', shortcuts, gettext('Tomorrow'), 'href', '#');
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
             day_link.addEventListener('click', function(e) {
                 e.preventDefault();
                 DateTimeShortcuts.handleCalendarQuickLink(num, +1);
@@ -335,7 +365,11 @@
             // cancel bar
             const cancel_p = quickElement('p', cal_box);
             cancel_p.className = 'calendar-cancel';
+<<<<<<< HEAD
             const cancel_link = quickElement('a', cancel_p, gettext('Cancel'), 'role', 'button', 'href', '#');
+=======
+            const cancel_link = quickElement('a', cancel_p, gettext('Cancel'), 'href', '#');
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
             cancel_link.addEventListener('click', function(e) {
                 e.preventDefault();
                 DateTimeShortcuts.dismissCalendar(num);

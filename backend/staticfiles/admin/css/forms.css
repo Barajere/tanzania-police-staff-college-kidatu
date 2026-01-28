@@ -36,13 +36,20 @@ form .form-row p {
 
 /* FORM LABELS */
 
+<<<<<<< HEAD
 legend, label {
+=======
+label {
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
     font-weight: normal;
     color: var(--body-quiet-color);
     font-size: 0.8125rem;
 }
 
+<<<<<<< HEAD
 .required legend, legend.required,
+=======
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
 .required label, label.required {
     font-weight: bold;
 }
@@ -92,6 +99,7 @@ fieldset .inline-heading,
 
 /* ALIGNED FIELDSETS */
 
+<<<<<<< HEAD
 .aligned fieldset {
     width: 100%;
     border-top: none;
@@ -106,6 +114,8 @@ fieldset .inline-heading,
 }
 
 .aligned legend,
+=======
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
 .aligned label {
     display: block;
     padding: 4px 10px 0 0;
@@ -148,7 +158,11 @@ form .aligned ul {
 }
 
 form .aligned div.radiolist {
+<<<<<<< HEAD
     display: block;
+=======
+    display: inline-block;
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
     margin: 0;
     padding: 0;
 }
@@ -353,7 +367,11 @@ body.popup .submit-row {
     width: 48em;
 }
 
+<<<<<<< HEAD
 .app-flatpages.model-flatpage #id_content {
+=======
+.flatpages-flatpage #id_content {
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
     height: 40.2em;
 }
 
@@ -428,12 +446,18 @@ body.popup .submit-row {
     border: none;
 }
 
+<<<<<<< HEAD
 .inline-related.tabular div.wrapper {
     overflow-x: auto;
 }
 
 .inline-related.tabular fieldset.module table {
     width: 100%;
+=======
+.inline-related.tabular fieldset.module table {
+    width: 100%;
+    overflow-x: scroll;
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
 }
 
 .last-related fieldset {
@@ -447,6 +471,10 @@ body.popup .submit-row {
 .inline-group .tabular tr td.original {
     padding: 2px 0 0 0;
     width: 0;
+<<<<<<< HEAD
+=======
+    _position: relative;
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
 }
 
 .inline-group .tabular th.original {
@@ -454,6 +482,7 @@ body.popup .submit-row {
     padding: 0;
 }
 
+<<<<<<< HEAD
 .inline-group .tabular td {
     font-size: 1rem;
 }
@@ -467,6 +496,18 @@ body.popup .submit-row {
     font-size: 0.875rem;
     font-weight: bold;
     color: var(--body-quiet-color);
+=======
+.inline-group .tabular td.original p {
+    position: absolute;
+    left: 0;
+    height: 1.1em;
+    padding: 2px 9px;
+    overflow: hidden;
+    font-size: 0.5625rem;
+    font-weight: bold;
+    color: var(--body-quiet-color);
+    _width: 700px;
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
 }
 
 .inline-group div.add-row,

@@ -162,6 +162,7 @@
 
 .selector-chooseall, .selector-clearall {
     display: inline-block;
+<<<<<<< HEAD
     text-align: left;
     padding: 4px 5px;
     margin: 0 auto;
@@ -172,11 +173,27 @@
     opacity: 0.55;
     border: none;
     border-radius: 4px;
+=======
+    height: 16px;
+    text-align: left;
+    margin: 0 auto;
+    overflow: hidden;
+    font-weight: bold;
+    line-height: 16px;
+    color: var(--body-quiet-color);
+    text-decoration: none;
+    opacity: 0.55;
+    border: none;
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
 }
 
 :enabled.selector-chooseall:focus, :enabled.selector-clearall:focus,
 :enabled.selector-chooseall:hover, :enabled.selector-clearall:hover {
+<<<<<<< HEAD
     background-color: var(--button-hover-bg);
+=======
+    color: var(--link-fg);
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
 }
 
 :enabled.selector-chooseall, :enabled.selector-clearall {
@@ -187,10 +204,28 @@
     cursor: pointer;
 }
 
+<<<<<<< HEAD
+=======
+.selector-chooseall {
+    padding: 0 18px 0 0;
+    background: url(../img/selector-icons.svg) right -160px no-repeat;
+    cursor: default;
+}
+
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
 :enabled.selector-chooseall:focus, :enabled.selector-chooseall:hover {
     background-position: 100% -176px;
 }
 
+<<<<<<< HEAD
+=======
+.selector-clearall {
+    padding: 0 0 0 18px;
+    background: url(../img/selector-icons.svg) 0 -128px no-repeat;
+    cursor: default;
+}
+
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
 :enabled.selector-clearall:focus, :enabled.selector-clearall:hover {
     background-position: 0 -144px;
 }
@@ -301,10 +336,13 @@ p.datetime {
     font-weight: bold;
 }
 
+<<<<<<< HEAD
 p.datetime label {
     display: inline;
 }
 
+=======
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
 .datetime span {
     white-space: nowrap;
     font-weight: normal;
@@ -568,8 +606,12 @@ ul.timelist, .timelist li {
 .inline-deletelink {
     float: right;
     text-indent: -9999px;
+<<<<<<< HEAD
     background: url(../img/inline-delete.svg) center center no-repeat;
     background-size: contain;
+=======
+    background: url(../img/inline-delete.svg) 0 0 no-repeat;
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
     width: 1.5rem;
     height: 1.5rem;
     border: 0px none;

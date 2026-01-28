@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .admin-interface a:not([role="button"], #header a, #nav-sidebar a, #content-main.app-list a, .object-tools a) {
     text-decoration: inherit;
 }
@@ -6,6 +7,8 @@
     text-decoration: underline;
 }
 
+=======
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
 /* fix generic flex container */
 .admin-interface .flex-container {
     width: 100%;
@@ -108,10 +111,13 @@
 }
 /* end fix */
 
+<<<<<<< HEAD
 .admin-interface .related-widget-wrapper .selector-chooser {
     border-radius: 15px;
 }
 
+=======
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
 /* fix selector chooser slide transition */
 .admin-interface .related-widget-wrapper .selector-chooser .selector-add,
 .admin-interface .related-widget-wrapper .selector-chooser .selector-remove {
@@ -139,7 +145,10 @@
 /* fix [stacked, not-stacked] select options text overflow */
 .admin-interface .selector .selector-available select option,
 .admin-interface .selector .selector-chosen select option {
+<<<<<<< HEAD
     color: var(--body-fg) !important;
+=======
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -149,11 +158,14 @@
     height: calc(46px + 17.2em) !important;
 }
 
+<<<<<<< HEAD
 /* fix selected options color */
 .admin-interface .selector select option:checked {
     color: inherit;
 }
 
+=======
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
 @media (max-width: 767px) {
     /* fixed responsive widgets */
     .admin-interface .aligned.collapsed .form-row {

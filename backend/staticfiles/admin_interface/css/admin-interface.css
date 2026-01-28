@@ -260,6 +260,7 @@
     color: var(--admin-interface-generic-link-hover-color);
 }
 
+<<<<<<< HEAD
 .admin-interface .selector button.selector-chooseall,
 .admin-interface .selector button.selector-clearall {
     background-color: var(--admin-interface-generic-link-color);
@@ -273,6 +274,8 @@
     background-color: var(--admin-interface-generic-link-hover-color);
 }
 
+=======
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
 /* fix #393  */
 .admin-interface .selector-chosen .list-footer-display {
     background: var(--admin-interface-module-background-color);
@@ -361,6 +364,7 @@
     color: var(--admin-interface-delete-button-text-color);
 }
 
+<<<<<<< HEAD
 .admin-interface #changelist .changelist-footer .paginator a,
 .admin-interface #changelist .changelist-footer .paginator a:link,
 .admin-interface #changelist .changelist-footer .paginator a:visited,
@@ -372,22 +376,44 @@
 .admin-interface #changelist .changelist-footer .paginator a,
 .admin-interface #changelist .changelist-footer .paginator a:link,
 .admin-interface #changelist .changelist-footer .paginator a:visited {
+=======
+.admin-interface .paginator a,
+.admin-interface .paginator a:link,
+.admin-interface .paginator a:visited,
+.admin-interface .paginator .this-page {
+    border-radius: var(--admin-interface-module-border-radius);
+}
+
+.admin-interface .paginator a,
+.admin-interface .paginator a:link,
+.admin-interface .paginator a:visited {
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
     background-color: #FFFFFF;
     color: var(--admin-interface-generic-link-color);
 }
 
+<<<<<<< HEAD
 .admin-interface #changelist .changelist-footer .paginator a:hover,
 .admin-interface #changelist .changelist-footer .paginator a:active {
+=======
+.admin-interface .paginator a:hover,
+.admin-interface .paginator a:active {
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
     background-color: #F8F8F8;
     color: var(--admin-interface-generic-link-hover-color);
 }
 
+<<<<<<< HEAD
 .admin-interface #changelist .changelist-footer .paginator a[aria-current="page"],
 .admin-interface #changelist .changelist-footer .paginator .this-page {
+=======
+.admin-interface .paginator .this-page {
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
     background-color: var(--admin-interface-module-background-color);
     color: var(--admin-interface-module-link-color);
 }
 
+<<<<<<< HEAD
 .admin-interface #changelist .changelist-footer .paginator a.showall,
 .admin-interface #changelist .changelist-footer .paginator a.showall:link,
 .admin-interface #changelist .changelist-footer .paginator a.showall:visited {
@@ -396,6 +422,16 @@
 
 .admin-interface #changelist .changelist-footer .paginator a.showall:hover,
 .admin-interface #changelist .changelist-footer .paginator a.showall:active {
+=======
+.admin-interface .paginator a.showall,
+.admin-interface .paginator a.showall:link,
+.admin-interface .paginator a.showall:visited {
+    color: var(--admin-interface-generic-link-color);
+}
+
+.admin-interface .paginator a.showall:hover,
+.admin-interface .paginator a.showall:active {
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
     color: var(--admin-interface-generic-link-hover-color);
 }
 

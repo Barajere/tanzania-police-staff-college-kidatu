@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* sticky actions */
 
 .admin-interface.sticky-actions #changelist .actions {
@@ -16,13 +17,19 @@
     margin-bottom: -1px;
 }
 
+=======
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
 /* sticky pagination */
 
 .admin-interface.sticky-pagination.change-list #content-main {
     padding-bottom: 4.375rem;
 }
 
+<<<<<<< HEAD
 .admin-interface.sticky-pagination.change-list #changelist .changelist-footer {
+=======
+.admin-interface.sticky-pagination.change-list .paginator {
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -33,34 +40,53 @@
     padding-right: 15px;
     white-space: nowrap;
     text-overflow: ellipsis;
+<<<<<<< HEAD
     background: var(--body-bg);
+=======
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
     border-radius: 0;
     border-top: 1px solid #EEEEEE !important;
     border-bottom: none;
     margin: 0;
 }
 
+<<<<<<< HEAD
 .admin-interface.sticky-pagination.change-list.popup #changelist .changelist-footer {
+=======
+.admin-interface.sticky-pagination.change-list.popup .paginator {
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
     padding-left: 20px;
     padding-right: 20px;
 }
 
 @media (min-width:768px) {
+<<<<<<< HEAD
     .admin-interface.sticky-pagination.change-list:not(.popup) #changelist .changelist-footer {
+=======
+    .admin-interface.sticky-pagination.change-list:not(.popup) .paginator {
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
         padding-left: 30px;
         padding-right: 30px;
     }
 }
 
 @media (min-width:1024px) {
+<<<<<<< HEAD
     .admin-interface.sticky-pagination.change-list:not(.popup) #changelist .changelist-footer {
+=======
+    .admin-interface.sticky-pagination.change-list:not(.popup) .paginator {
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
         padding-left: 40px;
         padding-right: 40px;
     }
 }
 
 @media (min-width:1280px) {
+<<<<<<< HEAD
     .admin-interface.sticky-pagination.change-list:not(.popup) #main.shifted > #nav-sidebar + .content #changelist .changelist-footer {
+=======
+    .admin-interface.sticky-pagination.change-list:not(.popup) #main.shifted > #nav-sidebar + .content .paginator {
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
         width: calc(100% - 360px);
     }
 }

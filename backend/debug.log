@@ -1878,6 +1878,7 @@ INFO 2025-12-07 22:41:18,350 autoreload 7053 133808109760640 Watching for file c
 WARNING 2025-12-07 22:41:54,398 log 7053 133807952881344 Not Found: /favicon.ico
 WARNING 2025-12-07 22:42:06,877 log 7053 133807961274048 Not Found: /api/all
 WARNING 2025-12-07 22:42:33,606 log 7053 133807961274048 Not Found: /api/ public/contact/current/
+<<<<<<< HEAD
 INFO 2026-01-21 10:20:59,066 autoreload 10204 26392 Watching for file changes with StatReloader
 INFO 2026-01-21 10:22:01,109 autoreload 16124 13440 Watching for file changes with StatReloader
 INFO 2026-01-21 10:22:23,593 autoreload 2808 19644 Watching for file changes with StatReloader
@@ -2780,3 +2781,339 @@ WARNING 2026-01-28 12:42:12,886 log 54664 129919002605248 Not Found: /api/pages/
 WARNING 2026-01-28 12:42:12,891 log 54664 129918985819840 Not Found: /api/pages/home/
 WARNING 2026-01-28 12:42:12,892 log 54664 129918994212544 Not Found: /api/posts/
 WARNING 2026-01-28 12:42:12,895 log 54664 129919078721216 Not Found: /api/posts/
+=======
+INFO 2026-01-21 10:20:59,066 autoreload 10204 26392 Watching for file changes with StatReloader
+INFO 2026-01-21 10:22:01,109 autoreload 16124 13440 Watching for file changes with StatReloader
+INFO 2026-01-21 10:22:23,593 autoreload 2808 19644 Watching for file changes with StatReloader
+INFO 2026-01-21 10:23:02,930 autoreload 27996 5656 Watching for file changes with StatReloader
+INFO 2026-01-21 10:23:26,144 autoreload 3452 31060 Watching for file changes with StatReloader
+INFO 2026-01-21 10:24:14,591 autoreload 25524 22412 Watching for file changes with StatReloader
+INFO 2026-01-21 10:25:10,047 autoreload 26236 2388 Watching for file changes with StatReloader
+WARNING 2026-01-21 10:25:15,334 log 26236 3788 Not Found: /favicon.ico
+WARNING 2026-01-21 10:28:32,048 log 26236 13112 Not Found: /api/pages/home/
+WARNING 2026-01-21 10:28:32,050 log 26236 20748 Not Found: /api/posts/
+WARNING 2026-01-21 10:28:32,071 log 26236 13112 Not Found: /api/pages/home/
+WARNING 2026-01-21 10:28:32,077 log 26236 20748 Not Found: /api/posts/
+INFO 2026-01-21 11:29:38,527 autoreload 10012 10016 Watching for file changes with StatReloader
+INFO 2026-01-21 11:36:59,478 autoreload 424 7868 Watching for file changes with StatReloader
+INFO 2026-01-21 11:42:47,379 autoreload 9672 7764 Watching for file changes with StatReloader
+INFO 2026-01-21 11:46:36,367 autoreload 9592 10132 Watching for file changes with StatReloader
+INFO 2026-01-21 11:49:59,052 autoreload 5836 1900 Watching for file changes with StatReloader
+INFO 2026-01-21 11:51:20,823 autoreload 11208 5384 Watching for file changes with StatReloader
+INFO 2026-01-21 11:56:13,603 autoreload 9736 10172 Watching for file changes with StatReloader
+INFO 2026-01-21 11:57:32,566 autoreload 8540 10440 Watching for file changes with StatReloader
+WARNING 2026-01-21 11:57:59,301 log 8540 5620 Not Found: /favicon.ico
+WARNING 2026-01-21 12:01:48,646 log 8540 6904 Not Found: /api/pages/home/
+WARNING 2026-01-21 12:01:48,743 log 8540 424 Not Found: /api/posts/
+WARNING 2026-01-21 12:01:50,711 log 8540 8628 Not Found: /api/pages/home/
+WARNING 2026-01-21 12:01:50,738 log 8540 6904 Not Found: /api/posts/
+ERROR 2026-01-21 12:03:59,064 log 8540 10792 Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: admin_interface_theme.form_actions_sticky
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\handlers\base.py", line 221, in _get_response
+    response = response.render()
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 174, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 166, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loader_tags.py", line 160, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 166, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loader_tags.py", line 160, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 166, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loader_tags.py", line 66, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1150, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 788, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 928, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1000, in _resolve_lookup
+    current = current()
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loader_tags.py", line 82, in super
+    return mark_safe(self.render(self.context))
+                     ~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loader_tags.py", line 66, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\library.py", line 325, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\admin_interface\templatetags\admin_interface_tags.py", line 64, in get_admin_interface_theme
+    theme = Theme.objects.get_active()
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\admin_interface\models.py", line 15, in get_active
+    objs_active_ls = list(objs_active_qs)
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\models\query.py", line 390, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\models\query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\models\query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\ICT POOL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: admin_interface_theme.form_actions_sticky
+INFO 2026-01-21 13:17:43,006 autoreload 11168 9920 Watching for file changes with StatReloader
+WARNING 2026-01-21 13:18:19,117 log 11168 9816 Not Found: /api/users/
+WARNING 2026-01-21 13:18:19,153 log 11168 10564 Not Found: /api/pages/
+WARNING 2026-01-21 13:18:19,191 log 11168 4384 Not Found: /api/posts/
+WARNING 2026-01-21 13:18:19,222 log 11168 7200 Not Found: /api/users/
+WARNING 2026-01-21 13:18:19,313 log 11168 10564 Not Found: /api/posts/
+WARNING 2026-01-21 13:18:19,320 log 11168 9816 Not Found: /api/pages/
+WARNING 2026-01-21 13:19:24,152 log 11168 11100 Not Found: /api/posts/
+WARNING 2026-01-21 13:19:24,180 log 11168 7612 Not Found: /api/pages/
+WARNING 2026-01-21 13:19:24,235 log 11168 1368 Not Found: /api/users/
+WARNING 2026-01-21 13:19:24,286 log 11168 11100 Not Found: /api/posts/
+WARNING 2026-01-21 13:19:24,324 log 11168 7612 Not Found: /api/pages/
+WARNING 2026-01-21 13:19:24,409 log 11168 420 Not Found: /api/users/
+WARNING 2026-01-21 14:42:36,775 log 11168 2848 Not Found: /api/posts/
+WARNING 2026-01-21 14:42:36,781 log 11168 11624 Not Found: /api/users/
+WARNING 2026-01-21 14:42:36,785 log 11168 11736 Not Found: /api/pages/
+WARNING 2026-01-21 14:42:36,882 log 11168 9868 Not Found: /api/posts/
+WARNING 2026-01-21 14:42:36,966 log 11168 2848 Not Found: /api/users/
+WARNING 2026-01-21 14:42:37,072 log 11168 11736 Not Found: /api/pages/
+WARNING 2026-01-21 14:42:37,948 log 11168 2848 Not Found: /api/posts/
+WARNING 2026-01-21 14:42:37,976 log 11168 11736 Not Found: /api/pages/home/
+WARNING 2026-01-21 14:42:38,370 log 11168 2848 Not Found: /api/posts/
+WARNING 2026-01-21 14:42:38,581 log 11168 2848 Not Found: /api/pages/home/
+INFO 2026-01-24 00:50:56,469 autoreload 55701 133610953306112 Watching for file changes with StatReloader
+INFO 2026-01-24 00:52:02,209 autoreload 56345 126751714598912 Watching for file changes with StatReloader
+INFO 2026-01-24 00:53:40,887 autoreload 57286 132355824791552 Watching for file changes with StatReloader
+INFO 2026-01-24 00:57:05,217 autoreload 58694 139194848804864 Watching for file changes with StatReloader
+INFO 2026-01-24 01:10:27,581 autoreload 64364 124240062038016 Watching for file changes with StatReloader
+INFO 2026-01-24 01:13:26,018 autoreload 65921 127963097706496 Watching for file changes with StatReloader
+INFO 2026-01-24 01:15:48,243 autoreload 67055 130953896062976 Watching for file changes with StatReloader
+INFO 2026-01-24 01:16:26,879 autoreload 67457 125782459015168 Watching for file changes with StatReloader
+INFO 2026-01-24 01:28:50,322 autoreload 72504 128316575401152 Watching for file changes with StatReloader
+INFO 2026-01-24 01:29:51,449 autoreload 72818 137452678763712 Watching for file changes with StatReloader
+INFO 2026-01-24 01:30:37,759 autoreload 72818 137452678763712 /home/ombeni/Desktop/dpa_college_website/backend/police_academy_backend/settings.py changed, reloading.
+INFO 2026-01-24 01:30:38,037 autoreload 72895 124336860157120 Watching for file changes with StatReloader
+INFO 2026-01-24 01:31:04,769 autoreload 73113 135657057596608 Watching for file changes with StatReloader
+WARNING 2026-01-24 01:31:29,796 log 73113 135656969324096 Not Found: /api/pages/home/
+WARNING 2026-01-24 01:31:29,797 log 73113 135656960931392 Not Found: /api/posts/
+WARNING 2026-01-24 01:31:29,813 log 73113 135656734975552 Not Found: /api/posts/
+WARNING 2026-01-24 01:31:29,817 log 73113 135656743368256 Not Found: /api/pages/home/
+WARNING 2026-01-24 01:32:42,859 log 73113 135656718190144 Not Found: /api/posts/
+WARNING 2026-01-24 01:32:42,862 log 73113 135656726582848 Not Found: /api/pages/home/
+WARNING 2026-01-24 01:32:42,866 log 73113 135656701404736 Not Found: /api/posts/
+WARNING 2026-01-24 01:32:42,879 log 73113 135656709797440 Not Found: /api/pages/home/
+WARNING 2026-01-24 01:32:51,315 log 73113 135656709797440 Not Found: /api/pages/history/
+WARNING 2026-01-24 01:32:51,319 log 73113 135656726582848 Not Found: /api/pages/history/
+WARNING 2026-01-24 01:32:52,725 log 73113 135656726582848 Not Found: /api/pages/organization/
+WARNING 2026-01-24 01:32:52,733 log 73113 135656709797440 Not Found: /api/pages/organization/
+WARNING 2026-01-24 01:32:54,035 log 73113 135656726582848 Not Found: /api/public/pages/by-page/
+WARNING 2026-01-24 01:32:54,036 log 73113 135656709797440 Not Found: /api/public/pages/by-page/
+WARNING 2026-01-24 01:33:34,445 log 73113 135656726582848 Not Found: /api/pages/home/
+WARNING 2026-01-24 01:33:34,446 log 73113 135656709797440 Not Found: /api/posts/
+WARNING 2026-01-24 01:33:34,449 log 73113 135656701404736 Not Found: /api/posts/
+WARNING 2026-01-24 01:33:34,453 log 73113 135656718190144 Not Found: /api/pages/home/
+WARNING 2026-01-24 01:36:44,985 log 73113 135656960931392 Not Found: /favicon.ico
+WARNING 2026-01-24 01:36:54,523 log 73113 135656969324096 Not Found: /favicon.ico
+WARNING 2026-01-24 01:39:11,116 log 73113 135656969324096 Unauthorized: /api/auth/token/
+WARNING 2026-01-24 01:39:33,093 log 73113 135656734975552 Not Found: /api/posts/
+WARNING 2026-01-24 01:39:33,096 log 73113 135656718190144 Not Found: /api/pages/
+WARNING 2026-01-24 01:39:33,103 log 73113 135656697230912 Not Found: /api/posts/
+WARNING 2026-01-24 01:39:33,105 log 73113 135656960931392 Not Found: /api/users/
+WARNING 2026-01-24 01:39:33,117 log 73113 135656697230912 Not Found: /api/pages/
+WARNING 2026-01-24 01:39:33,130 log 73113 135656960931392 Not Found: /api/users/
+WARNING 2026-01-24 01:39:48,597 log 73113 135656969324096 Not Found: /api/pages/
+WARNING 2026-01-24 01:39:48,599 log 73113 135656718190144 Not Found: /api/pages/
+WARNING 2026-01-24 01:39:48,600 log 73113 135656726582848 Not Found: /api/users/
+WARNING 2026-01-24 01:39:48,601 log 73113 135656697230912 Not Found: /api/users/
+WARNING 2026-01-24 01:39:48,603 log 73113 135656734975552 Not Found: /api/posts/
+WARNING 2026-01-24 01:39:48,607 log 73113 135656960931392 Not Found: /api/posts/
+WARNING 2026-01-24 01:40:17,988 log 73113 135656718190144 Not Found: /api/pages/
+WARNING 2026-01-24 01:40:17,989 log 73113 135656969324096 Not Found: /api/pages/
+WARNING 2026-01-24 01:40:21,233 log 73113 135656726582848 Not Found: /api/pages/
+WARNING 2026-01-24 01:40:24,504 log 73113 135656697230912 Not Found: /api/pages/
+WARNING 2026-01-24 01:40:27,922 log 73113 135656718190144 Not Found: /api/news/
+WARNING 2026-01-24 01:40:27,927 log 73113 135656969324096 Not Found: /api/news/
+WARNING 2026-01-24 01:40:34,311 log 73113 135656697230912 Not Found: /api/posts/
+WARNING 2026-01-24 01:40:34,312 log 73113 135656726582848 Not Found: /api/posts/
+WARNING 2026-01-24 01:40:39,609 log 73113 135656734975552 Not Found: /api/posts/
+WARNING 2026-01-24 01:40:39,614 log 73113 135656960931392 Not Found: /api/posts/
+WARNING 2026-01-24 01:40:41,377 log 73113 135656718190144 Not Found: /api/users/
+WARNING 2026-01-24 01:40:41,378 log 73113 135656969324096 Not Found: /api/users/
+WARNING 2026-01-24 01:40:56,418 log 73113 135656726582848 Not Found: /api/users/
+WARNING 2026-01-24 01:40:56,423 log 73113 135656697230912 Not Found: /api/users/
+WARNING 2026-01-24 01:41:42,726 log 73113 135656960931392 Not Found: /api/users/1/reset-password/
+WARNING 2026-01-24 01:41:52,691 log 73113 135656960931392 Not Found: /api/pages/home/
+WARNING 2026-01-24 01:41:52,704 log 73113 135656718190144 Not Found: /api/posts/
+WARNING 2026-01-24 01:41:52,707 log 73113 135656726582848 Not Found: /api/posts/
+WARNING 2026-01-24 01:41:52,709 log 73113 135656969324096 Not Found: /api/pages/home/
+WARNING 2026-01-24 01:42:10,197 log 73113 135656734975552 Not Found: /api/posts/
+WARNING 2026-01-24 01:42:10,201 log 73113 135656718190144 Not Found: /api/pages/
+WARNING 2026-01-24 01:42:10,203 log 73113 135656697230912 Not Found: /api/users/
+WARNING 2026-01-24 01:42:10,205 log 73113 135656960931392 Not Found: /api/posts/
+WARNING 2026-01-24 01:42:10,210 log 73113 135656726582848 Not Found: /api/users/
+WARNING 2026-01-24 01:42:10,216 log 73113 135656969324096 Not Found: /api/pages/
+WARNING 2026-01-24 01:42:24,546 log 73113 135656969324096 Not Found: /api/posts/
+WARNING 2026-01-24 01:42:24,552 log 73113 135656960931392 Not Found: /api/posts/
+WARNING 2026-01-24 01:42:24,563 log 73113 135656734975552 Not Found: /api/pages/home/
+WARNING 2026-01-24 01:42:24,565 log 73113 135656718190144 Not Found: /api/pages/home/
+WARNING 2026-01-24 01:42:58,082 log 73113 135656960931392 Not Found: /api/pages/
+WARNING 2026-01-24 01:42:58,083 log 73113 135656969324096 Not Found: /api/pages/
+WARNING 2026-01-24 01:43:00,678 log 73113 135656718190144 Not Found: /api/users/
+WARNING 2026-01-24 01:43:00,682 log 73113 135656734975552 Not Found: /api/pages/
+WARNING 2026-01-24 01:43:00,684 log 73113 135656969324096 Not Found: /api/posts/
+WARNING 2026-01-24 01:43:00,685 log 73113 135656726582848 Not Found: /api/users/
+WARNING 2026-01-24 01:43:00,686 log 73113 135656697230912 Not Found: /api/pages/
+WARNING 2026-01-24 01:43:00,688 log 73113 135656960931392 Not Found: /api/posts/
+WARNING 2026-01-24 01:43:02,759 log 73113 135656718190144 Not Found: /api/pages/
+WARNING 2026-01-24 01:43:02,760 log 73113 135656960931392 Not Found: /api/posts/
+WARNING 2026-01-24 01:43:02,762 log 73113 135656734975552 Not Found: /api/users/
+WARNING 2026-01-24 01:50:07,925 log 73113 135656718190144 Not Found: /api/pages/
+WARNING 2026-01-24 01:50:07,927 log 73113 135656960931392 Not Found: /api/posts/
+WARNING 2026-01-24 01:50:07,937 log 73113 135656734975552 Not Found: /api/users/
+WARNING 2026-01-24 01:59:56,035 log 73113 135656718190144 Not Found: /api/posts/
+WARNING 2026-01-24 01:59:56,045 log 73113 135656960931392 Not Found: /api/pages/home/
+WARNING 2026-01-24 01:59:56,050 log 73113 135656969324096 Not Found: /api/posts/
+WARNING 2026-01-24 01:59:56,058 log 73113 135656734975552 Not Found: /api/pages/home/
+WARNING 2026-01-24 02:02:45,596 log 73113 135656969324096 Not Found: /api/pages/history/
+WARNING 2026-01-24 02:02:45,597 log 73113 135656718190144 Not Found: /api/pages/history/
+WARNING 2026-01-24 02:02:47,184 log 73113 135656718190144 Not Found: /api/pages/organization/
+WARNING 2026-01-24 02:02:47,189 log 73113 135656969324096 Not Found: /api/pages/organization/
+WARNING 2026-01-24 02:02:48,394 log 73113 135656718190144 Not Found: /api/public/pages/by-page/
+WARNING 2026-01-24 02:02:48,398 log 73113 135656969324096 Not Found: /api/public/pages/by-page/
+INFO 2026-01-24 15:57:08,824 autoreload 20677 123915156128960 Watching for file changes with StatReloader
+WARNING 2026-01-24 15:57:20,142 log 20677 123915067819584 Not Found: /api/pages/home/
+WARNING 2026-01-24 15:57:20,143 log 20677 123915059426880 Not Found: /api/posts/
+WARNING 2026-01-24 15:57:20,155 log 20677 123915067819584 Not Found: /api/pages/home/
+WARNING 2026-01-24 15:57:20,156 log 20677 123915049985600 Not Found: /api/posts/
+WARNING 2026-01-24 15:57:45,444 log 20677 123914838603328 Not Found: /api/pages/home/
+WARNING 2026-01-24 15:57:45,457 log 20677 123914813425216 Not Found: /api/posts/
+WARNING 2026-01-24 15:57:45,460 log 20677 123914821817920 Not Found: /api/pages/home/
+WARNING 2026-01-24 15:57:45,491 log 20677 123914813425216 Not Found: /api/posts/
+WARNING 2026-01-24 16:21:37,646 log 20677 123915059426880 Not Found: /api/posts/
+WARNING 2026-01-24 16:21:37,647 log 20677 123915049985600 Not Found: /api/pages/home/
+WARNING 2026-01-24 16:21:37,657 log 20677 123915049985600 Not Found: /api/posts/
+WARNING 2026-01-24 16:21:37,662 log 20677 123915067819584 Not Found: /api/pages/home/
+INFO 2026-01-26 10:54:16,141 autoreload 30260 128193261367424 Watching for file changes with StatReloader
+INFO 2026-01-26 10:55:44,606 autoreload 30483 133232059207808 Watching for file changes with StatReloader
+INFO 2026-01-26 10:56:28,179 autoreload 30595 132904251269248 Watching for file changes with StatReloader
+INFO 2026-01-26 10:57:07,232 autoreload 30698 123968864358528 Watching for file changes with StatReloader
+INFO 2026-01-26 10:57:44,749 autoreload 30791 133695873908864 Watching for file changes with StatReloader
+INFO 2026-01-26 10:58:13,530 autoreload 30893 123989186621568 Watching for file changes with StatReloader
+INFO 2026-01-26 10:58:43,476 autoreload 30999 136365307203712 Watching for file changes with StatReloader
+INFO 2026-01-26 10:59:19,564 autoreload 31101 127772875960448 Watching for file changes with StatReloader
+INFO 2026-01-26 10:59:50,204 autoreload 31202 131218088775808 Watching for file changes with StatReloader
+INFO 2026-01-26 11:00:24,402 autoreload 31296 131634795413632 Watching for file changes with StatReloader
+INFO 2026-01-26 11:01:03,007 autoreload 31406 132823711592576 Watching for file changes with StatReloader
+WARNING 2026-01-26 11:01:29,774 log 31406 132823630046912 Not Found: /favicon.ico
+WARNING 2026-01-26 11:01:52,894 log 31406 132823630046912 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-26 11:02:30,108 log 31406 132823630046912 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+INFO 2026-01-26 11:17:07,621 autoreload 31973 129402713809024 Watching for file changes with StatReloader
+WARNING 2026-01-26 11:18:46,549 log 31973 129402631972544 Not Found: /api/public/pages/by-page/
+WARNING 2026-01-26 11:18:46,554 log 31973 129402631972544 Not Found: /api/public/pages/by-page/
+WARNING 2026-01-26 11:18:50,599 log 31973 129402631972544 Not Found: /api/pages/history/
+WARNING 2026-01-26 11:18:50,605 log 31973 129402631972544 Not Found: /api/pages/history/
+WARNING 2026-01-26 11:18:51,946 log 31973 129402631972544 Not Found: /api/pages/organization/
+WARNING 2026-01-26 11:18:51,953 log 31973 129402622531264 Not Found: /api/pages/organization/
+WARNING 2026-01-26 11:18:53,022 log 31973 129402622531264 Not Found: /api/public/pages/by-page/
+WARNING 2026-01-26 11:18:53,026 log 31973 129402622531264 Not Found: /api/public/pages/by-page/
+WARNING 2026-01-26 11:31:15,209 log 31973 129402622531264 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+INFO 2026-01-28 09:02:58,309 autoreload 7162 134409054883968 Watching for file changes with StatReloader
+WARNING 2026-01-28 09:04:27,051 log 7162 134408964757184 Not Found: /api/posts/
+WARNING 2026-01-28 09:04:27,051 log 7162 134408973149888 Not Found: /api/pages/home/
+WARNING 2026-01-28 09:04:27,057 log 7162 134408973149888 Not Found: /api/posts/
+WARNING 2026-01-28 09:04:27,060 log 7162 134408964757184 Not Found: /api/pages/home/
+WARNING 2026-01-28 10:08:56,996 log 7162 134408973149888 Not Found: /api/posts/
+WARNING 2026-01-28 10:08:56,999 log 7162 134408964757184 Not Found: /api/pages/home/
+WARNING 2026-01-28 10:08:57,007 log 7162 134408973149888 Not Found: /api/pages/home/
+WARNING 2026-01-28 10:08:57,011 log 7162 134408964757184 Not Found: /api/posts/
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
+INFO 2026-01-28 13:02:02,147 autoreload 65138 139562284384384 Watching for file changes with StatReloader
+INFO 2026-01-28 13:03:06,027 autoreload 65457 125549081792640 Watching for file changes with StatReloader
+INFO 2026-01-28 13:03:33,355 autoreload 65457 125549081792640 /home/nason/Desktop/dar-es-salaam-police-academy/backend/academy/urls.py changed, reloading.
+INFO 2026-01-28 13:03:33,654 autoreload 65562 131726497124480 Watching for file changes with StatReloader
+INFO 2026-01-28 13:03:37,762 autoreload 65562 131726497124480 /home/nason/Desktop/dar-es-salaam-police-academy/backend/academy/serializers.py changed, reloading.
+INFO 2026-01-28 13:03:38,027 autoreload 65610 132383970091136 Watching for file changes with StatReloader

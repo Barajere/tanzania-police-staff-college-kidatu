@@ -50,6 +50,7 @@
     overflow: hidden;
     max-width: min(400px, 30vw);
 }
+<<<<<<< HEAD
 
 /* make date hierarchy scrollable horizontally */
 /*
@@ -66,3 +67,5 @@
     padding-right: 10px;
 }
 */
+=======
+>>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
