@@ -26,6 +26,7 @@ import PostsList from './pages/admin/PostsList';
 import EditPage from './pages/admin/EditNews'; // FIXED: As per original (reuse for pages if needed)
 import CreateNews from './pages/admin/CreateNews';
 import EditNews from './pages/admin/EditNews';
+import SportGym from './pages/Facilities/SportGym';
 
 // Error Boundary
 import ErrorBoundary from './components/ErrorBoundary';
@@ -225,7 +226,7 @@ function App() {
           <Route path="/admission/admission-requirements" element={<PublicLayout><TempPage title="Admission Requirements" /></PublicLayout>} />
           <Route path="/admission/fee-structure" element={<PublicLayout><TempPage title="Fee Structure" /></PublicLayout>} />
           <Route path="/admission/application-process" element={<PublicLayout><TempPage title="Application Process" /></PublicLayout>} />
-          <Route path="/facilities/sport-gym" element={<PublicLayout><TempPage title="Sport & Gym" /></PublicLayout>} />
+          <Route path="/facilities/sport-gym" element={<PublicLayout><SportGym /></PublicLayout>} />
           <Route path="/facilities/recreation" element={<PublicLayout><TempPage title="Recreation" /></PublicLayout>} />
           <Route path="/facilities/classes-accommodation" element={<PublicLayout><TempPage title="Classes & Accommodation" /></PublicLayout>} />
           <Route path="/facilities/range" element={<PublicLayout><TempPage title="Range" /></PublicLayout>} />
