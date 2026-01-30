@@ -52,6 +52,7 @@ import Users from "./pages/admin/Users";
 import AddUser from "./pages/admin/AddUser";
 import EditUser from "./pages/admin/EditUser";
 import PostsList from "./pages/admin/PostsList";
+import CreatePost from "./pages/admin/CreatePost";
 import CreateNews from "./pages/admin/CreateNews";
 import EditNews from "./pages/admin/EditNews";
 
@@ -169,6 +170,17 @@ function App() {
               <ProtectedAdminRoute>
                 <ErrorBoundary>
                   <PostsList />
+                </ErrorBoundary>
+              </ProtectedAdminRoute>
+            }
+          />
+
+                    <Route
+            path="/admin/posts/create"
+            element={
+              <ProtectedAdminRoute>
+                <ErrorBoundary>
+                  <CreatePost />
                 </ErrorBoundary>
               </ProtectedAdminRoute>
             }

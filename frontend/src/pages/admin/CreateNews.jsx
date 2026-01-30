@@ -12,6 +12,7 @@ import {
   ArrowLeft,
   Upload
 } from 'lucide-react';
+
 import api from '../../utils/api';
 
 export default function CreateNews() {
@@ -42,7 +43,7 @@ export default function CreateNews() {
         formDataToSend.append('image', formData.image);
       }
 
-      await api.post('news/', formDataToSend, {
+      await api.post('admin/news/create/', formDataToSend, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

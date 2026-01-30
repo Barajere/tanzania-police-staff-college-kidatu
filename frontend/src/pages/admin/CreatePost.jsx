@@ -16,6 +16,7 @@ import {
   Type,
   FileText as FileTextIcon
 } from 'lucide-react';
+import AdminNavbar from './AdminNavbar';
 import api from '../../utils/api';
 
 export default function CreatePost() {
@@ -298,7 +299,3 @@ export default function CreatePost() {
   );
 }
 
-// Admin Navbar Component (same as above)
-const AdminNavbar = () => {
-  // ... same AdminNavbar component as above
-};

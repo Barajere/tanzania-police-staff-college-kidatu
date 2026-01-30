@@ -406,7 +406,7 @@ export default function Home() {
                       <div className="event-date-badge">
                         <Calendar size={16} />
                         <span>
-                          {new Date(event.created_at).toLocaleDateString('en-US', {
+                          {new Date(event.event_date).toLocaleDateString('en-US', {
                             day: 'numeric',
                             month: 'short'
                           })}
@@ -414,7 +414,7 @@ export default function Home() {
                       </div>
                       <div className="event-content">
                         <h3>{event.title}</h3>
-                        <p>{event.content || "Join us for this important academy event."}</p>
+                        <p>{event.description || "Join us for this important academy event."}</p>
                         <div className="event-meta">
                           <span>📍 Main Campus</span>
                           <span>🕒 09:00 AM</span>
