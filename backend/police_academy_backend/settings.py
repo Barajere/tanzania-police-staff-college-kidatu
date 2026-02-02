@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'constance',
     'constance.backends.database',
     'import_export',
-    'django_mfa',
+    'mfa',
     
     # 🔥 YOUR APPS
     'academy',

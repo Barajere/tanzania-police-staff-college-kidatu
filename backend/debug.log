@@ -3117,3 +3117,21 @@ INFO 2026-01-28 13:03:33,355 autoreload 65457 125549081792640 /home/nason/Deskto
 INFO 2026-01-28 13:03:33,654 autoreload 65562 131726497124480 Watching for file changes with StatReloader
 INFO 2026-01-28 13:03:37,762 autoreload 65562 131726497124480 /home/nason/Desktop/dar-es-salaam-police-academy/backend/academy/serializers.py changed, reloading.
 INFO 2026-01-28 13:03:38,027 autoreload 65610 132383970091136 Watching for file changes with StatReloader
+INFO 2026-01-29 13:33:13,786 autoreload 5856 135716855304320 Watching for file changes with StatReloader
+INFO 2026-01-29 13:38:14,570 autoreload 5606 131088483233920 Watching for file changes with StatReloader
+INFO 2026-01-29 13:43:50,833 autoreload 5825 125957090893952 Watching for file changes with StatReloader
+INFO 2026-01-29 13:46:14,154 autoreload 6232 135087905837184 Watching for file changes with StatReloader
+INFO 2026-01-29 13:49:18,212 autoreload 7152 132886316875904 Watching for file changes with StatReloader
+INFO 2026-01-29 13:49:40,502 autoreload 7261 125432729354368 Watching for file changes with StatReloader
+INFO 2026-01-29 13:52:22,675 autoreload 7261 125432729354368 /home/tpf/dar-es-salaam-police-academy/backend/police_academy_backend/settings.py changed, reloading.
+INFO 2026-01-29 13:52:22,926 autoreload 7649 124431105364096 Watching for file changes with StatReloader
+INFO 2026-01-29 13:52:24,090 autoreload 7649 124431105364096 /home/tpf/dar-es-salaam-police-academy/backend/police_academy_backend/settings.py changed, reloading.
+INFO 2026-01-29 13:52:24,550 autoreload 7662 125907904966784 Watching for file changes with StatReloader
+INFO 2026-01-29 13:52:30,956 autoreload 7662 125907904966784 /home/tpf/dar-es-salaam-police-academy/backend/police_academy_backend/settings.py changed, reloading.
+INFO 2026-01-29 13:52:31,327 autoreload 7807 133681873424512 Watching for file changes with StatReloader
+INFO 2026-01-29 13:53:18,772 autoreload 7949 133444039106688 Watching for file changes with StatReloader
+WARNING 2026-01-29 13:53:39,623 log 7949 133443889395392 Not Found: /favicon.ico
+INFO 2026-01-30 09:07:42,210 autoreload 6933 127635654709376 Watching for file changes with StatReloader
+INFO 2026-01-30 09:23:38,057 autoreload 5426 125332059041920 Watching for file changes with StatReloader
+INFO 2026-01-30 11:56:47,995 autoreload 9396 133620678484096 Watching for file changes with StatReloader
+WARNING 2026-01-30 11:57:39,007 log 9396 133620526216896 Not Found: /favicon.ico

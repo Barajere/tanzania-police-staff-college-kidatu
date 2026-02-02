@@ -1,34 +1,4 @@
-<<<<<<< HEAD
-import { useEffect, useState } from 'react';
-import api from '../../utils/api';
 
-export default function Course() {
-  const [content, setContent] = useState(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    api.get('pages/course/')
-      .then(res => {
-        setContent(res.data);
-        setLoading(false);
-      })
-      .catch(err => {
-        console.error('Error loading Course page:', err);
-        setLoading(false);
-      });
-  }, []);
-
-  if (loading) return <div>Loading Course info...</div>;
-  if (!content) return <div>Course details not available.</div>;
-
-  return (
-    <div className="course-page">
-      <h1>{content.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: content.content }} />
-    </div>
-  );
-}
-=======
 import './Course.css';
 import modernDormitoriesImage from '../../assets/modern-dormitories.png';
 
@@ -59,9 +29,17 @@ export default function Course() {
               <div className="course-section-content">
                 <h2 className="course-section-title">Academic Programmes</h2>
                 <ul className="course-list">
-                  <li>Diploma in Police Science</li>
-                  <li>Medical Laboratory Technology program</li>
-                  <li>Certificate in Law</li>
+                  <li>Bachelor degree in police science</li>
+                  <li>Ordinary Diploma in criminal Investigation</li>
+                  <li>Ordinary Diploma in medical laboratory science</li>
+                  <li>Ordinary Diploma in police science</li>
+                  <li>Basic Technician certificate in medical laboratory science</li>
+                  <li>Basic Technician certificate in Criminal Investigation</li>
+                  <li>Basic technician certificate in police communication</li>
+                  <li>Basic Technician certificate in law</li>
+                  <li>Technician certificate in law</li>
+                  <li>Technician certificate in medical laboratory science</li>
+                  <li>Driving course</li>
                 </ul>
               </div>
             </div>
@@ -99,4 +77,4 @@ export default function Course() {
     </div>
   );
 }
->>>>>>> f82bba6af5ffd5ca62025f21297dee1ee034a82d
+
