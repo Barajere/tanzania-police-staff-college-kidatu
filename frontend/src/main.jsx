@@ -1,4 +1,5 @@
 import React from 'react';
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Bootstrap JS
 import App from './App';
