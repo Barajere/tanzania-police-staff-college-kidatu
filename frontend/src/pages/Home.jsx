@@ -192,6 +192,26 @@ export default function Home() {
 
   return (
     <div className="home-page">
+      <style>{`
+       .news-image {
+          width: 100%;
+          height: 180px;
+          overflow: hidden;
+          margin-right: 5%;
+          border-radius: 8px;
+          margin-bottom: 12px; /* 👈 adds gap below the image */
+        }
+
+        .news-thumbnail {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+
+
+      `}</style>
+
       {/* {ga.length === 0 ? (
         <p>No news available at the moment.</p>
       ) : (
@@ -361,56 +381,71 @@ export default function Home() {
                 <h2>News & Announcements</h2>
               </div>
               <div className="news-list">
-                {posts.news.length > 0 ? (
-                  posts.news.map((news, index) => (
-                    <div 
-                      key={news.id} 
-                      className={`news-item ${hoveredCard === `news-${index}` ? 'card-hovered' : ''}`}
-                      onMouseEnter={() => setHoveredCard(`news-${index}`)}
-                      onMouseLeave={() => setHoveredCard(null)}
-                    >
-                      <div className="news-content">
-                        <div className="news-date">
-                          {new Date(news.date_posted).toLocaleDateString('en-US', {
-                            day: 'numeric',
-                            month: 'short',
-                            year: 'numeric'
-                          })}
-                        </div>
-                        
-                        <h3>{news.title}</h3>
-                        <p>{news.content || "Important update from the academy administration."}</p>
-                      </div>
-                      <div className="news-arrow">
-                        <ChevronRight size={16} />
-                      </div>
-                    </div>
-                  ))
-                ) : (
-                  <>
-                    <div className="news-item">
-                      <div className="news-content">
-                        <div className="news-date">Jan 15, 2025</div>
-                        <h3>New Intake for 2025/2026 Announced</h3>
-                        <p>Applications now open for the upcoming academic year.</p>
-                      </div>
-                      <div className="news-arrow">
-                        <ChevronRight size={16} />
-                      </div>
-                    </div>
-                    <div className="news-item">
-                      <div className="news-content">
-                        <div className="news-date">Dec 20, 2024</div>
-                        <h3>Graduation Ceremony Highlights</h3>
-                        <p>Celebrating the achievements of our latest graduates.</p>
-                      </div>
-                      <div className="news-arrow">
-                        <ChevronRight size={16} />
-                      </div>
-                    </div>
-                  </>
-                )}
-              </div>
+  {posts.news.length > 0 ? (
+  posts.news.map((news, index) => (
+    <div 
+      key={news.id} 
+      className={`news-item ${hoveredCard === `news-${index}` ? 'card-hovered' : ''}`}
+      onMouseEnter={() => setHoveredCard(`news-${index}`)}
+      onMouseLeave={() => setHoveredCard(null)}
+    >
+      {/* Image on top - only if exists */}
+      {news.image && news.image.trim() !== "" && (
+        <div className="news-image">
+          <img
+            src={'http://localhost:8000' + news.image}
+            alt={news.title}
+            className="news-thumbnail"
+          />
+        </div>
+      )}
+
+      {/* Content below */}
+      <div className="news-content">
+        <div className="news-date">
+          {new Date(news.date_posted).toLocaleDateString('en-US', {
+            day: 'numeric',
+            month: 'short',
+            year: 'numeric'
+          })}
+        </div>
+        <h3>{news.title}</h3>
+        <p>{news.content || "Important update from the academy administration."}</p>
+      </div>
+
+      <div className="news-arrow">
+        <ChevronRight size={16} />
+      </div>
+    </div>
+  ))
+) : (
+  <>
+    <div className="news-item">
+      <div className="news-content">
+        <div className="news-date">Jan 15, 2025</div>
+        <h3>New Intake for 2025/2026 Announced</h3>
+        <p>Applications now open for the upcoming academic year.</p>
+      </div>
+      <div className="news-arrow">
+        <ChevronRight size={16} />
+      </div>
+    </div>
+
+    <div className="news-item">
+      <div className="news-content">
+        <div className="news-date">Dec 20, 2024</div>
+        <h3>Graduation Ceremony Highlights</h3>
+        <p>Celebrating the achievements of our latest graduates.</p>
+      </div>
+      <div className="news-arrow">
+        <ChevronRight size={16} />
+      </div>
+    </div>
+  </>
+)}
+
+</div>
+
               <a href="/news" className="view-all-link">
                 View All News <ExternalLink size={16} />
               </a>
