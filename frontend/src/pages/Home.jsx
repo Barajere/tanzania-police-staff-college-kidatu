@@ -60,7 +60,7 @@ export default function Home() {
   }, []);
 
   // Sample data for sections
- 
+ /*
   const programs = [
     {
       title: "Certificate in Law Enforcement",
@@ -99,6 +99,53 @@ export default function Home() {
       color: "#2d4cc8"
     }
   ];
+*/
+
+const programs = [
+  {
+    title: "Basic Recruit Courses",
+    description:
+      "Comprehensive entry-level training program designed to transform motivated individuals into professional police officers.",
+    image: "/images/recruit.jpg",
+    color: "#1a365d",
+  },
+  {
+    title: "Academic Courses",
+    description:
+      "Advanced educational programs offering undergraduate degrees and specialized certifications.",
+    image: "/images/academic.jpg",
+    color: "#065f46",
+  },
+  {
+    title: "Promotional Courses",
+    description:
+      "Leadership and skill enhancement training designed to prepare officers for higher ranks.",
+    image: "/images/promotional.jpg",
+    color: "#5b21b6",
+  },
+   {
+    title: "Basic Recruit Courses",
+    description:
+      "Comprehensive entry-level training program designed to transform motivated individuals into professional police officers.",
+    image: "/images/recruit.jpg",
+    color: "#1a365d",
+  },
+   {
+    title: "Basic Recruit Courses",
+    description:
+      "Comprehensive entry-level training program designed to transform motivated individuals into professional police officers.",
+    image: "/images/campus4.jpg",
+    color: "#1a365d",
+  },
+  
+  {
+    title: "Proficiency Courses",
+    description:
+      "Specialized training programs focusing on technical skills and tactical operations.",
+    image: "/images/proficiency.jpg",
+    color: "#9a3412",
+  },
+];
 
   const facilities = [
     { 
@@ -252,45 +299,36 @@ export default function Home() {
       </section>
 
       {/* Programs Section */}
-      <section className="programs-section">
-        <div className="container">
-          <div className="section-header">
-            <div className="animated-icon">🎓</div>
-            <h2>Programs & Courses</h2>
-            <p className="section-subtitle">Comprehensive Training for Law Enforcement Professionals</p>
+     <section className="programs-section">
+  <div className="container">
+    <div className="section-header">
+      <h2>Programs & Courses</h2>
+    </div>
+
+    <div className="programs-grid">
+      {programs.map((program, index) => (
+        <div className="program-card" key={index}>
+          
+          {/* Image */}
+          <div className="program-image">
+            <img src={program.image} alt={program.title} />
           </div>
-          <div className="programs-grid">
-            {programs.map((program, index) => (
-              <div 
-                key={index} 
-                className={`program-card animated-card ${hoveredCard === `program-${index}` ? 'card-hovered' : ''}`}
-                onMouseEnter={() => setHoveredCard(`program-${index}`)}
-                onMouseLeave={() => setHoveredCard(null)}
-                style={{ '--accent-color': program.color }}
-              >
-                <div className="program-icon-wrapper">
-                  <div className="program-icon-bg"></div>
-                  {program.icon}
-                </div>
-                <h3>{program.title}</h3>
-                <div className="program-duration">
-                  <Clock className="duration-icon" />
-                  {program.duration}
-                </div>
-                <p>Comprehensive training program designed to develop skilled law enforcement professionals.</p>
-                <div className="program-features">
-                  <span>Practical Training</span>
-                  <span>Field Exercises</span>
-                  <span>Expert Instructors</span>
-                </div>
-                <a href="/programs" className="modern-btn outline animated-padding">
-                  View Details <ChevronRight className={`btn-icon ${hoveredCard === `program-${index}` ? 'icon-slide' : ''}`} />
-                </a>
-              </div>
-            ))}
+
+          {/* Content */}
+          <div className="program-content">
+            <h3 style={{ color: program.color }}>{program.title}</h3>
+            <p>{program.description}</p>
+            <a href="/programs" className="program-link">
+              View Details →
+            </a>
           </div>
+
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* News & Events Section */}
       <section className="news-events-section">
