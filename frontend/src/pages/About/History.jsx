@@ -1,3 +1,4 @@
+
 import './History.css';
 import { useEffect, useState } from 'react';
 import api from '../../utils/api';
@@ -52,4 +53,5 @@ export default function History() {
       <div dangerouslySetInnerHTML={{ __html: content.content }} />
     </div>
   );
+
 }

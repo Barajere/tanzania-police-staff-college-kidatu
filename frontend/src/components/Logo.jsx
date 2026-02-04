@@ -1,4 +1,5 @@
-// src/components/Logo.jsx
+
+
 export default function Logo({ side }) {
   return (
     <div className={`logo logo-${side}`}>
@@ -6,4 +7,5 @@ export default function Logo({ side }) {
       <span>DPA</span>
     </div>
   );
+
 }

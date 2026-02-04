@@ -1,3 +1,4 @@
+
 // src/utils/publicApi.js
 import axios from 'axios';
 
@@ -14,5 +15,6 @@ export const publicEndpoints = {
   getPostDetail: (id) => publicApi.get(`public/posts/${id}/`),
   getContactInfo: () => publicApi.get('public/contact/current/'),
 };
+
 
 export default publicApi;

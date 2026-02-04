@@ -1,4 +1,4 @@
-// src/pages/Admission/YourPageName.jsx
+
 import { useEffect, useState } from 'react';
 import api from '../../utils/api';
 
@@ -29,4 +29,5 @@ export default function YourPageName() {
       <div dangerouslySetInnerHTML={{ __html: content.content }} />
     </div>
   );
+
 }

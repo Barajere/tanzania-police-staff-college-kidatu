@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react';
 import api from '../../utils/api';
 
@@ -26,4 +27,5 @@ export default function ClassesAccommodation() {
       <div dangerouslySetInnerHTML={{ __html: content.content }} />
     </div>
   );
+
 }

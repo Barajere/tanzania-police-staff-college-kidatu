@@ -1,5 +1,8 @@
+
 // src/pages/Home.jsx
 import { useEffect, useState } from 'react';
+import { useNavigate } from "react-router-dom";
+
 import { 
   Send, 
   ArrowRight, 
@@ -32,7 +35,6 @@ import api from '../utils/api';
 export default function Home() {
   const [content, setContent] = useState(null);
   const [posts, setPosts] = useState({ news: [], announcements: [], events: [] });
-  const [gallery, setGallery] = useState([]);
   const [loading, setLoading] = useState(true);
   const [hoveredCard, setHoveredCard] = useState(null);
 
@@ -46,8 +48,7 @@ export default function Home() {
       ]);
       
       setContent(contentRes.data);
-      setGallery(galleryRes)
-      console.log(gallery)
+      //setGallery(galleryRes)
       // postsRes.data is now already structured
       setPosts(postsRes.data);
       console.log('Fetched posts:', postsRes.data);
@@ -60,8 +61,8 @@ export default function Home() {
   fetchData();
 }, []);
 
-
   // Sample data for sections
+ /*
   const programs = [
     {
       title: "Certificate in Law Enforcement",
@@ -100,45 +101,90 @@ export default function Home() {
       color: "#2d4cc8"
     }
   ];
+*/
+const programs = [
+  {
+    title: "Academic Courses",
+    description:
+      "Advanced educational programs offering undergraduate degrees and specialized certifications.",
+    images: [
+      "/images/academic.jpg",
+      "/images/promotional.jpg",
+      "/images/academic.jpg",
+    ],
+    color: "#065f46",
+  },
+  {
+    title: "Promotional Courses",
+    description:
+      "Leadership and skill enhancement training designed to prepare officers for higher ranks.",
+    images: [
+      "/images/promotional.jpg",
+      "/images/academic.jpg",
+      "/images/promotional.jpg",
+    ],
+    color: "#5b21b6",
+  },
+  {
+    title: "Proficiency Courses",
+    description:
+      "Specialized training programs focusing on technical skills and tactical operations.",
+    images: [
+     "/images/promotional.jpg",
+      "/images/campus4.jpg",
+      "/images/campus2.jpg",
+    ],
+    color: "#9a3412",
+  },
+];
 
-  const facilities = [
-    { 
-      icon: <Library className="facility-icon-svg" />, 
-      name: "Modern Library", 
-      description: "Extensive collection of law enforcement literature and digital resources",
-      features: ["24/7 Access", "Digital Resources", "Study Rooms"]
-    },
-    { 
-      icon: <BookOpen className="facility-icon-svg" />, 
-      name: "Computer Lab", 
-      description: "State-of-the-art technology for digital forensics and research",
-      features: ["High-Speed Internet", "Forensic Software", "Modern Equipment"]
-    },
-    { 
-      icon: <HomeIcon className="facility-icon-svg" />,
-      name: "Student Hostels", 
-      description: "Comfortable and secure accommodation for all cadets",
-      features: ["WiFi", "Security", "Recreation"]
-    },
-    { 
-      icon: <Activity className="facility-icon-svg" />, 
-      name: "Parade Ground", 
-      description: "Spacious grounds for military drills and ceremonies",
-      features: ["5 Acres", "Lighting", "Grandstand"]
-    },
-    { 
-      icon: <Target className="facility-icon-svg" />, 
-      name: "Shooting Range", 
-      description: "Modern firearms training facility with safety protocols",
-      features: ["Indoor/Outdoor", "Safety Gear", "Expert Trainers"]
-    },
-    { 
-      icon: <Dumbbell className="facility-icon-svg" />, 
-      name: "Gymnasium", 
-      description: "Fully equipped fitness center for physical training",
-      features: ["Modern Equipment", "Trainers", "24/7 Access"]
-    }
-  ];
+const facilities = [
+  {
+    category: "ICT Labs",
+    name: "Networking Lab",
+     images: [
+      "/images/campus4.jpg",
+      "/images/campus3.jpg",
+      "/images/promotional.jpg",
+    ],
+    description: "Specialized lab for network administration and cybersecurity training.",
+    progress: 85
+  },
+  {
+    category: "ICT Labs",
+    name: "Computer Lab",
+     images: [
+      "/images/promotional.jpg",
+      "/images/academic.jpg",
+      "/images/campus2.jpg",
+    ],
+    description: "State-of-the-art technology for digital forensics and research.",
+     progress: 90
+  },
+  {
+    category: "Sports Areas",
+    name: "Basketball Courts",
+    images: [
+      "/images/campus3.jpg",
+      "/images/academic.jpg",
+      "/images/promotional.jpg",
+    ],
+    description: "Multiple indoor and outdoor basketball courts for training and competitions.",
+    progress: 75
+  },
+  {
+    category: "Library",
+    name: "Modern Library",
+     images: [
+      "/images/promotional.jpg",
+      "/images/academic.jpg",
+      "/images/campus1",
+    ],
+    description: "Extensive collection of law enforcement literature and digital resources.",
+    progress: 95
+  }
+];
+
 
   const stats = [
     { number: "5000+", label: "Graduated Officers", icon: <GraduationCap className="stat-icon" /> },
@@ -147,24 +193,26 @@ export default function Home() {
     { number: "98%", label: "Employment Rate", icon: <BarChart3 className="stat-icon" /> }
   ];
 
-  const galleryImages = Array(6).fill().map((_, i) => ({
-    src: `/images/gallery${i + 1}.jpg`,
-    alt: `Campus activity ${i + 1}`
-  }));
-
+   const galleryImages = [
+  { src: "/images/campus1.webp", alt: "Campus activity 1" },
+   { src: "/images/campus2.jpg", alt: "Campus activity 2" },
+  { src: "/images/campus3.jpg", alt: "Campus activity 3" },
+  { src: "/images/campus4.jpg", alt: "Campus activity 4" },
+   { src: "/images/campus5.jpeg", alt: "Campus activity 5" },
+];
   const slides = [
     {
-      image: '/images/slide1.jpg',
+      image: '/images/campus2.jpg',
       title: "Welcome to the Center of Excellence",
       subtitle: "Where Discipline Meets Leadership"
     },
     {
-      image: '/images/slide2.jpg', 
+      image: '/images/campus3.jpg', 
       title: "Shape the Future of Law Enforcement",
       subtitle: "Join Tanzania Police Academy"
     },
     {
-      image: '/images/slide3.jpg',
+      image: '/images/campus4.jpg',
       title: "Excellence in Training, Integrity in Service", 
       subtitle: "Building Professional Officers"
     }
@@ -267,108 +315,84 @@ export default function Home() {
 
       {/* Commandant Message Section */}
       <section className="commandant-section">
-        <div className="container">
-          <div className="commandant-content">
-            <div className="commandant-image">
-              <img src="/images/mambosasa.jpg" alt="Dr. Lazaro B. Mambosasa-DCP - Commandant" />
-              <div className="commandant-badge">
-                <Award className="badge-icon" />
-              </div>
-            </div>
-            <div className="commandant-message">
-              <div className="message-header">
-                <span className="message-icon"></span>
-                <h2>Message from the Commandant</h2>
-              </div>
-              <blockquote>
-                "At Dar es Salaam Police Academy, we shape officers of integrity and excellence. 
-                Our commitment extends beyond academic excellence to character building, ensuring 
-                our graduates serve with honor, courage, and unwavering dedication to justice."
-              </blockquote>
-              <div className="commandant-info">
-                <h3>Dr. Lazaro B. Mambosasa-DCP</h3>
-                <p>Deputy Commissioner of Police - Commandant</p>
-                
-              </div>
-            </div>
-          </div>
+        
+  <div className="container">
+    <div className="commandant-card">
+
+      {/* IMAGE */}
+      <div className="commandant-image">
+        <img
+          src="/images/mambosasa.jpg"
+          alt="Dr. Lazaro B. Mambosasa-DCP - Commandant"
+        />
+        <div className="commandant-badge">
+          <Award size={22} />
         </div>
-      </section>
+      </div>
+
+      {/* MESSAGE */}
+      <div className="commandant-message">
+        <span className="section-tag">Leadership Message</span>
+
+        <h2>Message from the Commandant</h2>
+
+        <blockquote>
+          “At Dar es Salaam Police Academy, we shape officers of integrity and
+          excellence. Our commitment extends beyond academic excellence to
+          character building, ensuring our graduates serve with honor, courage,
+          and unwavering dedication to justice.”
+        </blockquote>
+
+        <div className="commandant-info">
+          <h3>Dr. Lazaro B. Mambosasa, DCP</h3>
+          <p>Deputy Commissioner of Police · Commandant</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
       {/* Programs Section */}
-      <section className="programs-section">
-        <div className="container">
-          <div className="section-header">
-            <div className="animated-icon">🎓</div>
-            <h2>Programs & Courses</h2>
-            <p className="section-subtitle">Comprehensive Training for Law Enforcement Professionals</p>
-          </div>
-          <div className="programs-grid">
-            {programs.map((program, index) => (
-              <div 
-                key={index} 
-                className={`program-card animated-card ${hoveredCard === `program-${index}` ? 'card-hovered' : ''}`}
-                onMouseEnter={() => setHoveredCard(`program-${index}`)}
-                onMouseLeave={() => setHoveredCard(null)}
-                style={{ '--accent-color': program.color }}
-              >
-                <div className="program-icon-wrapper">
-                  <div className="program-icon-bg"></div>
-                  {program.icon}
-                </div>
-                <h3>{program.title}</h3>
-                <div className="program-duration">
-                  <Clock className="duration-icon" />
-                  {program.duration}
-                </div>
-                <p>Comprehensive training program designed to develop skilled law enforcement professionals.</p>
-                <div className="program-features">
-                  <span>Practical Training</span>
-                  <span>Field Exercises</span>
-                  <span>Expert Instructors</span>
-                </div>
-                <a href="/programs" className="modern-btn outline animated-padding">
-                  View Details <ChevronRight className={`btn-icon ${hoveredCard === `program-${index}` ? 'icon-slide' : ''}`} />
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+     <section className="programs-section">
+  <div className="container">
+    <div className="section-header">
+      <h2>Programs & Courses</h2>
+    </div>
 
-      {/* Facilities Section */}
-      <section className="facilities-section">
-        <div className="container">
-          <div className="section-header">
-            <div className="animated-icon">🏢</div>
-            <h2>Our Facilities</h2>
-            <p className="section-subtitle">World-Class Infrastructure for Optimal Learning</p>
-          </div>
-          <div className="facilities-grid">
-            {facilities.map((facility, index) => (
-              <div 
-                key={index} 
-                className={`facility-card animated-card ${hoveredCard === `facility-${index}` ? 'card-hovered' : ''}`}
-                onMouseEnter={() => setHoveredCard(`facility-${index}`)}
-                onMouseLeave={() => setHoveredCard(null)}
-              >
-                <div className="facility-icon-wrapper">
-                  <div className="facility-icon-bg"></div>
-                  {facility.icon}
-                </div>
-                <h3>{facility.name}</h3>
-                <p>{facility.description}</p>
-                <div className="facility-features">
-                  {facility.features.map((feature, idx) => (
-                    <span key={idx} className="feature-tag">{feature}</span>
-                  ))}
-                </div>
-                <div className="facility-hover-effect"></div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+   <div className="programs-grid">
+  {programs.map((program, index) => (
+    <div className="program-card" key={index}>
+
+      {/* Animated Image Stack */}
+      <div className="program-image">
+        {program.images.map((img, i) => (
+          <img
+            key={i}
+            src={img}
+            alt={program.title}
+            style={{ animationDelay: `${i * 4}s` }}
+          />
+        ))}
+      </div>
+
+      {/* Content */}
+      <div className="program-content">
+        <h3 style={{ color: program.color }}>{program.title}</h3>
+        <p>{program.description}</p>
+        <a href="/programs" className="program-link">
+          View Details →
+        </a>
+      </div>
+
+    </div>
+  ))}
+</div>
+
+  </div>
+</section>
+
 
       {/* News & Events Section */}
       <section className="news-events-section">
@@ -565,80 +589,63 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Gallery Section */}
-      <section className="gallery-section">
-        <div className="container">
-          <div className="section-header">
-            <div className="animated-icon">📸</div>
-            <h2>Campus Gallery</h2>
-            <p className="section-subtitle">Life at Dar es Salaam Police Academy</p>
-          </div>
-          <div className="gallery-3d">
-            {galleryImages.map((image, index) => (
-              <div 
-                key={index} 
-                className="gallery-item-3d"
-                style={{ '--rotation': `${index * 60}deg` }}
-              >
-                <div className="gallery-item-inner">
-                  <img src={image.src} alt={image.alt} />
-                  <div className="gallery-overlay-3d">
-                    <PlayCircle size={24} />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="text-center">
-            <a href="/gallery" className="modern-btn primary">
-              <Image className="btn-icon" /> Explore Gallery
-            </a>
-          </div>
-        </div>
-      </section>
+         {/* Facilities Section */}
 
-      {/* Statistics Section - Moved to bottom */}
-      <section className="stats-section-bottom">
-        <div className="container">
-          <div className="stats-grid">
-            {stats.map((stat, index) => (
-              <div key={index} className="stat-card">
-                <div className="stat-icon-circle">
-                  {stat.icon}
-                </div>
-                <div className="stat-number">{stat.number}</div>
-                <div className="stat-label">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+         
+     <section className="facilities-showcase">
+  <div className="container">
 
-      {/* Quick Links Section */}
-      <section className="quick-links-section">
-        <div className="container">
-          <div className="quick-links-grid">
-            <div className="link-card">
-              <MapPin className="link-icon" />
-              <h3>Visit Campus</h3>
-              <p>Schedule a tour of our facilities</p>
-              <a href="/visit" className="link-btn">Plan Visit</a>
-            </div>
-            <div className="link-card">
-              <BookOpen className="link-icon" />
-              <h3>Admissions</h3>
-              <p>Start your application process</p>
-              <a href="/admissions" className="link-btn">Apply Now</a>
-            </div>
-            <div className="link-card">
-              <Users className="link-icon" />
-              <h3>Contact Us</h3>
-              <p>Get in touch with our team</p>
-              <a href="/contact" className="link-btn">Contact</a>
-            </div>
-          </div>
-        </div>
-      </section>
+    <div className="facilities-tabs">
+      <button className="active">ICT Labs</button>
+      <button>Sports Areas</button>
+      <button>Library</button>
+    </div>
+
+    <div className="facilities-cards">
+      {facilities.map((facility, index) => (
+        <div className="facility-image-card" key={index}>
+
+  {/* Animated image stack */}
+  <div className="facility-image">
+    {facility.images.map((img, i) => (
+      <img
+        key={i}
+        src={img}
+        alt={facility.name}
+        style={{ animationDelay: `${i * 4}s` }}
+      />
+    ))}
+  </div>
+
+  {/* Overlay content */}
+  <div className="facility-overlay">
+    <span className="facility-category">
+      {facility.category}
+    </span>
+
+    <h3>{facility.name}</h3>
+    <p>{facility.description}</p>
+
+    <button className="facility-btn">
+      Learn More
+    </button>
+  </div>
+
+</div>
+
+      ))}
+    </div>
+
+    <div className="facilities-footer">
+      <button className="explore-btn">
+        Explore All Facilities
+      </button>
+    </div>
+
+  </div>
+</section>
+
     </div>
   );
+
 }

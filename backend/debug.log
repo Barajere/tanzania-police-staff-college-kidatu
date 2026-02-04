@@ -118,3 +118,184 @@ WARNING 2026-02-02 10:11:25,216 log 55081 139508766983872 Not Found: /api/drivin
 WARNING 2026-02-02 10:11:25,219 log 55081 139508792161984 Not Found: /api/driving-features
 WARNING 2026-02-02 10:11:25,281 log 55081 139508741805760 Not Found: /api/driving-images
 WARNING 2026-02-02 10:11:25,284 log 55081 139508758591168 Not Found: /api/driving-features
+INFO 2026-02-04 09:46:53,860 autoreload 9020 132247452500096 Watching for file changes with StatReloader
+WARNING 2026-02-04 09:47:05,421 log 9020 132247369975488 Unauthorized: /api/public/home-feed/
+WARNING 2026-02-04 09:47:05,422 log 9020 132247143315136 Unauthorized: /api/public/gallery/
+WARNING 2026-02-04 09:47:05,472 log 9020 132247361582784 Unauthorized: /api/public/home-feed/
+WARNING 2026-02-04 09:47:05,475 log 9020 132247353190080 Unauthorized: /api/public/gallery/
+WARNING 2026-02-04 10:06:09,422 log 9020 132247133873856 Not Found: /favicon.ico
+WARNING 2026-02-04 10:06:46,635 log 9020 132247133873856 Not Found: /public/news
+INFO 2026-02-04 17:17:26,317 autoreload 11707 139488548409472 Watching for file changes with StatReloader
+INFO 2026-02-04 17:18:23,945 autoreload 11707 139488548409472 /home/beni/Documents/dpa_college_website/backend/police_academy_backend/urls.py changed, reloading.
+INFO 2026-02-04 17:18:24,486 autoreload 12188 136227303018624 Watching for file changes with StatReloader
+INFO 2026-02-04 17:26:08,502 autoreload 12845 123175857176704 Watching for file changes with StatReloader
+INFO 2026-02-04 17:29:49,739 autoreload 13203 135129849000064 Watching for file changes with StatReloader
+WARNING 2026-02-04 17:33:31,640 log 13203 135129767605952 Not Found: /api/pages/home/
+WARNING 2026-02-04 17:33:31,643 log 13203 135129759213248 Not Found: /api/posts/
+WARNING 2026-02-04 17:33:31,705 log 13203 135129750820544 Not Found: /api/pages/home/
+WARNING 2026-02-04 17:33:31,707 log 13203 135129775998656 Not Found: /api/posts/
+ERROR 2026-02-04 17:34:52,386 log 13203 135129401915072 Internal Server Error: /api/public/news/
+Traceback (most recent call last):
+  File "/home/beni/Documents/dpa_college_website/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/beni/Documents/dpa_college_website/backend/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/beni/Documents/dpa_college_website/backend/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/beni/Documents/dpa_college_website/backend/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/beni/Documents/dpa_college_website/backend/venv/lib/python3.12/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/beni/Documents/dpa_college_website/backend/venv/lib/python3.12/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+WARNING 2026-02-04 17:37:38,472 log 13203 135129750820544 Not Found: /api/posts/
+WARNING 2026-02-04 17:37:38,475 log 13203 135129775998656 Not Found: /api/pages/home/
+WARNING 2026-02-04 17:37:38,495 log 13203 135129775998656 Not Found: /api/posts/
+WARNING 2026-02-04 17:37:38,498 log 13203 135129750820544 Not Found: /api/pages/home/
+WARNING 2026-02-04 17:38:59,797 log 13203 135129775998656 Not Found: /api/posts/
+WARNING 2026-02-04 17:38:59,799 log 13203 135129750820544 Not Found: /api/pages/home/
+WARNING 2026-02-04 17:38:59,820 log 13203 135129775998656 Not Found: /api/pages/home/
+WARNING 2026-02-04 17:38:59,822 log 13203 135129750820544 Not Found: /api/posts/
+WARNING 2026-02-04 17:44:55,357 log 13203 135129775998656 Not Found: /api/posts/
+WARNING 2026-02-04 17:44:55,359 log 13203 135129750820544 Not Found: /api/pages/home/
+WARNING 2026-02-04 17:44:55,385 log 13203 135129750820544 Not Found: /api/posts/
+WARNING 2026-02-04 17:44:55,390 log 13203 135129775998656 Not Found: /api/pages/home/
+WARNING 2026-02-04 17:46:43,290 log 13203 135129775998656 Not Found: /api/pages/home/
+WARNING 2026-02-04 17:46:43,293 log 13203 135129750820544 Not Found: /api/posts/
+WARNING 2026-02-04 17:46:43,315 log 13203 135129401915072 Not Found: /api/posts/
+WARNING 2026-02-04 17:46:43,319 log 13203 135129775998656 Not Found: /api/pages/home/
+INFO 2026-02-04 17:52:12,764 autoreload 13203 135129849000064 /home/beni/Documents/dpa_college_website/backend/police_academy_backend/settings.py changed, reloading.
+INFO 2026-02-04 17:52:13,878 autoreload 13942 126753071378560 Watching for file changes with StatReloader
+WARNING 2026-02-04 17:52:31,990 log 13942 126752962795200 Not Found: /api/posts/
+WARNING 2026-02-04 17:52:31,993 log 13942 126752971187904 Not Found: /api/pages/home/
+WARNING 2026-02-04 17:52:32,014 log 13942 126752971187904 Not Found: /api/posts/
+WARNING 2026-02-04 17:52:32,017 log 13942 126752962795200 Not Found: /api/pages/home/
+INFO 2026-02-04 17:53:28,019 autoreload 13942 126753071378560 /home/beni/Documents/dpa_college_website/backend/academy/urls.py changed, reloading.
+INFO 2026-02-04 17:53:29,129 autoreload 14100 139831801200768 Watching for file changes with StatReloader
+WARNING 2026-02-04 17:53:32,516 log 14100 139831651858112 Not Found: /api/pages/home/
+WARNING 2026-02-04 17:53:32,519 log 14100 139831643465408 Not Found: /api/posts/
+WARNING 2026-02-04 17:53:32,542 log 14100 139831643465408 Not Found: /api/pages/home/
+WARNING 2026-02-04 17:53:32,544 log 14100 139831651858112 Not Found: /api/posts/
+WARNING 2026-02-04 17:54:17,701 log 14100 139831651858112 Not Found: /api/pages/home/
+WARNING 2026-02-04 17:54:17,704 log 14100 139831643465408 Not Found: /api/posts/
+WARNING 2026-02-04 17:54:17,744 log 14100 139831651858112 Not Found: /api/pages/home/
+WARNING 2026-02-04 17:54:17,748 log 14100 139831616190144 Not Found: /api/posts/
+WARNING 2026-02-04 17:55:04,615 log 14100 139831107643072 Not Found: /api/pages/home/
+WARNING 2026-02-04 17:55:04,617 log 14100 139831116035776 Not Found: /api/posts/
+WARNING 2026-02-04 17:55:04,628 log 14100 139831107643072 Not Found: /api/pages/home/
+WARNING 2026-02-04 17:55:04,671 log 14100 139831607797440 Not Found: /api/posts/
+WARNING 2026-02-04 17:56:02,196 log 14100 139831607797440 Not Found: /api/pages/home/
+WARNING 2026-02-04 17:56:02,211 log 14100 139831607797440 Not Found: /api/pages/home/
+WARNING 2026-02-04 18:07:08,962 log 14100 139831107643072 Not Found: /api/posts/
+WARNING 2026-02-04 18:07:08,966 log 14100 139831607797440 Not Found: /api/users/
+WARNING 2026-02-04 18:07:08,973 log 14100 139831616190144 Not Found: /api/pages/
+WARNING 2026-02-04 18:07:08,979 log 14100 139831107643072 Not Found: /api/posts/
+WARNING 2026-02-04 18:07:09,029 log 14100 139831634024128 Not Found: /api/users/
+WARNING 2026-02-04 18:07:09,033 log 14100 139831607797440 Not Found: /api/pages/
+WARNING 2026-02-04 18:07:11,402 log 14100 139831634024128 Not Found: /api/news/
+WARNING 2026-02-04 18:07:11,456 log 14100 139831607797440 Not Found: /api/news/
+WARNING 2026-02-04 18:07:20,082 log 14100 139831651858112 Not Found: /api/posts/
+WARNING 2026-02-04 18:07:20,113 log 14100 139831643465408 Not Found: /api/posts/
+WARNING 2026-02-04 18:07:20,115 log 14100 139831086675648 Not Found: /api/users/
+WARNING 2026-02-04 18:07:20,120 log 14100 139831625631424 Not Found: /api/pages/
+WARNING 2026-02-04 18:07:20,178 log 14100 139831651858112 Not Found: /api/users/
+WARNING 2026-02-04 18:07:20,181 log 14100 139831086675648 Not Found: /api/pages/
+WARNING 2026-02-04 18:07:22,387 log 14100 139831607797440 Not Found: /api/users/
+WARNING 2026-02-04 18:07:22,400 log 14100 139831607797440 Not Found: /api/users/
+WARNING 2026-02-04 18:07:24,694 log 14100 139831086675648 Not Found: /api/posts/
+WARNING 2026-02-04 18:07:24,698 log 14100 139831625631424 Not Found: /api/users/
+WARNING 2026-02-04 18:07:24,709 log 14100 139831651858112 Not Found: /api/pages/
+WARNING 2026-02-04 18:07:24,728 log 14100 139831625631424 Not Found: /api/users/
+WARNING 2026-02-04 18:07:24,731 log 14100 139831086675648 Not Found: /api/posts/
+WARNING 2026-02-04 18:07:24,735 log 14100 139831651858112 Not Found: /api/pages/
+WARNING 2026-02-04 18:07:30,303 log 14100 139831086675648 Not Found: /api/pages/
+WARNING 2026-02-04 18:07:30,307 log 14100 139831651858112 Not Found: /api/posts/
+WARNING 2026-02-04 18:07:30,315 log 14100 139831625631424 Not Found: /api/users/
+WARNING 2026-02-04 18:07:30,333 log 14100 139831086675648 Not Found: /api/pages/
+WARNING 2026-02-04 18:07:30,340 log 14100 139831643465408 Not Found: /api/posts/
+WARNING 2026-02-04 18:07:30,344 log 14100 139831625631424 Not Found: /api/users/
+WARNING 2026-02-04 18:08:37,906 log 14100 139831607797440 Not Found: /api/posts/
+WARNING 2026-02-04 18:08:37,909 log 14100 139831634024128 Not Found: /api/pages/
+WARNING 2026-02-04 18:08:37,913 log 14100 139831107643072 Not Found: /api/users/
+WARNING 2026-02-04 18:08:37,940 log 14100 139831634024128 Not Found: /api/users/
+WARNING 2026-02-04 18:08:37,944 log 14100 139831616190144 Not Found: /api/pages/
+WARNING 2026-02-04 18:08:37,946 log 14100 139831607797440 Not Found: /api/posts/
+WARNING 2026-02-04 18:08:50,098 log 14100 139831607797440 Not Found: /api/pages/
+WARNING 2026-02-04 18:08:50,111 log 14100 139831634024128 Not Found: /api/pages/
+WARNING 2026-02-04 18:08:51,586 log 14100 139831607797440 Not Found: /api/pages/
+WARNING 2026-02-04 18:08:51,589 log 14100 139831616190144 Not Found: /api/users/
+WARNING 2026-02-04 18:08:51,591 log 14100 139831634024128 Not Found: /api/posts/
+WARNING 2026-02-04 18:08:51,623 log 14100 139831607797440 Not Found: /api/posts/
+WARNING 2026-02-04 18:08:51,626 log 14100 139831107643072 Not Found: /api/pages/
+WARNING 2026-02-04 18:08:51,629 log 14100 139831634024128 Not Found: /api/users/
+WARNING 2026-02-04 18:08:54,694 log 14100 139831634024128 Not Found: /api/users/
+WARNING 2026-02-04 18:08:54,707 log 14100 139831634024128 Not Found: /api/users/
+WARNING 2026-02-04 18:08:57,809 log 14100 139831607797440 Not Found: /api/pages/
+WARNING 2026-02-04 18:08:57,811 log 14100 139831634024128 Not Found: /api/posts/
+WARNING 2026-02-04 18:08:57,815 log 14100 139831107643072 Not Found: /api/users/
+WARNING 2026-02-04 18:08:57,844 log 14100 139831616190144 Not Found: /api/users/
+WARNING 2026-02-04 18:08:57,847 log 14100 139831607797440 Not Found: /api/posts/
+WARNING 2026-02-04 18:08:57,849 log 14100 139831634024128 Not Found: /api/pages/
+WARNING 2026-02-04 18:10:02,386 log 14100 139831634024128 Not Found: /api/news/
+WARNING 2026-02-04 18:10:02,398 log 14100 139831634024128 Not Found: /api/news/
+WARNING 2026-02-04 18:25:06,930 log 14100 139831625631424 Not Found: /api/driving-features
+WARNING 2026-02-04 18:25:06,931 log 14100 139831651858112 Not Found: /api/driving-images
+WARNING 2026-02-04 18:25:06,987 log 14100 139831625631424 Not Found: /api/driving-images
+WARNING 2026-02-04 18:25:06,988 log 14100 139831634024128 Not Found: /api/driving-features
+WARNING 2026-02-04 18:25:09,241 log 14100 139831625631424 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:25:09,291 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:25:11,407 log 14100 139831634024128 Not Found: /api/pages/organization/
+WARNING 2026-02-04 18:25:11,457 log 14100 139831625631424 Not Found: /api/pages/organization/
+WARNING 2026-02-04 18:25:13,789 log 14100 139831625631424 Not Found: /api/public/pages/by-page/
+WARNING 2026-02-04 18:25:13,837 log 14100 139831625631424 Not Found: /api/public/pages/by-page/
+WARNING 2026-02-04 18:25:15,340 log 14100 139831625631424 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:25:15,346 log 14100 139831625631424 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:26:11,804 log 14100 139831625631424 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:26:11,811 log 14100 139831625631424 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:26:32,349 log 14100 139831625631424 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:26:32,357 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:26:55,418 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:26:55,427 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:27:09,701 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:27:09,710 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:27:46,646 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:27:46,653 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:28:02,595 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:28:02,600 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:28:25,412 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:28:25,422 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:28:39,138 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:28:39,146 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:28:49,859 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:28:49,866 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:28:59,386 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:28:59,396 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:29:12,118 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:29:12,128 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:29:24,148 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:29:24,158 log 14100 139831625631424 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:29:31,817 log 14100 139831625631424 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:29:31,827 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:30:17,088 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:30:17,094 log 14100 139831625631424 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:30:36,304 log 14100 139831625631424 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:30:36,313 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:31:07,998 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:31:08,007 log 14100 139831634024128 Not Found: /api/pages/history/
+WARNING 2026-02-04 18:35:03,170 log 14100 139831634024128 Not Found: /api/users/
+WARNING 2026-02-04 18:35:03,177 log 14100 139831634024128 Not Found: /api/users/
+WARNING 2026-02-04 18:35:05,367 log 14100 139831634024128 Not Found: /api/pages/
+WARNING 2026-02-04 18:35:05,374 log 14100 139831625631424 Not Found: /api/pages/
+WARNING 2026-02-04 18:35:10,234 log 14100 139831651858112 Not Found: /api/users/
+WARNING 2026-02-04 18:35:10,236 log 14100 139831625631424 Not Found: /api/posts/
+WARNING 2026-02-04 18:35:10,237 log 14100 139831634024128 Not Found: /api/pages/
+WARNING 2026-02-04 18:35:10,249 log 14100 139831107643072 Not Found: /api/users/
+WARNING 2026-02-04 18:35:10,250 log 14100 139831634024128 Not Found: /api/pages/
+WARNING 2026-02-04 18:35:10,251 log 14100 139831625631424 Not Found: /api/posts/

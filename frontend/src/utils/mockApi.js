@@ -1,3 +1,4 @@
+
 // Mock API service for development
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -87,3 +88,4 @@ export const mockApiService = {
 export const shouldUseMockApi = () => {
   return process.env.NODE_ENV === 'development';
 };
+

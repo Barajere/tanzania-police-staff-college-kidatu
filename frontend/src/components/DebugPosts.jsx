@@ -1,3 +1,4 @@
+
 // src/components/DebugPosts.jsx
 import { useEffect, useState } from 'react';
 import api from '../utils/api';
@@ -60,4 +61,5 @@ export default function DebugPosts() {
       </div>
     </div>
   );
+
 }
