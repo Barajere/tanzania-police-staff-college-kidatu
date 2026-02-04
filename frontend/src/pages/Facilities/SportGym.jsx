@@ -1,11 +1,6 @@
-
-import { useEffect, useState } from 'react';
-import api from '../../utils/api';
-
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 
 export default function SportGym() {
   const data = {
@@ -129,7 +124,6 @@ export default function SportGym() {
           top: 0;
           left: 0;
           width: 100%;
-          background: rgba(0, 0, 0, 0.5);
           color: white;
           padding: 15px;
           font-size: 24px;
@@ -141,7 +135,6 @@ export default function SportGym() {
           bottom: 0;
           left: 0;
           width: 100%;
-          background: rgba(0, 0, 0, 0.5);
           color: white;
           padding: 15px;
           font-size: 16px;
@@ -173,7 +166,6 @@ export default function SportGym() {
           top: 0;
           left: 0;
           width: 100%;
-          background: rgba(0, 0, 0, 0.5);
           color: white;
           padding: 10px;
           font-weight: bold;
@@ -184,7 +176,6 @@ export default function SportGym() {
           bottom: 0;
           left: 0;
           width: 100%;
-          background: rgba(0, 0, 0, 0.5);
           color: white;
           padding: 10px;
         }
@@ -212,5 +203,4 @@ export default function SportGym() {
       `}</style>
     </div>
   );
-
 }
