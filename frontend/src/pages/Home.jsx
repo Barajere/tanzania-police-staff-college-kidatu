@@ -1,6 +1,8 @@
 
 // src/pages/Home.jsx
 import { useEffect, useState } from 'react';
+import { useNavigate } from "react-router-dom";
+
 import { 
   Send, 
   ArrowRight, 
@@ -100,60 +102,84 @@ export default function Home() {
     }
   ];
 */
-
 const programs = [
- 
   {
     title: "Academic Courses",
     description:
       "Advanced educational programs offering undergraduate degrees and specialized certifications.",
-    image: "/images/academic.jpg",
+    images: [
+      "/images/academic.jpg",
+      "/images/promotional.jpg",
+      "/images/academic.jpg",
+    ],
     color: "#065f46",
   },
   {
     title: "Promotional Courses",
     description:
       "Leadership and skill enhancement training designed to prepare officers for higher ranks.",
-    image: "/images/promotional.jpg",
+    images: [
+      "/images/promotional.jpg",
+      "/images/academic.jpg",
+      "/images/promotional.jpg",
+    ],
     color: "#5b21b6",
   },
-  
-  
-  
   {
     title: "Proficiency Courses",
     description:
       "Specialized training programs focusing on technical skills and tactical operations.",
-    image: "/images/proficiency.jpg",
+    images: [
+     "/images/promotional.jpg",
+      "/images/campus4.jpg",
+      "/images/campus2.jpg",
+    ],
     color: "#9a3412",
   },
 ];
+
 const facilities = [
   {
     category: "ICT Labs",
     name: "Networking Lab",
-    image: "/images/campus4.jpg",
+     images: [
+      "/images/campus4.jpg",
+      "/images/campus3.jpg",
+      "/images/promotional.jpg",
+    ],
     description: "Specialized lab for network administration and cybersecurity training.",
     progress: 85
   },
   {
     category: "ICT Labs",
     name: "Computer Lab",
-    image: "/images/promotional.jpg",
+     images: [
+      "/images/promotional.jpg",
+      "/images/academic.jpg",
+      "/images/campus2.jpg",
+    ],
     description: "State-of-the-art technology for digital forensics and research.",
      progress: 90
   },
   {
     category: "Sports Areas",
     name: "Basketball Courts",
-    image: "/images/campus3.jpg",
+    images: [
+      "/images/campus3.jpg",
+      "/images/academic.jpg",
+      "/images/promotional.jpg",
+    ],
     description: "Multiple indoor and outdoor basketball courts for training and competitions.",
     progress: 75
   },
   {
     category: "Library",
     name: "Modern Library",
-    image: "/images/campus4.jpg",
+     images: [
+      "/images/promotional.jpg",
+      "/images/academic.jpg",
+      "/images/campus1",
+    ],
     description: "Extensive collection of law enforcement literature and digital resources.",
     progress: 95
   }
@@ -290,27 +316,35 @@ const facilities = [
       <h2>Programs & Courses</h2>
     </div>
 
-    <div className="programs-grid">
-      {programs.map((program, index) => (
-        <div className="program-card" key={index}>
-          
-          {/* Image */}
-          <div className="program-image">
-            <img src={program.image} alt={program.title} />
-          </div>
+   <div className="programs-grid">
+  {programs.map((program, index) => (
+    <div className="program-card" key={index}>
 
-          {/* Content */}
-          <div className="program-content">
-            <h3 style={{ color: program.color }}>{program.title}</h3>
-            <p>{program.description}</p>
-            <a href="/programs" className="program-link">
-              View Details →
-            </a>
-          </div>
+      {/* Animated Image Stack */}
+      <div className="program-image">
+        {program.images.map((img, i) => (
+          <img
+            key={i}
+            src={img}
+            alt={program.title}
+            style={{ animationDelay: `${i * 4}s` }}
+          />
+        ))}
+      </div>
 
-        </div>
-      ))}
+      {/* Content */}
+      <div className="program-content">
+        <h3 style={{ color: program.color }}>{program.title}</h3>
+        <p>{program.description}</p>
+        <a href="/programs" className="program-link">
+          View Details →
+        </a>
+      </div>
+
     </div>
+  ))}
+</div>
+
   </div>
 </section>
 
@@ -495,6 +529,8 @@ const facilities = [
       </section>
 
          {/* Facilities Section */}
+
+         
      <section className="facilities-showcase">
   <div className="container">
 
@@ -507,21 +543,35 @@ const facilities = [
     <div className="facilities-cards">
       {facilities.map((facility, index) => (
         <div className="facility-image-card" key={index}>
-          <img src={facility.image} alt={facility.name} />
 
-          <div className="facility-overlay">
-            <span className="facility-category">
-              {facility.category}
-            </span>
+  {/* Animated image stack */}
+  <div className="facility-image">
+    {facility.images.map((img, i) => (
+      <img
+        key={i}
+        src={img}
+        alt={facility.name}
+        style={{ animationDelay: `${i * 4}s` }}
+      />
+    ))}
+  </div>
 
-            <h3>{facility.name}</h3>
-            <p>{facility.description}</p>
+  {/* Overlay content */}
+  <div className="facility-overlay">
+    <span className="facility-category">
+      {facility.category}
+    </span>
 
-            <button className="facility-btn">
-              Learn More
-            </button>
-          </div>
-        </div>
+    <h3>{facility.name}</h3>
+    <p>{facility.description}</p>
+
+    <button className="facility-btn">
+      Learn More
+    </button>
+  </div>
+
+</div>
+
       ))}
     </div>
 
