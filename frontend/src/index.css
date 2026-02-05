@@ -1993,10 +1993,10 @@ body, #root {
   gap: 1.5rem;
 }
 
-.coa-logo {
+/* .coa-logo {
   height: 100px;
   width: auto;
-}
+} */
 
 .school-name {
   text-align: center;
@@ -2145,11 +2145,11 @@ body, #root {
   background: rgba(0, 0, 0, 0.35);
 }
 
-.coa-logo,
+/* .coa-logo,
 .academy-logo {
   height: 80px;
   width: auto;
-}
+} */
 
 .school-name {
   text-align: center;
@@ -2185,10 +2185,10 @@ body, #root {
     text-align: center;
   }
 
-  .coa-logo,
+  /* .coa-logo,
   .academy-logo {
     margin: 0 auto;
-  }
+  } */
 
   .school-name h2 {
     font-size: 1.2rem;
@@ -2553,6 +2553,22 @@ body, #root {
   width: auto;
 }
 
+.main-header {
+  position: relative;
+  z-index: 1;
+}
+
+.main-nav {
+  position: relative;
+  z-index: 10;
+}
+
+.dropdown-menu {
+  position: absolute;
+  z-index: 99999;
+}
+
+
 .school-name {
   text-align: center;
   flex: 1;
@@ -2856,11 +2872,13 @@ body, #root {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-  .top-bar {
-    flex-direction: column;
+  .top-bar,
+  .main-header {
+    display: none;
+    /* flex-direction: column;
     gap: 0.4rem;
     padding: 0.6rem 1rem;
-    font-size: 0.85rem;
+    font-size: 0.85rem; */
   }
 
   .contact-info,

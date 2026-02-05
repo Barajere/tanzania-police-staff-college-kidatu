@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_extensions',
     
     # 🔥 THIRD-PARTY APPS
     'corsheaders',
@@ -38,12 +39,12 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt.token_blacklist',
     'ckeditor',
     'auditlog',
-    #'hijack',
-    #'hijack.contrib.admin',
+    'hijack',
+    'hijack.contrib.admin',
     'constance',
     'constance.backends.database',
     'import_export',
-    'mfa',
+    #'mfa',
     
     # 🔥 YOUR APPS
     'academy',
@@ -100,14 +101,24 @@ TEMPLATES = [
 # ===========================
 # Database (SQLite default)
 # ===========================
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'police_colleges',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': '127.0.0.1',  # connect via TCP
-        'PORT': '3306',       # default MySQL port
+        'NAME': 'police_colleges',   # replace with your DB name
+        'USER': 'root',      # replace with your MySQL username
+        'PASSWORD': '',  # replace with your password
+        'HOST': '127.0.0.1',            # or your DB host
+        'PORT': '3306',                 # default MySQL port
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        },
     }
 }
 # ===========================

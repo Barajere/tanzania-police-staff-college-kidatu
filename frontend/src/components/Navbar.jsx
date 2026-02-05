@@ -1,5 +1,4 @@
-
-
+// src/components/Navbar.jsx
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
@@ -90,6 +89,40 @@ export default function Navbar() {
             );
           })}
         </nav>
+      </div>
+      <div
+          style={{
+            width: '100%',
+            overflow: 'hidden',
+            color: '#e61212',
+            fontWeight: '600',
+            padding: '10px 0',
+            whiteSpace: 'nowrap',
+            boxSizing: 'border-box',
+          }}
+        >
+          <a
+            href='https://dpa.tpf.go.tz/apply'
+            target='_blank'
+            style={{
+              color: '#e61212',
+              display: 'inline-block',
+              paddingLeft: '100%',
+              animation: 'marquee 25s linear infinite',
+            }}
+          >
+            Applications for 2025/2026 Academic Year are now OPEN — Apply Online Today!
+          </a>
+
+        {/* Inline keyframes */}
+        <style>
+          {`
+            @keyframes marquee {
+              0% { transform: translateX(0%); }
+              100% { transform: translateX(-100%); }
+            }
+          `}
+        </style>
       </div>
 
       {/* Main Header - Logos + Centered Title */}
@@ -211,5 +244,4 @@ export default function Navbar() {
       </div>
     </nav>
   );
-
 }

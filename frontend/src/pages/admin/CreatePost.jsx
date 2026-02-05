@@ -1,4 +1,3 @@
-
 // src/pages/admin/CreatePost.jsx
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
@@ -17,6 +16,7 @@ import {
   Type,
   FileText as FileTextIcon
 } from 'lucide-react';
+import AdminNavbar from './AdminNavbar';
 import api from '../../utils/api';
 
 export default function CreatePost() {
@@ -299,8 +299,3 @@ export default function CreatePost() {
   );
 }
 
-// Admin Navbar Component (same as above)
-const AdminNavbar = () => {
-  // ... same AdminNavbar component as above
-
-};

@@ -1,4 +1,4 @@
-
+// src/pages/admin/AddUser.jsx - COMPLETE FIX
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { 
@@ -488,5 +488,4 @@ const AdminNavbar = () => {
       </div>
     </nav>
   );
-
 };
