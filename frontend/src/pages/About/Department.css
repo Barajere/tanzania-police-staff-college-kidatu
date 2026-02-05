@@ -1,67 +1,387 @@
-.department-page {
-  padding: 40px 20px;
-  max-width: 1400px;
-  margin: 0 auto;
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+/* Variables */
+:root {
+  --primary-color: #1a365d;
+  --secondary-color: #2c5282;
+  --accent-color: #3182ce;
+  --gold-accent: #d4af37;
+  --bg-light: #f8fafc;
+  --text-primary: #1a202c;
+  --text-secondary: #4a5568;
+  --shadow-sm: 0 2px 8px rgba(26, 54, 93, 0.08);
+  --shadow-md: 0 4px 16px rgba(26, 54, 93, 0.12);
+  --shadow-lg: 0 8px 32px rgba(26, 54, 93, 0.16);
 }
 
-.department-container {
+/* Page Container */
+.department-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e6f2ff 100%);
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Hero Section */
+.department-hero {
+  position: relative;
+  height: 300px;
+  background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
   display: flex;
-  flex-direction: row;       /* side by side */
-  align-items: flex-start;   /* align tops */
-  gap: 32px;                 /* space between image & text */
-  background: #f8f9fa;       /* light background – optional */
-  padding: 32px;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08); /* subtle card look – optional */
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin: 0 0 0.5rem 0;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  letter-spacing: -0.5px;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.95;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+/* Main Container */
+.department-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* Library Card */
+.library-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  animation: fadeIn 0.8s ease-out 0.4s both;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
 }
 
 .department-image {
   width: 100%;
-  max-width: 600px;          /* your preferred max size */
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;         /* better framing if image has people/buildings */
-  flex-shrink: 0;            /* prevents image from being squished */
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
 }
 
-.department-text {
-  flex: 1;                   /* take all remaining space */
-  min-width: 0;
+.library-card:hover .department-image {
+  transform: scale(1.05);
 }
 
-.department-text h1 {
-  margin-top: 0;
-  font-size: 2.2rem;
-  color: #1a3c5e;           /* darker blue – police theme feel */
+.image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(26, 54, 93, 0.95), transparent);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
-.department-text h2 {
-  margin: 1.8rem 0 0.8rem;
-  font-size: 1.6rem;
-  color: #33475b;
+.caption-icon {
+  font-size: 2rem;
 }
 
-.department-text ul {
-  list-style: disc;
-  padding-left: 1.8rem;
-  margin: 0.8rem 0 1.5rem;
+.caption-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+/* Departments Grid */
+.departments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 2rem;
+}
+
+/* Department Cards */
+.department-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+  border-left: 5px solid var(--accent-color);
+  animation: slideInUp 0.8s ease-out;
+}
+
+.department-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-left-color: var(--gold-accent);
+}
+
+.card-header {
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  padding: 1.75rem 2rem;
+  border-bottom: 2px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.card-content {
+  padding: 2rem;
+}
+
+.wing-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wing-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(90deg, rgba(49, 130, 206, 0.03) 0%, transparent 100%);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.wing-list li:hover {
+  background: linear-gradient(90deg, rgba(49, 130, 206, 0.08) 0%, rgba(49, 130, 206, 0.03) 100%);
+  border-left-color: var(--accent-color);
+  transform: translateX(8px);
+}
+
+.list-icon {
+  color: var(--accent-color);
+  font-size: 1.25rem;
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.wing-list li span:last-child {
+  color: var(--text-secondary);
+  font-size: 1rem;
   line-height: 1.6;
+  font-weight: 500;
 }
 
-.department-text li {
-  margin-bottom: 0.6rem;
+/* Bottom Decoration */
+.bottom-decoration {
+  height: 8px;
+  background: linear-gradient(90deg, 
+    var(--primary-color) 0%, 
+    var(--accent-color) 50%, 
+    var(--gold-accent) 100%
+  );
+  margin-top: 3rem;
 }
 
-/* Mobile – stack vertically */
-@media (max-width: 900px) {
+/* Loading & Error States */
+.loading,
+.error {
+  text-align: center;
+  padding: 4rem 2rem;
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+}
+
+.error {
+  color: #e53e3e;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .departments-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
   .department-container {
-    flex-direction: column;
-    gap: 24px;
-    padding: 20px;
+    padding: 2rem 1rem;
   }
-  
-  .department-image {
-    max-width: 100%;
-    width: 100%;
+
+  .image-wrapper {
+    height: 300px;
   }
+
+  .caption-text {
+    font-size: 1.25rem;
+  }
+
+  .card-header {
+    padding: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  .card-content {
+    padding: 1.5rem;
+  }
+
+  .wing-list li {
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .card-icon {
+    font-size: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .caption-icon {
+    font-size: 1.5rem;
+  }
+}
+/* Loading Container */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  gap: 1.5rem;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #e2e8f0;
+  border-top-color: var(--accent-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-container p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  font-weight: 500;
 }

@@ -111,14 +111,11 @@ TEMPLATES = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'police_colleges',   # replace with your DB name
-        'USER': 'root',      # replace with your MySQL username
-        'PASSWORD': '',  # replace with your password
-        'HOST': '127.0.0.1',            # or your DB host
-        'PORT': '3306',                 # default MySQL port
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-        },
+        'NAME': 'police_academy_db',
+        'USER': 'policeadmin',
+        'PASSWORD': 'SecurePass123!',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 # ===========================

@@ -1,4 +1,3 @@
-// src/components/Navbar.jsx
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
@@ -8,44 +7,23 @@ import {
   Building,
   Newspaper,
   Phone,
-  Send,
   ChevronDown,
-  Mail,
-  PhoneCall,
-  BookOpen,
-  HelpCircle,
-  Shield,
-  UserCircle
 } from 'lucide-react';
 
 export default function Navbar() {
   const [openDropdown, setOpenDropdown] = useState(null);
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
 
-  const handleMouseEnter = (name) => {
-    setOpenDropdown(name);
-  };
+  const handleMouseEnter = (name) => setOpenDropdown(name);
+  const handleMouseLeave = () => setOpenDropdown(null);
+  const toggleMobileMenu = () => setIsMobileOpen(!isMobileOpen);
 
-  const handleMouseLeave = () => {
-    setOpenDropdown(null);
-  };
-
-  // Quick Links for Top Bar
-  const quickLinks = [
-    { name: 'Tpf Service Portal', path: '/alumni', icon: Shield },
-    { name: 'Admission', path: '/admission', icon: GraduationCap },
-    { name: 'E-Learning', path: '/e-learning', icon: BookOpen },
-    { name: 'Help Desk', path: '/help-desk', icon: HelpCircle },
-    { name: 'Certificate Verification', path: '/certificate-verification', icon: Shield },
-  ];
-
-  // Dropdown Items - SWITCHED ADMISSION AND FACILITIES
   const aboutSubItems = [
     { label: 'History', path: '/about/history' },
     { label: 'Organization Structure', path: '/about/organization' },
     { label: 'Department', path: '/about/department' },
   ];
 
-  // NOW FACILITIES ITEMS UNDER ADMISSION
   const admissionSubItems = [
     { label: 'Course', path: '/admission/course' },
     { label: 'Admission Requirements', path: '/admission/admission-requirements' },
@@ -53,7 +31,6 @@ export default function Navbar() {
     { label: 'Application Process', path: '/admission/application-process' },
   ];
 
-  // NOW ADMISSION ITEMS UNDER FACILITIES
   const facilitiesSubItems = [
     { label: 'Sport & Gym', path: '/facilities/sport-gym' },
     { label: 'Recreation', path: '/facilities/recreation' },
@@ -65,183 +42,199 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="college-navbar">
-      {/* Top Bar - Quick Links & Contact Info */}
-      <div className="top-bar">
-        <div className="contact-info">
-          <span>
-            <Mail size={14} className="contact-icon" />
-            barua@dpacademy.go.tz
-          </span>
-          <span>
-            <PhoneCall size={14} className="contact-icon" />
-            +255 (0) 22 123 4567
-          </span>
-        </div>
-        <nav className="quick-links">
-          {quickLinks.map(link => {
-            const IconComponent = link.icon;
-            return (
-              <Link key={link.path} to={link.path}>
-                <IconComponent size={12} className="quick-link-icon" />
-                {link.name}
-              </Link>
-            );
-          })}
-        </nav>
-      </div>
-      <div
-          style={{
-            width: '100%',
-            overflow: 'hidden',
-            color: '#e61212',
-            fontWeight: '600',
-            padding: '10px 0',
-            whiteSpace: 'nowrap',
-            boxSizing: 'border-box',
-          }}
-        >
-          <a
-            href='https://dpa.tpf.go.tz/apply'
-            target='_blank'
-            style={{
-              color: '#e61212',
-              display: 'inline-block',
-              paddingLeft: '100%',
-              animation: 'marquee 25s linear infinite',
-            }}
-          >
-            Applications for 2025/2026 Academic Year are now OPEN — Apply Online Today!
-          </a>
+    <>
+      {/* ================= STYLES ================= */}
+      <style>
+        {`
+          /* NAVBAR BASE */
+          .college-navbar {
+            background: #002855;
+          }
 
-        {/* Inline keyframes */}
-        <style>
-          {`
-            @keyframes marquee {
-              0% { transform: translateX(0%); }
-              100% { transform: translateX(-100%); }
+          .college-navbar a,
+          .college-navbar span {
+            color: #ffffff;
+          }
+
+          .college-navbar svg {
+            stroke: #ffffff;
+          }
+
+          /* HAMBURGER */
+          .mobile-hamburger {
+            display: none;
+            padding: 12px 20px;
+            font-size: 28px;
+            cursor: pointer;
+            color: #ffffff;
+          }
+
+          /* MAIN NAV */
+          .main-nav ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+            margin: 0;
+            padding: 14px 30px;
+            align-items: center;
+          }
+
+          .main-nav a,
+          .main-nav span {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 500;
+            cursor: pointer;
+          }
+
+          /* DROPDOWN */
+          .dropdown {
+            position: relative;
+          }
+
+          .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #0b2e63;
+            min-width: 220px;
+            padding: 10px 0;
+            border-radius: 6px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            z-index: 1000;
+          }
+
+          .dropdown-menu a {
+            color: #ffffff;
+            padding: 10px 20px;
+            display: block;
+          }
+
+          .dropdown-menu a:hover {
+            background: #123d7a;
+            color: #ffffff;
+          }
+
+          /* HOVER FIX (VERY IMPORTANT) */
+          .college-navbar a:hover,
+          .college-navbar span:hover {
+            color: #ffffff;
+          }
+
+          .college-navbar a:hover svg,
+          .college-navbar span:hover svg {
+            stroke: #ffffff;
+          }
+
+          /* MOBILE */
+          @media (max-width: 900px) {
+            .mobile-hamburger {
+              display: block;
             }
-          `}
-        </style>
-      </div>
 
-      {/* Main Header - Logos + Centered Title */}
-      <div className="main-header">
-        <img
-          src="/images/tanzania-coa.png"
-          alt="Tanzania Coat of Arms"
-          className="coa-logo"
-        />
-        <div className="school-name">
-          <h1>THE UNITED REPUBLIC OF TANZANIA</h1>
-          <h2>DAR ES SALAAM POLICE ACADEMY</h2>
-          <p>"The Center of Excellence"</p>
+            .main-nav {
+              display: none;
+            }
+
+            .main-nav.open {
+              display: block;
+            }
+
+            .main-nav ul {
+              flex-direction: column;
+              align-items: flex-start;
+            }
+
+            .dropdown-menu {
+              position: static;
+              width: 100%;
+              box-shadow: none;
+            }
+          }
+        `}
+      </style>
+
+      {/* ================= NAVBAR ================= */}
+      <nav className="college-navbar">
+        <div className="mobile-hamburger" onClick={toggleMobileMenu}>
+          ☰
         </div>
-        <img
-          src="/images/police-academy-logo.png"
-          alt="Police Academy Logo"
-          className="academy-logo"
-        />
-      </div>
 
-      {/* Enhanced Navigation Menu with Dropdowns & Icons */}
-      <div className="main-nav">
-        <ul>
-          {/* Home */}
-          <li>
-            <Link to="/">
-              <Home size={18} className="nav-icon" />
-              Home
-            </Link>
-          </li>
+        <div className={`main-nav ${isMobileOpen ? 'open' : ''}`}>
+          <ul>
+            <li>
+              <Link to="/"><Home size={18} /> Home</Link>
+            </li>
 
-          {/* About Us Dropdown */}
-          <li
-            className="dropdown"
-            onMouseEnter={() => handleMouseEnter('about')}
-            onMouseLeave={handleMouseLeave}
-          >
-            <span>
-              <Users size={18} className="nav-icon" />
-              About Us 
-              <ChevronDown size={14} className="dropdown-arrow" />
-            </span>
-            {openDropdown === 'about' && (
-              <ul className="dropdown-menu">
-                {aboutSubItems.map((item) => (
-                  <li key={item.path}>
-                    <Link to={item.path}>{item.label}</Link>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </li>
+            <li
+              className="dropdown"
+              onMouseEnter={() => handleMouseEnter('about')}
+              onMouseLeave={handleMouseLeave}
+            >
+              <span>
+                <Users size={18} /> About Us <ChevronDown size={14} />
+              </span>
+              {openDropdown === 'about' && (
+                <ul className="dropdown-menu">
+                  {aboutSubItems.map(item => (
+                    <li key={item.path}>
+                      <Link to={item.path}>{item.label}</Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
 
-          {/* Admission Dropdown */}
-          <li
-            className="dropdown"
-            onMouseEnter={() => handleMouseEnter('admission')}
-            onMouseLeave={handleMouseLeave}
-          >
-            <span>
-              <GraduationCap size={18} className="nav-icon" />
-              Admission 
-              <ChevronDown size={14} className="dropdown-arrow" />
-            </span>
-            {openDropdown === 'admission' && (
-              <ul className="dropdown-menu">
-                {admissionSubItems.map((item) => (
-                  <li key={item.path}>
-                    <Link to={item.path}>{item.label}</Link>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </li>
+            <li
+              className="dropdown"
+              onMouseEnter={() => handleMouseEnter('admission')}
+              onMouseLeave={handleMouseLeave}
+            >
+              <span>
+                <GraduationCap size={18} /> Admission <ChevronDown size={14} />
+              </span>
+              {openDropdown === 'admission' && (
+                <ul className="dropdown-menu">
+                  {admissionSubItems.map(item => (
+                    <li key={item.path}>
+                      <Link to={item.path}>{item.label}</Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
 
-          {/* Facilities Dropdown */}
-          <li
-            className="dropdown"
-            onMouseEnter={() => handleMouseEnter('facilities')}
-            onMouseLeave={handleMouseLeave}
-          >
-            <span>
-              <Building size={18} className="nav-icon" />
-              Facilities 
-              <ChevronDown size={14} className="dropdown-arrow" />
-            </span>
-            {openDropdown === 'facilities' && (
-              <ul className="dropdown-menu">
-                {facilitiesSubItems.map((item) => (
-                  <li key={item.path}>
-                    <Link to={item.path}>{item.label}</Link>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </li>
+            <li
+              className="dropdown"
+              onMouseEnter={() => handleMouseEnter('facilities')}
+              onMouseLeave={handleMouseLeave}
+            >
+              <span>
+                <Building size={18} /> Facilities <ChevronDown size={14} />
+              </span>
+              {openDropdown === 'facilities' && (
+                <ul className="dropdown-menu">
+                  {facilitiesSubItems.map(item => (
+                    <li key={item.path}>
+                      <Link to={item.path}>{item.label}</Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
 
-          {/* News */}
-          <li>
-            <Link to="/news">
-              <Newspaper size={18} className="nav-icon" />
-              News
-            </Link>
-          </li>
+            <li>
+              <Link to="/news"><Newspaper size={18} /> News</Link>
+            </li>
 
-          {/* Contact */}
-          <li>
-            <Link to="/contact">
-              <Phone size={18} className="nav-icon" />
-              Contact
-            </Link>
-          </li>
-
-          {/* Apply Online Button */}
-          <li className="apply-btn-li">
-          </li>
-        </ul>
-      </div>
-    </nav>
+            <li>
+              <Link to="/contact"><Phone size={18} /> Contact</Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </>
   );
 }

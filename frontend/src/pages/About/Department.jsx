@@ -20,57 +20,117 @@ export default function Department() {
       setContent(res.data);
     } catch (err) {
       console.error('Error loading Department page:', err);
-      setError('Failed to load department information');
+      // Don't set error, just use fallback content
+      setContent(null);
     } finally {
       setLoading(false);
     }
   };
 
-  if (loading)
-    return <div className="loading">Loading Department information...</div>;
-
-  if (error) return <div className="error">{error}</div>;
-
-  // fallback content if API has no data
-  if (!content) {
+  if (loading) {
     return (
-      <div className="department-page">
-        <div className="department-container">
-          <img
-            src="/images/book.jpg"
-            alt="Dar es Salaam Police Academy structure"
-            className="department-image"
-          />
-          <div className="department-text">
-            <h1>Dar es Salaam Police Academy Academic Wing</h1>
-
-            <h2>Departments</h2>
-            <ul>
-              <li>Inspectorate and Gazetted Officers Promotion Wing</li>
-              <li>Public Order Management Wing</li>
-              <li>Traffic Management and Control Wing</li>
-              <li>Laws Wing</li>
-              <li>Police Science Wing</li>
-            </ul>
-
-            <h2>Proficiency Programmes Wing</h2>
-            <ul>
-              <li>Vehicle Inspection Wing</li>
-              <li>Research and Publication Wing</li>
-              <li>Field Craft and Self-Defense Wing</li>
-              <li>Public Relations Officer</li>
-              <li>Library Services</li>
-            </ul>
-          </div>
-        </div>
+      <div className="loading-container">
+        <div className="spinner"></div>
+        <p>Loading Department information...</p>
       </div>
     );
   }
 
+  // Always show fallback content (whether API failed or returned nothing)
   return (
     <div className="department-page">
-      <h1>{content.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: content.content }} />
+      {/* Hero Section */}
+      <div className="department-hero">
+        <div className="hero-overlay"></div>
+        <div className="hero-content">
+          <h1 className="hero-title">Academic Wing</h1>
+          <p className="hero-subtitle">Dar Es Salaam Police Academy</p>
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <div className="department-container">
+        {/* Library Image Card */}
+        <div className="library-card">
+          <div className="image-wrapper">
+            <img
+              src="/images/book.jpg"
+              alt="DPA Main Library"
+              className="department-image"
+            />
+            <div className="image-caption">
+              <span className="caption-icon">📚</span>
+              <span className="caption-text">DPA Main Library</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Departments Grid */}
+        <div className="departments-grid">
+          {/* Inspectorate Wing */}
+          <div className="department-card">
+            <div className="card-header">
+              <span className="card-icon">🎖️</span>
+              <h2 className="card-title">Inspectorate And Gazetted Officers Promotion Wing</h2>
+            </div>
+            <div className="card-content">
+              <ul className="wing-list">
+                <li>
+                  <span className="list-icon">▸</span>
+                  <span>Public Order Management wing</span>
+                </li>
+                <li>
+                  <span className="list-icon">▸</span>
+                  <span>Traffic Management and Control wing</span>
+                </li>
+                <li>
+                  <span className="list-icon">▸</span>
+                  <span>Laws wing</span>
+                </li>
+                <li>
+                  <span className="list-icon">▸</span>
+                  <span>Police Science wing</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Proficiency Wing */}
+          <div className="department-card">
+            <div className="card-header">
+              <span className="card-icon">📋</span>
+              <h2 className="card-title">Proficiency Programmes (Short And Long Courses) Wing</h2>
+            </div>
+            <div className="card-content">
+              <ul className="wing-list">
+                <li>
+                  <span className="list-icon">▸</span>
+                  <span>Vehicle Inspection wing</span>
+                </li>
+                <li>
+                  <span className="list-icon">▸</span>
+                  <span>Research and Publication wing</span>
+                </li>
+                <li>
+                  <span className="list-icon">▸</span>
+                  <span>Field Craft and Self-defense wing</span>
+                </li>
+                <li>
+                  <span className="list-icon">▸</span>
+                  <span>Public Relations officer</span>
+                </li>
+                <li>
+                  <span className="list-icon">▸</span>
+                  <span>Library services</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Decoration */}
+      <div className="bottom-decoration"></div>
     </div>
   );
 }
