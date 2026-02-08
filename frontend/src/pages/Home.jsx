@@ -32,6 +32,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import api from '../utils/api';
 
+
+
 export default function Home() {
   const [content, setContent] = useState(null);
   const [posts, setPosts] = useState({ news: [], announcements: [], events: [] });
@@ -589,63 +591,75 @@ const facilities = [
         </div>
       </section>
 
-         {/* Facilities Section */}
+        
 
-         
-     <section className="facilities-showcase">
-  <div className="container">
-
-    <div className="facilities-tabs">
-      <button className="active">ICT Labs</button>
-      <button>Sports Areas</button>
-      <button>Library</button>
-    </div>
-
-    <div className="facilities-cards">
-      {facilities.map((facility, index) => (
-        <div className="facility-image-card" key={index}>
-
-  {/* Animated image stack */}
-  <div className="facility-image">
-    {facility.images.map((img, i) => (
-      <img
-        key={i}
-        src={img}
-        alt={facility.name}
-        style={{ animationDelay: `${i * 4}s` }}
-      />
-    ))}
-  </div>
-
-  {/* Overlay content */}
-  <div className="facility-overlay">
-    <span className="facility-category">
-      {facility.category}
-    </span>
-
-    <h3>{facility.name}</h3>
-    <p>{facility.description}</p>
-
-    <button className="facility-btn">
-      Learn More
-    </button>
-  </div>
-
-</div>
-
-      ))}
-    </div>
-
-    <div className="facilities-footer">
-      <button className="explore-btn">
-        Explore All Facilities
-      </button>
-    </div>
-
-  </div>
-</section>
+{/* Facilities Section */}
+<FacilitiesShowcase facilities={facilities} />
 
     </div>
   );
 
 }
+
+
+/* ✅ COMPONENT OUTSIDE JSX */
+
+const FacilitiesShowcase = ({ facilities }) => {
+  const [activeCategory, setActiveCategory] = useState("All");
+
+  const filteredFacilities =
+    activeCategory === "All"
+      ? facilities
+      : facilities.filter(
+          (facility) => facility.category === activeCategory
+        );
+
+  return (
+    <section className="facilities-showcase">
+      <div className="container">
+
+        {/* Tabs */}
+        <div className="facilities-tabs">
+          {["All", "ICT Labs", "Sports Areas", "Library"].map((tab) => (
+            <button
+              key={tab}
+              className={activeCategory === tab ? "active" : ""}
+              onClick={() => setActiveCategory(tab)}
+            >
+              {tab}
+            </button>
+          ))}
+        </div>
+
+        {/* Cards */}
+        <div className="facilities-cards">
+          {filteredFacilities.map((facility, index) => (
+            <div className="facility-image-card" key={index}>
+              <div className="facility-image">
+                {facility.images.map((img, i) => (
+                  <img
+                    key={i}
+                    src={img}
+                    alt={facility.name}
+                    style={{ animationDelay: `${i * 4}s` }}
+                  />
+                ))}
+              </div>
+
+              <div className="facility-overlay">
+                <span className="facility-category">
+                  {facility.category}
+                </span>
+                <h3>{facility.name}</h3>
+                <p>{facility.description}</p>
+                <button className="facility-btn">Learn More</button>
+              </div>
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </section>
+  );
+};
+

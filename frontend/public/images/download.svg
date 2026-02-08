@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <!-- Base paper color -->
+  <rect width="120" height="120" fill="#f4f6f1"></rect>
+
+  <!-- Soft diagonal bands -->
+  <g opacity="0.06">
+    <rect x="-60" y="0" width="40" height="180" transform="rotate(-20 0 0)" fill="#000"></rect>
+    <rect x="-10" y="0" width="40" height="180" transform="rotate(-20 0 0)" fill="#000"></rect>
+    <rect x="40" y="0" width="40" height="180" transform="rotate(-20 0 0)" fill="#000"></rect>
+    <rect x="90" y="0" width="40" height="180" transform="rotate(-20 0 0)" fill="#000"></rect>
+  </g>
+</svg>

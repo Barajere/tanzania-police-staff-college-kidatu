@@ -363,18 +363,32 @@ body, #root {
 }
 
 /* Hero Slide Overlay */
+
+.hero-carousel,
+.hero-carousel .slick-slider,
+.hero-carousel .slick-list,
+.hero-carousel .slick-track {
+  height: 100%;
+}
+
 .hero-slide {
   position: relative;
    height: 100%;
+  max-height: 500px;
+ 
   
 }
 
 .hero-slide img {
   display: block;
   width: 100%;
-  height: auto;
+ height: 100%;  
   max-height: 500px;
   object-fit: cover;
+  transition: transform 8s ease;
+}
+.slick-active .hero-slide img {
+  transform: scale(1.05);
 }
 
 .slide-overlay h2 {
@@ -389,6 +403,39 @@ body, #root {
   max-width: 800px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
+
+
+/* Medium screens: tablets */
+@media (max-width: 1024px) {
+  .hero-slide {
+    height: 70vh;
+    min-height: 400px;
+  }
+  .slide-content h2 {
+    font-size: 2.5rem;
+  }
+  
+  .slide-content p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Small screens: mobiles */
+@media (max-width: 768px) {
+  .hero-slide {
+    height: 55vh;       /* use viewport-based height instead of 100% */
+    min-height: 320px;  /* ensures the slide is visible on small devices */
+  }
+
+  .slide-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .slide-content p {
+    font-size: 1rem;
+  }
+}
+
 
 /* Centered Apply Button Over Slideshow */
 
@@ -1978,10 +2025,11 @@ body, #root {
   gap: 1.5rem;
 }
 
-/* .coa-logo {
+.coa-logo {
   height: 100px;
   width: auto;
-} */
+   animation-delay: 0.2s;
+} 
 
 .school-name {
   text-align: center;
@@ -2019,6 +2067,7 @@ body, #root {
 .academy-logo {
   height: 100px;
   width: auto;
+ animation-delay: 0.4s;
 }
 
 /* Responsive */
@@ -2103,19 +2152,49 @@ body, #root {
    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
- 
+ animation: fadeUp 0.8s ease-out both;
   border-bottom: 2px solid #1c236d;
+ overflow: hidden;
+
+  /* base government background */
+  background: linear-gradient(
+    135deg,
+    #f7f8f4 0%,
+    #eef1ea 50%,
+    #fafbf8 100%
+  );
+
+  
 }
 .main-header::before {
   content: "";
   position: absolute;
   inset: 0;
 
+  background-image: url("/images/tanzania.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: auto, cover;
 
-  background: rgba(0, 0, 0, 0.35);
-  /* adjust opacity: 0.6–0.85 works best */
-
+  opacity: 0.06; /* VERY important */
+  pointer-events: none;
+  z-index: 0;
+}
+/* Keep content above the background*/
+.main-header > * {
+  position: relative;
   z-index: 1;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .header-inner {
@@ -2129,9 +2208,7 @@ body, #root {
   position: relative;
   z-index: 2;
 }
-.main-header::before {
-  background: rgba(0, 0, 0, 0.7);
-}
+
 
 /* .coa-logo,
 .academy-logo {
@@ -2143,29 +2220,33 @@ body, #root {
   text-align: center;
   flex: 1;
   padding: 0 1.5rem;
+  animation: fadeUp 1s ease-out both;
+  animation-delay: 0.3s;
 }
 
+/* Top line */
 .school-name h1 {
-  color: #003366;
-  font-size: 1.3rem;
+  color: #000000;
+  font-size: 1.2rem;
   margin: 0;
+  font-weight: 700;
   letter-spacing: 1px;
-  font-weight: bold;
-
-  
 }
-
+/* Main title (green & dominant) */
 .school-name h2 {
-  color: #003366;
-  font-size: 2.2rem;
+  color: #1b5e20; /* strong government green */
+  font-size: 2.1rem;
   margin: 0.4rem 0 0;
-  font-weight: bold;
-  letter-spacing: 1px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+   animation: titleFocus 1.2s ease-out both;
+  animation-delay: 0.5s;
 }
 
+/* Motto */
 .school-name p {
-  color: #003366;
-  font-size: 1.1rem;
+  color: #333333;
+  font-size: 1.05rem;
   margin: 0.3rem 0 0;
   font-style: italic;
 }
@@ -2542,6 +2623,7 @@ body, #root {
 .academy-logo {
   height: 80px;
   width: auto;
+   animation: fadeUp 0.9s ease-out both;
 }
 
 .main-header {
@@ -5144,26 +5226,9 @@ body, #root {
   margin-bottom: 0;
 }
 
-.hero-slide {
-  position: relative;
-  height: 80vh;
-  min-height: 600px;
-  overflow: hidden;
-}
-
-.hero-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .slide-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  
-  bottom: 0;
+  inset: 0;
   background: linear-gradient(135deg, 
     rgba(28, 35, 109, 0) 0%, 
     rgba(28, 35, 109, 0) 50%, 
@@ -5174,6 +5239,7 @@ body, #root {
   text-align: center;
   color: white;
   padding: 1rem;
+  z-index: 2;
 }
 
 .slide-content h2 {
@@ -5553,6 +5619,8 @@ body, #root {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
   gap: 2rem;
+justify-content: center;
+ 
 }
 
 .facility-image-card {
@@ -5666,6 +5734,20 @@ body, #root {
   cursor: pointer;
 }
 
+.facilities-cards {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /* News & Events Section - Clean Design */
 .news-events-section {
@@ -6140,24 +6222,8 @@ body, #root {
   }
 }
 
-@media (max-width: 480px) {
-  .hero-slide {
-    height: 50vh;
-  }
-  
-  .slide-content h2 {
-    font-size: 1.8rem;
-  }
-  
-  .stats-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .quick-links-grid {
-    grid-template-columns: 1fr;
-  }
-  
-}
+
+
 /* PAGE */
 .contact-page {
   background: #f8fafc;
