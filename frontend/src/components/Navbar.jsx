@@ -15,6 +15,8 @@ import {
   HelpCircle,
 } from 'lucide-react';
 
+
+
 export default function Navbar() {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
@@ -103,10 +105,19 @@ export default function Navbar() {
       </div>
     
 
-      {/* Hamburger for mobile */}
-      <div className="mobile-hamburger" onClick={toggleMobileMenu}>
-        <span className="hamburger-icon">&#9776;</span> {/* ☰ */}
-      </div>
+      {/* Mobile header */}
+<div className="mobile-header">
+  <div className="mobile-hamburger" onClick={toggleMobileMenu}>
+    <span className="hamburger-icon">&#9776;</span>
+  </div>
+
+  <img
+    src="/images/police-academy-logo.png"
+    alt="Police Logo"
+    className="mobile-logo"
+  />
+</div>
+
 
       {/* Main Navigation */}
       <div className={`main-nav ${isMobileOpen ? 'open' : ''}`}>
