@@ -23,6 +23,7 @@ import Contact from "./pages/Contact";
 import News from "./pages/News";
 import ApplyOnline from "./pages/ApplyOnline";
 import programs from "./pages/Admission/Course";
+import Events from "./pages/Events";
 
 // ===== ABOUT =====
 import History from "./pages/About/History";
@@ -270,7 +271,7 @@ function App() {
     </PublicLayout>
   }
 />
-
+ 
 
 
           <Route path="/facilities/sport-gym" element={<PublicLayout><SportGym/></PublicLayout>} />
@@ -280,7 +281,12 @@ function App() {
           <Route path="/facilities/driving-school" element={<PublicLayout><DrivingSchool/></PublicLayout>} />
           <Route path="/facilities/dispensary" element={<PublicLayout><Dispensary/></PublicLayout>} />
 
-          <Route path="/news" element={<PublicLayout><News /></PublicLayout>} />
+         <Route path="/news" element={<PublicLayout><News /></PublicLayout>} />
+         <Route path="/news/:id" element={<PublicLayout><News /></PublicLayout>} />
+          
+          <Route path="/events" element={<PublicLayout><Events /></PublicLayout>} />
+          <Route path="/events/:id" element={<PublicLayout><Events /></PublicLayout>} />
+
           <Route path="/contact" element={<PublicLayout><Contact /></PublicLayout>} />
           <Route path="/apply" element={<PublicLayout><ApplyOnline /></PublicLayout>} />
 
