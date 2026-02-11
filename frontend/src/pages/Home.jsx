@@ -2,7 +2,7 @@
 // src/pages/Home.jsx
 import { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 import { 
   Send, 
   ArrowRight, 
@@ -107,6 +107,7 @@ export default function Home() {
 const programs = [
   {
     title: "Academic Courses",
+     slug: "academic-courses",
     description:
       "Advanced educational programs offering undergraduate degrees and specialized certifications.",
     images: [
@@ -118,6 +119,7 @@ const programs = [
   },
   {
     title: "Promotional Courses",
+     slug: "promotional-courses",
     description:
       "Leadership and skill enhancement training designed to prepare officers for higher ranks.",
     images: [
@@ -129,6 +131,7 @@ const programs = [
   },
   {
     title: "Proficiency Courses",
+     slug: "proficiency-courses",
     description:
       "Specialized training programs focusing on technical skills and tactical operations.",
     images: [
@@ -383,9 +386,11 @@ const facilities = [
       <div className="program-content">
         <h3 style={{ color: program.color }}>{program.title}</h3>
         <p>{program.description}</p>
-        <a href="/programs" className="program-link">
-          View Details →
-        </a>
+        <Link to={`/programs/${program.slug}`}
+      className="program-link">
+  View Details →
+       </Link>
+
       </div>
 
     </div>
@@ -397,37 +402,36 @@ const facilities = [
 
 
       {/* News & Events Section */}
-      <section className="news-events-section">
-        <div className="container">
-          <div className="news-events-grid">
-            {/* News Section */}
-            <div className="news-section">
-              <div className="section-header-inline">
-                <Newspaper className="section-icon" />
-                <h2>News & Announcements</h2>
-              </div>
-              <div className="news-list">
-  {posts.news.length > 0 ? (
-  posts.news.map((news, index) => (
-    <div 
-      key={news.id} 
-      className={`news-item ${hoveredCard === `news-${index}` ? 'card-hovered' : ''}`}
+     {/* News & Events Section */}
+<section className="news-events-section">
+  <div className="container">
+    <div className="news-events-grid">
+      {/* News Section */}
+      <div className="news-section">
+        <div className="section-header-inline">
+          <Newspaper className="section-icon" />
+          <h2>News & Announcements</h2>
+        </div>
+
+        <div className="news-list">
+          {posts.news.length > 0 ? (
+   posts.news
+      .sort((a, b) => new Date(b.date_posted) - new Date(a.date_posted))
+      .slice(0, 3)
+      .map((news, index) => (
+    <div
+      key={news.id}
+      className={`news-card ${hoveredCard === `news-${index}` ? 'expanded' : ''}`}
       onMouseEnter={() => setHoveredCard(`news-${index}`)}
       onMouseLeave={() => setHoveredCard(null)}
     >
-      {/* Image on top - only if exists */}
-      {news.image && news.image.trim() !== "" && (
-        <div className="news-image">
-          <img
-            src={'http://localhost:8000' + news.image}
-            alt={news.title}
-            className="news-thumbnail"
-          />
+      {news.image && (
+        <div className="news-card-image">
+          <img src={'http://localhost:8000' + news.image} alt={news.title} />
         </div>
       )}
 
-      {/* Content below */}
-      <div className="news-content">
+      <div className="news-card-content">
         <div className="news-date">
           {new Date(news.date_posted).toLocaleDateString('en-US', {
             day: 'numeric',
@@ -437,45 +441,56 @@ const facilities = [
         </div>
         <h3>{news.title}</h3>
         <p>{news.content || "Important update from the academy administration."}</p>
+
+        {/* Read More link */}
+  
+<Link to={`/news/${news.id}`} className="read-more-link">
+  Read More →
+</Link>
+
       </div>
 
-      <div className="news-arrow">
+      <div className="news-card-arrow">
         <ChevronRight size={16} />
       </div>
     </div>
-  ))
-) : (
-  <>
-    <div className="news-item">
-      <div className="news-content">
-        <div className="news-date">Jan 15, 2025</div>
-        <h3>New Intake for 2025/2026 Announced</h3>
-        <p>Applications now open for the upcoming academic year.</p>
-      </div>
-      <div className="news-arrow">
-        <ChevronRight size={16} />
-      </div>
-    </div>
+ 
 
-    <div className="news-item">
-      <div className="news-content">
-        <div className="news-date">Dec 20, 2024</div>
-        <h3>Graduation Ceremony Highlights</h3>
-        <p>Celebrating the achievements of our latest graduates.</p>
-      </div>
-      <div className="news-arrow">
-        <ChevronRight size={16} />
-      </div>
-    </div>
-  </>
-)}
+ 
 
-</div>
+            ))
+          ) : (
+            <>
+              <div className="news-card">
+                <div className="news-card-content">
+                  <div className="news-date">Jan 15, 2025</div>
+                  <h3>New Intake for 2025/2026 Announced</h3>
+                  <p>Applications now open for the upcoming academic year.</p>
+                </div>
+                <div className="news-card-arrow">
+                  <ChevronRight size={16} />
+                </div>
+              </div>
 
-              <a href="/news" className="view-all-link">
-                View All News <ExternalLink size={16} />
-              </a>
-            </div>
+              <div className="news-card">
+                <div className="news-card-content">
+                  <div className="news-date">Dec 20, 2024</div>
+                  <h3>Graduation Ceremony Highlights</h3>
+                  <p>Celebrating the achievements of our latest graduates.</p>
+                </div>
+                <div className="news-card-arrow">
+                  <ChevronRight size={20} />
+                </div>
+              </div>
+            </>
+          )}
+        </div>
+
+        <a href="/news" className="view-all-link">
+          View All News <ExternalLink size={16} />
+        </a>
+      </div>
+    
 
             {/* Events Section */}
             <div className="events-section">
@@ -519,6 +534,10 @@ const facilities = [
                         <span>Nov 25</span>
                       </div>
                       <div className="event-content">
+                        <Link to="/events" className="read-more-link">
+  Read More →
+</Link>
+
                         <h3>Graduation Day Ceremony</h3>
                         <p>Annual graduation ceremony celebrating our cadets' achievements.</p>
                         <div className="event-meta">
@@ -548,8 +567,6 @@ const facilities = [
                 See All Events <ExternalLink size={16} />
               </a>
             </div>
-
-  
           </div>
         </div>
       </section>

@@ -3252,6 +3252,7 @@ WARNING 2026-02-09 12:06:44,025 log 6082 130413437646528 Not Found: /api/pages/o
 WARNING 2026-02-09 12:06:44,030 log 6082 130413437646528 Not Found: /api/pages/organization/
 WARNING 2026-02-09 12:08:04,241 log 6082 130413437646528 Not Found: /api/pages/organization/
 WARNING 2026-02-09 12:08:04,254 log 6082 130413460715200 Not Found: /api/pages/organization/
+<<<<<<< HEAD
 WARNING 2026-02-09 12:18:57,843 log 6082 130413437646528 Not Found: /api/pages/history/
 WARNING 2026-02-09 12:18:57,853 log 6082 130413437646528 Not Found: /api/pages/history/
 WARNING 2026-02-09 12:58:09,300 log 6082 130413460715200 Not Found: /api/pages/organization/
@@ -3292,3 +3293,187 @@ WARNING 2026-02-10 13:15:37,801 log 6478 129272198981312 Not Found: /api/posts/
 WARNING 2026-02-10 13:17:17,461 log 6478 129272198981312 Not Found: /api/posts/
 INFO 2026-02-11 10:15:29,307 autoreload 11349 136866860003456 Watching for file changes with StatReloader
 WARNING 2026-02-11 10:15:44,332 log 11349 136866713040576 Not Found: /favicon.ico
+=======
+INFO 2026-02-09 22:54:23,607 autoreload 11908 19248 Watching for file changes with StatReloader
+INFO 2026-02-10 08:19:38,165 autoreload 16964 8104 Watching for file changes with StatReloader
+INFO 2026-02-10 08:48:20,688 autoreload 16964 8104 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\police_academy_backend\settings.py changed, reloading.
+INFO 2026-02-10 09:53:45,806 autoreload 11252 22340 Watching for file changes with StatReloader
+INFO 2026-02-10 09:57:08,769 autoreload 20860 14356 Watching for file changes with StatReloader
+INFO 2026-02-10 10:13:40,355 autoreload 9944 18048 Watching for file changes with StatReloader
+INFO 2026-02-10 10:15:51,514 autoreload 8748 23120 Watching for file changes with StatReloader
+INFO 2026-02-10 10:18:53,713 autoreload 8748 23120 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\police_academy_backend\settings.py changed, reloading.
+INFO 2026-02-10 10:19:12,875 autoreload 7248 18960 Watching for file changes with StatReloader
+INFO 2026-02-10 10:20:08,677 autoreload 20004 20660 Watching for file changes with StatReloader
+INFO 2026-02-10 10:28:26,142 autoreload 5292 7500 Watching for file changes with StatReloader
+WARNING 2026-02-10 10:28:39,356 log 5292 9196 Not Found: /favicon.ico
+WARNING 2026-02-10 10:31:00,217 log 5292 3600 Unauthorized: /api/public/gallery/
+WARNING 2026-02-10 10:31:00,220 log 5292 16996 Unauthorized: /api/public/posts/
+WARNING 2026-02-10 10:31:00,221 log 5292 1292 Unauthorized: /api/public/home-feed/
+WARNING 2026-02-10 10:31:00,341 log 5292 3888 Unauthorized: /api/public/gallery/
+WARNING 2026-02-10 10:31:00,345 log 5292 3600 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-10 10:31:00,352 log 5292 10544 Unauthorized: /api/public/posts/
+WARNING 2026-02-10 10:31:00,483 log 5292 1292 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-10 10:31:00,631 log 5292 19380 Unauthorized: /api/public/home-feed/
+WARNING 2026-02-10 10:31:00,648 log 5292 16996 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-10 10:31:23,337 log 5292 16996 Unauthorized: /api/auth/token/
+INFO 2026-02-10 10:39:54,900 autoreload 8084 19268 Watching for file changes with StatReloader
+WARNING 2026-02-10 10:40:12,641 log 8084 20848 Not Found: /api/pages/
+WARNING 2026-02-10 10:40:12,653 log 8084 13156 Not Found: /api/users/
+WARNING 2026-02-10 10:40:12,663 log 8084 21784 Not Found: /api/posts/
+WARNING 2026-02-10 10:40:12,728 log 8084 11080 Not Found: /api/pages/
+WARNING 2026-02-10 10:40:12,844 log 8084 20848 Not Found: /api/users/
+WARNING 2026-02-10 10:40:12,878 log 8084 13156 Not Found: /api/posts/
+WARNING 2026-02-10 10:40:41,752 log 8084 13156 Not Found: /api/users/
+WARNING 2026-02-10 10:40:41,800 log 8084 20848 Not Found: /api/posts/
+WARNING 2026-02-10 10:40:41,813 log 8084 11080 Not Found: /api/pages/
+WARNING 2026-02-10 10:40:41,960 log 8084 13156 Not Found: /api/posts/
+WARNING 2026-02-10 10:40:42,019 log 8084 20848 Not Found: /api/pages/
+WARNING 2026-02-10 10:40:42,047 log 8084 21784 Not Found: /api/users/
+WARNING 2026-02-10 10:50:11,088 log 8084 13156 Not Found: /api/users/
+WARNING 2026-02-10 10:50:11,104 log 8084 1184 Not Found: /api/pages/
+WARNING 2026-02-10 10:50:11,115 log 8084 16052 Not Found: /api/posts/
+WARNING 2026-02-10 10:50:11,238 log 8084 1184 Not Found: /api/pages/
+WARNING 2026-02-10 10:50:11,262 log 8084 13156 Not Found: /api/users/
+WARNING 2026-02-10 10:50:11,322 log 8084 21832 Not Found: /api/posts/
+WARNING 2026-02-10 10:50:47,970 log 8084 21832 Not Found: /api/pages/
+WARNING 2026-02-10 10:50:48,158 log 8084 13156 Not Found: /api/pages/
+WARNING 2026-02-10 10:50:54,862 log 8084 13156 Not Found: /api/posts/
+WARNING 2026-02-10 10:50:54,870 log 8084 1184 Not Found: /api/users/
+WARNING 2026-02-10 10:50:54,879 log 8084 21832 Not Found: /api/pages/
+WARNING 2026-02-10 10:50:55,016 log 8084 1184 Not Found: /api/pages/
+WARNING 2026-02-10 10:50:55,033 log 8084 13156 Not Found: /api/users/
+WARNING 2026-02-10 10:50:55,051 log 8084 16052 Not Found: /api/posts/
+WARNING 2026-02-10 10:53:20,430 log 8084 16052 Not Found: /api/posts/
+WARNING 2026-02-10 10:54:27,409 log 8084 16052 Not Found: /api/posts/
+WARNING 2026-02-10 12:52:03,337 log 8084 8820 Not Found: /api/pages/
+WARNING 2026-02-10 12:52:03,421 log 8084 3460 Not Found: /api/users/
+WARNING 2026-02-10 12:52:03,469 log 8084 19180 Not Found: /api/posts/
+WARNING 2026-02-10 12:52:03,788 log 8084 19180 Not Found: /api/posts/
+WARNING 2026-02-10 12:52:03,836 log 8084 5540 Not Found: /api/pages/
+WARNING 2026-02-10 12:52:03,863 log 8084 19928 Not Found: /api/users/
+WARNING 2026-02-10 13:05:45,641 log 8084 8604 Not Found: /api/public/news/1/
+WARNING 2026-02-10 13:05:46,099 log 8084 4776 Not Found: /api/public/news/1/
+WARNING 2026-02-10 13:05:57,584 log 8084 5912 Not Found: /api/public/news/3/
+WARNING 2026-02-10 13:05:57,694 log 8084 8604 Not Found: /api/public/news/3/
+WARNING 2026-02-10 13:06:43,319 log 8084 5912 Not Found: /api/public/news/2/
+WARNING 2026-02-10 13:06:43,573 log 8084 8604 Not Found: /api/public/news/2/
+WARNING 2026-02-10 13:07:02,232 log 8084 4776 Not Found: /api/public/news/1/
+WARNING 2026-02-10 13:07:02,470 log 8084 5912 Not Found: /api/public/news/1/
+WARNING 2026-02-10 13:48:37,657 log 8084 8772 Not Found: /api/pages/
+WARNING 2026-02-10 13:48:37,678 log 8084 1012 Not Found: /api/users/
+WARNING 2026-02-10 13:48:37,694 log 8084 14864 Not Found: /api/posts/
+WARNING 2026-02-10 13:48:37,846 log 8084 8772 Not Found: /api/users/
+WARNING 2026-02-10 13:48:37,863 log 8084 18532 Not Found: /api/posts/
+WARNING 2026-02-10 13:48:37,889 log 8084 16792 Not Found: /api/pages/
+WARNING 2026-02-10 13:58:12,035 log 8084 2840 Not Found: /api/posts/
+WARNING 2026-02-10 14:21:49,485 log 8084 1108 Not Found: /api/public/events/
+WARNING 2026-02-10 14:21:49,972 log 8084 9892 Not Found: /api/public/events/
+WARNING 2026-02-10 14:22:48,542 log 8084 9892 Not Found: /api/posts/
+WARNING 2026-02-10 14:42:27,009 log 8084 10284 Not Found: /api/posts/
+WARNING 2026-02-10 15:04:27,588 log 8084 22944 Not Found: /api/posts/
+WARNING 2026-02-10 15:04:27,748 log 8084 7096 Not Found: /api/posts/
+WARNING 2026-02-10 15:05:53,533 log 8084 7096 Not Found: /api/posts/
+WARNING 2026-02-10 15:06:00,566 log 8084 7096 Not Found: /api/posts/
+WARNING 2026-02-10 15:37:35,450 log 8084 12736 Not Found: /api/users/
+WARNING 2026-02-10 15:37:35,495 log 8084 16644 Not Found: /api/posts/
+WARNING 2026-02-10 15:37:35,544 log 8084 2656 Not Found: /api/pages/
+WARNING 2026-02-10 15:37:35,661 log 8084 19436 Not Found: /api/users/
+WARNING 2026-02-10 15:37:35,742 log 8084 16644 Not Found: /api/pages/
+WARNING 2026-02-10 15:37:35,790 log 8084 12736 Not Found: /api/posts/
+WARNING 2026-02-10 15:40:12,481 log 8084 12736 Not Found: /api/posts/
+WARNING 2026-02-10 15:40:20,744 log 8084 12736 Not Found: /api/posts/
+WARNING 2026-02-10 15:40:31,063 log 8084 12736 Not Found: /api/posts/
+WARNING 2026-02-10 15:40:31,068 log 8084 16644 Not Found: /api/pages/
+WARNING 2026-02-10 15:40:31,095 log 8084 19436 Not Found: /api/users/
+WARNING 2026-02-10 15:40:31,204 log 8084 2656 Not Found: /api/posts/
+WARNING 2026-02-10 15:40:31,218 log 8084 12736 Not Found: /api/pages/
+WARNING 2026-02-10 15:40:31,266 log 8084 16644 Not Found: /api/users/
+WARNING 2026-02-10 15:42:28,710 log 8084 12736 Not Found: /api/pages/
+WARNING 2026-02-10 15:42:28,736 log 8084 16644 Not Found: /api/posts/
+WARNING 2026-02-10 15:42:28,746 log 8084 2656 Not Found: /api/users/
+WARNING 2026-02-10 15:42:28,817 log 8084 19436 Not Found: /api/pages/
+WARNING 2026-02-10 15:42:28,917 log 8084 12736 Not Found: /api/posts/
+WARNING 2026-02-10 15:42:29,056 log 8084 16644 Not Found: /api/users/
+INFO 2026-02-10 17:52:31,980 autoreload 860 13276 Watching for file changes with StatReloader
+WARNING 2026-02-10 18:14:20,122 log 860 2440 Not Found: /api/users/
+WARNING 2026-02-10 18:14:20,111 log 860 4112 Not Found: /api/pages/
+WARNING 2026-02-10 18:14:20,161 log 860 13488 Not Found: /api/posts/
+WARNING 2026-02-10 18:14:20,326 log 860 17844 Not Found: /api/pages/
+WARNING 2026-02-10 18:14:20,333 log 860 15188 Not Found: /api/posts/
+WARNING 2026-02-10 18:14:20,341 log 860 8600 Not Found: /api/users/
+WARNING 2026-02-10 18:14:55,925 log 860 8600 Not Found: /api/pages/
+WARNING 2026-02-10 18:14:55,975 log 860 15188 Not Found: /api/pages/
+WARNING 2026-02-10 18:16:11,793 log 860 15188 Not Found: /api/posts/
+WARNING 2026-02-10 19:07:04,729 log 860 15996 Not Found: /api/posts/
+WARNING 2026-02-10 19:11:51,946 log 860 15996 Not Found: /api/posts/
+INFO 2026-02-11 09:41:04,170 autoreload 2792 9352 Watching for file changes with StatReloader
+INFO 2026-02-11 09:45:09,629 autoreload 13544 18700 Watching for file changes with StatReloader
+WARNING 2026-02-11 09:46:06,353 log 13544 6392 Not Found: /api/users/
+WARNING 2026-02-11 09:46:06,384 log 13544 8012 Not Found: /api/pages/
+WARNING 2026-02-11 09:46:06,408 log 13544 23332 Not Found: /api/posts/
+WARNING 2026-02-11 09:46:06,439 log 13544 22912 Not Found: /api/users/
+WARNING 2026-02-11 09:46:06,486 log 13544 6392 Not Found: /api/pages/
+WARNING 2026-02-11 09:46:06,630 log 13544 8012 Not Found: /api/posts/
+WARNING 2026-02-11 09:57:14,672 log 13544 22448 Not Found: /favicon.ico
+WARNING 2026-02-11 10:18:56,809 log 13544 21616 Not Found: /api/pages/
+WARNING 2026-02-11 10:18:56,817 log 13544 23344 Not Found: /api/posts/
+WARNING 2026-02-11 10:18:56,834 log 13544 11692 Not Found: /api/users/
+WARNING 2026-02-11 10:18:57,079 log 13544 21616 Not Found: /api/posts/
+WARNING 2026-02-11 10:18:57,194 log 13544 23344 Not Found: /api/users/
+WARNING 2026-02-11 10:18:57,196 log 13544 19176 Not Found: /api/pages/
+WARNING 2026-02-11 10:20:01,104 log 13544 19176 Not Found: /api/posts/
+WARNING 2026-02-11 10:20:01,167 log 13544 21616 Not Found: /api/posts/
+WARNING 2026-02-11 10:22:03,076 log 13544 23344 Not Found: /api/posts/
+WARNING 2026-02-11 10:22:03,145 log 13544 21616 Not Found: /api/posts/
+WARNING 2026-02-11 10:38:30,476 log 13544 14428 Not Found: /api/posts/
+WARNING 2026-02-11 10:38:47,947 log 13544 14428 Not Found: /api/posts/
+WARNING 2026-02-11 10:38:52,784 log 13544 14428 Not Found: /api/posts/
+WARNING 2026-02-11 10:39:04,577 log 13544 14428 Not Found: /api/posts/
+WARNING 2026-02-11 10:39:08,103 log 13544 14428 Not Found: /api/posts/
+WARNING 2026-02-11 10:39:20,441 log 13544 14428 Not Found: /api/users/
+WARNING 2026-02-11 10:39:20,542 log 13544 14428 Not Found: /api/users/
+WARNING 2026-02-11 10:40:22,985 log 13544 14428 Not Found: /api/posts/
+WARNING 2026-02-11 10:40:30,509 log 13544 14428 Not Found: /api/pages/
+WARNING 2026-02-11 10:40:30,578 log 13544 14428 Not Found: /api/pages/
+WARNING 2026-02-11 10:40:32,243 log 13544 11848 Not Found: /api/pages/
+WARNING 2026-02-11 10:40:32,278 log 13544 7788 Not Found: /api/users/
+WARNING 2026-02-11 10:40:32,297 log 13544 14428 Not Found: /api/posts/
+WARNING 2026-02-11 10:40:32,380 log 13544 11848 Not Found: /api/users/
+WARNING 2026-02-11 10:40:32,435 log 13544 7788 Not Found: /api/posts/
+WARNING 2026-02-11 10:40:32,466 log 13544 8928 Not Found: /api/pages/
+WARNING 2026-02-11 10:40:34,627 log 13544 8928 Unauthorized: /api/public/news/
+WARNING 2026-02-11 10:40:34,671 log 13544 8928 Unauthorized: /api/public/news/
+INFO 2026-02-11 10:53:25,597 autoreload 13544 18700 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\academy\views.py changed, reloading.
+INFO 2026-02-11 10:54:13,137 autoreload 1624 12796 Watching for file changes with StatReloader
+INFO 2026-02-11 10:55:03,086 autoreload 1624 12796 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\academy\views.py changed, reloading.
+INFO 2026-02-11 10:55:11,836 autoreload 21396 21036 Watching for file changes with StatReloader
+INFO 2026-02-11 10:55:22,960 autoreload 21396 21036 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\academy\views.py changed, reloading.
+INFO 2026-02-11 10:55:35,727 autoreload 15776 14156 Watching for file changes with StatReloader
+INFO 2026-02-11 10:56:28,437 autoreload 15776 14156 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\academy\views.py changed, reloading.
+INFO 2026-02-11 10:56:51,201 autoreload 996 18640 Watching for file changes with StatReloader
+INFO 2026-02-11 11:05:48,322 autoreload 996 18640 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\academy\models.py changed, reloading.
+INFO 2026-02-11 11:06:11,921 autoreload 10256 5828 Watching for file changes with StatReloader
+INFO 2026-02-11 11:06:21,215 autoreload 10256 5828 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\academy\models.py changed, reloading.
+INFO 2026-02-11 11:06:28,682 autoreload 17792 7544 Watching for file changes with StatReloader
+INFO 2026-02-11 11:06:34,677 autoreload 17792 7544 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\academy\models.py changed, reloading.
+INFO 2026-02-11 11:06:48,667 autoreload 14276 13020 Watching for file changes with StatReloader
+INFO 2026-02-11 11:10:14,462 autoreload 14276 13020 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\academy\views.py changed, reloading.
+INFO 2026-02-11 11:10:38,531 autoreload 10648 20888 Watching for file changes with StatReloader
+INFO 2026-02-11 11:10:55,421 autoreload 10648 20888 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\academy\views.py changed, reloading.
+INFO 2026-02-11 11:11:05,293 autoreload 6388 5152 Watching for file changes with StatReloader
+INFO 2026-02-11 11:11:38,901 autoreload 6388 5152 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\academy\views.py changed, reloading.
+INFO 2026-02-11 11:11:52,333 autoreload 15464 10988 Watching for file changes with StatReloader
+INFO 2026-02-11 11:17:36,560 autoreload 15464 10988 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\academy\views.py changed, reloading.
+INFO 2026-02-11 11:18:05,097 autoreload 6876 15180 Watching for file changes with StatReloader
+INFO 2026-02-11 11:18:36,037 autoreload 6876 15180 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\academy\migrations\0004_post_author_post_excerpt_post_updated_at_post_views_and_more.py changed, reloading.
+INFO 2026-02-11 11:18:51,175 autoreload 21712 19164 Watching for file changes with StatReloader
+WARNING 2026-02-11 11:19:21,833 log 21712 4804 Not Found: /api/pages/
+WARNING 2026-02-11 11:19:22,050 log 21712 4804 Not Found: /api/pages/
+WARNING 2026-02-11 11:23:30,065 log 21712 14340 Not Found: /api/users/
+WARNING 2026-02-11 11:23:30,078 log 21712 4804 Not Found: /api/posts/
+WARNING 2026-02-11 11:23:30,117 log 21712 7664 Not Found: /api/pages/
+WARNING 2026-02-11 11:23:30,217 log 21712 14340 Not Found: /api/users/
+WARNING 2026-02-11 11:23:30,309 log 21712 4804 Not Found: /api/posts/
+WARNING 2026-02-11 11:23:30,356 log 21712 18384 Not Found: /api/pages/
+WARNING 2026-02-11 11:24:50,134 log 21712 18384 Not Found: /api/posts/
+>>>>>>> 077a6e8e4264a85dd33fb54101f84aba62ae0124
