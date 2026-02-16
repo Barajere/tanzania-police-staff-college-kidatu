@@ -3572,3 +3572,5 @@ WARNING 2026-02-15 22:39:45,373 log 7104 4556 Not Found: /api/pages/history/
 WARNING 2026-02-15 22:39:46,189 log 7104 4556 Not Found: /api/pages/history/
 INFO 2026-02-16 08:41:13,249 autoreload 12616 19952 Watching for file changes with StatReloader
 
+INFO 2026-02-16 13:37:55,808 autoreload 105195 132673972879488 Watching for file changes with StatReloader
+WARNING 2026-02-16 13:39:21,621 log 105195 132673821472448 Unauthorized: /api/auth/token/
