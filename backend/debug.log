@@ -3494,3 +3494,18 @@ WARNING 2026-02-12 12:09:27,915 log 12752 9992 Unauthorized: /api/auth/token/
 WARNING 2026-02-12 12:09:51,782 log 12752 9992 Unauthorized: /api/auth/token/
 WARNING 2026-02-12 12:10:11,674 log 12752 9992 Unauthorized: /api/auth/token/
 INFO 2026-02-13 05:13:26,680 autoreload 7104 17484 Watching for file changes with StatReloader
+INFO 2026-02-13 13:45:45,000 autoreload 16220 14796 Watching for file changes with StatReloader
+INFO 2026-02-13 13:55:26,096 autoreload 16220 14796 C:\Users\USER\Documents\dpa_college_website\backend\police_academy_backend\settings.py changed, reloading.
+INFO 2026-02-13 14:03:32,132 autoreload 10108 8972 Watching for file changes with StatReloader
+INFO 2026-02-13 14:34:47,427 autoreload 4124 15872 Watching for file changes with StatReloader
+WARNING 2026-02-13 14:35:01,304 log 4124 5184 Not Found: /favicon.ico
+INFO 2026-02-13 14:38:20,609 autoreload 4888 15948 Watching for file changes with StatReloader
+INFO 2026-02-16 07:49:24,387 autoreload 18880 19068 Watching for file changes with StatReloader
+INFO 2026-02-16 07:50:29,561 autoreload 19764 10868 Watching for file changes with StatReloader
+WARNING 2026-02-16 07:50:44,777 log 19764 17704 Not Found: /favicon.ico
+WARNING 2026-02-16 07:51:19,904 log 19764 18716 Unauthorized: /api/posts/
+WARNING 2026-02-16 07:51:19,904 log 19764 2000 Unauthorized: /api/pages/
+WARNING 2026-02-16 07:51:19,904 log 19764 16544 Unauthorized: /api/users/
+WARNING 2026-02-16 07:51:19,927 log 19764 3924 Unauthorized: /api/pages/
+WARNING 2026-02-16 07:51:19,943 log 19764 18716 Unauthorized: /api/posts/
+WARNING 2026-02-16 07:51:19,945 log 19764 1184 Unauthorized: /api/users/
