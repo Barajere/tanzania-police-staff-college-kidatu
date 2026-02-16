@@ -3252,7 +3252,6 @@ WARNING 2026-02-09 12:06:44,025 log 6082 130413437646528 Not Found: /api/pages/o
 WARNING 2026-02-09 12:06:44,030 log 6082 130413437646528 Not Found: /api/pages/organization/
 WARNING 2026-02-09 12:08:04,241 log 6082 130413437646528 Not Found: /api/pages/organization/
 WARNING 2026-02-09 12:08:04,254 log 6082 130413460715200 Not Found: /api/pages/organization/
-<<<<<<< HEAD
 WARNING 2026-02-09 12:18:57,843 log 6082 130413437646528 Not Found: /api/pages/history/
 WARNING 2026-02-09 12:18:57,853 log 6082 130413437646528 Not Found: /api/pages/history/
 WARNING 2026-02-09 12:58:09,300 log 6082 130413460715200 Not Found: /api/pages/organization/
@@ -3293,7 +3292,6 @@ WARNING 2026-02-10 13:15:37,801 log 6478 129272198981312 Not Found: /api/posts/
 WARNING 2026-02-10 13:17:17,461 log 6478 129272198981312 Not Found: /api/posts/
 INFO 2026-02-11 10:15:29,307 autoreload 11349 136866860003456 Watching for file changes with StatReloader
 WARNING 2026-02-11 10:15:44,332 log 11349 136866713040576 Not Found: /favicon.ico
-=======
 INFO 2026-02-09 22:54:23,607 autoreload 11908 19248 Watching for file changes with StatReloader
 INFO 2026-02-10 08:19:38,165 autoreload 16964 8104 Watching for file changes with StatReloader
 INFO 2026-02-10 08:48:20,688 autoreload 16964 8104 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\police_academy_backend\settings.py changed, reloading.
@@ -3476,7 +3474,6 @@ WARNING 2026-02-11 11:23:30,217 log 21712 14340 Not Found: /api/users/
 WARNING 2026-02-11 11:23:30,309 log 21712 4804 Not Found: /api/posts/
 WARNING 2026-02-11 11:23:30,356 log 21712 18384 Not Found: /api/pages/
 WARNING 2026-02-11 11:24:50,134 log 21712 18384 Not Found: /api/posts/
->>>>>>> 077a6e8e4264a85dd33fb54101f84aba62ae0124
 INFO 2026-02-12 09:08:45,620 autoreload 12752 8540 Watching for file changes with StatReloader
 WARNING 2026-02-12 10:52:35,272 log 12752 15996 Unauthorized: /api/public/home-feed/
 WARNING 2026-02-12 10:52:35,281 log 12752 14632 Unauthorized: /api/public/posts/
@@ -3553,3 +3550,25 @@ WARNING 2026-02-13 09:05:15,584 log 12005 135750947428032 Not Found: /api/posts/
 WARNING 2026-02-13 09:05:15,633 log 12005 135750939035328 Not Found: /api/posts/
 WARNING 2026-02-13 09:05:15,638 log 12005 135750955820736 Not Found: /api/pages/
 WARNING 2026-02-13 09:05:15,642 log 12005 135751180211904 Not Found: /api/users/
+WARNING 2026-02-13 12:10:54,602 log 7104 7440 Unauthorized: /api/public/gallery/
+WARNING 2026-02-13 12:10:54,528 log 7104 19296 Unauthorized: /api/public/home-feed/
+WARNING 2026-02-13 12:10:54,629 log 7104 21692 Unauthorized: /api/public/posts/
+WARNING 2026-02-13 12:10:56,057 log 7104 19296 Unauthorized: /api/public/home-feed/
+WARNING 2026-02-13 12:10:56,063 log 7104 7440 Unauthorized: /api/public/gallery/
+WARNING 2026-02-13 12:10:56,257 log 7104 21692 Unauthorized: /api/public/posts/
+WARNING 2026-02-14 23:20:52,397 log 7104 16524 Unauthorized: /api/public/gallery/
+WARNING 2026-02-14 23:20:52,401 log 7104 6904 Unauthorized: /api/public/home-feed/
+WARNING 2026-02-14 23:20:53,502 log 7104 1864 Unauthorized: /api/public/posts/
+WARNING 2026-02-14 23:20:54,469 log 7104 15740 Unauthorized: /api/public/gallery/
+WARNING 2026-02-14 23:20:54,640 log 7104 21172 Unauthorized: /api/public/posts/
+WARNING 2026-02-14 23:20:54,994 log 7104 6904 Unauthorized: /api/public/home-feed/
+WARNING 2026-02-14 23:20:55,578 log 7104 20936 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-14 23:20:55,626 log 7104 1864 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-14 23:20:55,846 log 7104 16524 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-14 23:20:56,252 log 7104 21172 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-14 23:20:56,581 log 7104 15740 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-14 23:20:57,018 log 7104 6904 Unauthorized: /api/auth/token/refresh/
+WARNING 2026-02-15 22:39:45,373 log 7104 4556 Not Found: /api/pages/history/
+WARNING 2026-02-15 22:39:46,189 log 7104 4556 Not Found: /api/pages/history/
+INFO 2026-02-16 08:41:13,249 autoreload 12616 19952 Watching for file changes with StatReloader
+
