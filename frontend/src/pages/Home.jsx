@@ -233,7 +233,7 @@ const facilities = [
     color: "#0ea5e9",
     description:
       "Comfortable and secure accommodation for all cadets.",
-       link: "/facilities/classes-accomodation",
+       link: "/facilities/Classes_Accomodations",
     images: [
       "/images/promotional.jpg",
       "/images/academic.jpg",
@@ -544,10 +544,7 @@ const sortedNews = [...posts.news]
               <Calendar size={14} />
               {new Date(featured.date_posted).toLocaleDateString()}
             </span>
-            <span className="meta-pill read-pill">
-              <Clock size={14} />
-              {calculateReadingTime(featured.content)}
-            </span>
+           
           </div>
 
           <p className="hero-summary">
@@ -750,6 +747,7 @@ const sortedNews = [...posts.news]
             <h4>{item.title}</h4>
             <p>{item.content}</p>
           </div>
+          
         </div>
       ))}
     </div>
