@@ -3,6 +3,12 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Autoplay, Navigation } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/navigation";
 
 import { 
   Send, 
@@ -57,6 +63,18 @@ const handleLearnMore = () => {
   navigate("/pages/About");
 };
 
+
+useEffect(() => {
+  const cards = document.querySelectorAll(".facility-card");
+
+  cards.forEach(card => {
+    card.addEventListener("mousemove", e => {
+      const rect = card.getBoundingClientRect();
+      card.style.setProperty("--x", `${e.clientX - rect.left}px`);
+      card.style.setProperty("--y", `${e.clientY - rect.top}px`);
+    });
+  });
+}, []);
 
   useEffect(() => {
   const fetchData = async () => {
@@ -217,6 +235,7 @@ const facilities = [
     description: "Multiple indoor and outdoor basketball courts for training and competitions.",
     progress: 75
   },
+  
   {
     category: "Library",
     name: "Modern Library",
@@ -372,15 +391,7 @@ const facilities = [
   {/* Commandant Message Section */}
   
   <section className="hero-commandant">
-  <video
-    className="hero-video"
-    src="/videos/campus-hero.mp4" 
-    autoPlay
-    muted
-    loop
-    playsInline >
-
-  </video>
+  
 
   {/* Overlay & Floating Shapes */}
   <div className="hero-overlay"></div>
@@ -568,7 +579,7 @@ const sortedNews = [...posts.news]
       {/* Featured Ribbon */}
       {news.is_featured && (
         <div className="featured-ribbon-corner">
-          ★ Featured
+          ★ Featured News
         </div>
       )}
 
@@ -823,8 +834,19 @@ const FacilitiesShowcase = ({ facilities }) => {
     activeCategory === "All"
       ? facilities
       : facilities.filter(
-          (facility) => facility.category === activeCategory
+          (f) => f.category === activeCategory
         );
+
+  const sliderSettings = {
+    dots: true,
+    arrows: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    speed: 700,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
 
   return (
     <section className="facilities-showcase">
@@ -832,7 +854,7 @@ const FacilitiesShowcase = ({ facilities }) => {
 
         {/* Tabs */}
         <div className="facilities-tabs">
-          {["All", "ICT Labs", "Sports Areas", "Library"].map((tab) => (
+          {["All", "ICT Labs", "Sports Areas", "Library"].map(tab => (
             <button
               key={tab}
               className={activeCategory === tab ? "active" : ""}
@@ -844,39 +866,91 @@ const FacilitiesShowcase = ({ facilities }) => {
         </div>
 
         {/* Cards */}
-        <div className="facilities-cards">
-          {filteredFacilities.map((facility, index) => (
-            <div className="facility-image-card" key={index}>
-              <div className="facility-image">
-                {facility.images.map((img, i) => (
-                  <img
-                    key={i}
-                    src={img}
-                    alt={facility.name}
-                    style={{ animationDelay: `${i * 4}s` }}
-                  />
-                ))}
-              </div>
+       <div className="facilities-slider">
 
-              <div className="facility-overlay">
-                <span className="facility-category">
-                  {facility.category}
-                </span>
-                <h3>{facility.name}</h3>
-                <p>{facility.description}</p>
-                <button className="facility-btn">Learn More</button>
-              </div>
+  {/* Navigation Buttons */}
+  <div className="facility-nav prev">‹</div>
+  <div className="facility-nav next">›</div>
+
+  <Swiper
+    modules={[EffectCoverflow, Autoplay, Navigation]}
+    effect="coverflow"
+    centeredSlides
+    slidesPerView={"auto"}
+    loop
+    grabCursor
+    navigation={{
+      nextEl: ".next",
+      prevEl: ".prev",
+    }}
+    autoplay={{
+      delay: 4500,
+      disableOnInteraction: false,
+    }}
+    coverflowEffect={{
+      rotate: 0,
+      stretch: 0,
+      depth: 220,
+      modifier: 2.2,
+      slideShadows: false,
+    }}
+  >
+    {filteredFacilities.map((facility, index) => (
+      <SwiperSlide key={index} className="facility-slide">
+
+        <div className="facility-card">
+
+          {/* Image Stack */}
+          <div className="facility-image">
+            {facility.images.map((img, i) => (
+              <img
+                key={i}
+                src={img}
+                alt={facility.name}
+                style={{ animationDelay: `${i * 4}s` }}
+              />
+            ))}
+          </div>
+
+          {/* Glass Overlay */}
+          <div className="facility-overlay">
+
+            <span className="facility-category">
+              {facility.category}
+            </span>
+
+            <h3>{facility.name}</h3>
+
+            <p>{facility.description}</p>
+
+            {/* Progress */}
+            <div className="facility-progress">
+              <div
+                className="facility-progress-bar"
+                style={{ width: `${facility.progress}%` }}
+              />
             </div>
-          ))}
+
+           <Link to="/facilities" className="facility-btn">
+  View More →
+</Link>
+
+          </div>
+
         </div>
+
+      </SwiperSlide>
+    ))}
+  </Swiper>
+</div>
+
+
 
       </div>
     </section>
-
-
   );
-  
 };
+
 
 
 
