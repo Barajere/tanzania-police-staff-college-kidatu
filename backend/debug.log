@@ -3589,3 +3589,27 @@ WARNING 2026-02-17 09:21:18,947 log 9690 135722545694400 Not Found: /api/pages/h
 WARNING 2026-02-17 09:21:18,985 log 9690 135722545694400 Not Found: /api/pages/history/
 WARNING 2026-02-17 09:21:50,459 log 9690 135722545694400 Not Found: /api/pages/history/
 WARNING 2026-02-17 09:21:50,493 log 9690 135722545694400 Not Found: /api/pages/history/
+WARNING 2026-02-17 11:28:29,502 log 9690 135722519467712 Not Found: /api/pages/history/
+WARNING 2026-02-17 11:28:29,584 log 9690 135722519467712 Not Found: /api/pages/history/
+WARNING 2026-02-17 11:28:35,240 log 9690 135722527860416 Not Found: /api/pages/organization/
+WARNING 2026-02-17 11:28:35,326 log 9690 135722527860416 Not Found: /api/pages/organization/
+WARNING 2026-02-17 11:28:59,627 log 9690 135722527860416 Not Found: /api/public/pages/by-page/
+WARNING 2026-02-17 11:28:59,711 log 9690 135722527860416 Not Found: /api/public/pages/by-page/
+WARNING 2026-02-17 11:31:07,921 log 9690 135722527860416 Not Found: /api/driving-features
+WARNING 2026-02-17 11:31:07,926 log 9690 135722005673664 Not Found: /api/driving-images
+WARNING 2026-02-17 11:31:07,980 log 9690 135722519467712 Not Found: /api/driving-features
+WARNING 2026-02-17 11:31:07,985 log 9690 135722545694400 Not Found: /api/driving-images
+INFO 2026-02-17 13:05:12,056 autoreload 9690 135722642108544 /home/tpf/dar-es-salaam-police-academy/backend/academy/models.py changed, reloading.
+INFO 2026-02-17 13:05:12,630 autoreload 109163 126654969700480 Watching for file changes with StatReloader
+INFO 2026-02-17 13:05:14,859 autoreload 109163 126654969700480 /home/tpf/dar-es-salaam-police-academy/backend/academy/models.py changed, reloading.
+INFO 2026-02-17 13:05:15,225 autoreload 109209 124218439540864 Watching for file changes with StatReloader
+INFO 2026-02-17 13:05:16,468 autoreload 109209 124218439540864 /home/tpf/dar-es-salaam-police-academy/backend/academy/models.py changed, reloading.
+INFO 2026-02-17 13:05:16,877 autoreload 109211 137339050078336 Watching for file changes with StatReloader
+INFO 2026-02-17 13:05:18,116 autoreload 109211 137339050078336 /home/tpf/dar-es-salaam-police-academy/backend/academy/models.py changed, reloading.
+INFO 2026-02-17 13:05:18,555 autoreload 109246 134023206359168 Watching for file changes with StatReloader
+INFO 2026-02-17 13:05:21,824 autoreload 109246 134023206359168 /home/tpf/dar-es-salaam-police-academy/backend/academy/models.py changed, reloading.
+INFO 2026-02-17 13:05:22,203 autoreload 109259 128698086072448 Watching for file changes with StatReloader
+INFO 2026-02-17 13:05:29,434 autoreload 109259 128698086072448 /home/tpf/dar-es-salaam-police-academy/backend/academy/models.py changed, reloading.
+INFO 2026-02-17 13:05:29,729 autoreload 109345 129420219150464 Watching for file changes with StatReloader
+INFO 2026-02-17 13:09:20,864 autoreload 109345 129420219150464 /home/tpf/dar-es-salaam-police-academy/backend/academy/models.py changed, reloading.
+INFO 2026-02-17 13:09:21,155 autoreload 110935 139964691570816 Watching for file changes with StatReloader
