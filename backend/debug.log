@@ -3511,3 +3511,4 @@ WARNING 2026-02-16 07:51:19,943 log 19764 18716 Unauthorized: /api/posts/
 WARNING 2026-02-16 07:51:19,945 log 19764 1184 Unauthorized: /api/users/
 INFO 2026-02-18 10:20:03,915 autoreload 15292 13456 Watching for file changes with StatReloader
 INFO 2026-02-18 10:21:44,338 autoreload 7096 14244 Watching for file changes with StatReloader
+WARNING 2026-02-18 10:21:54,818 log 7096 13692 Not Found: /favicon.ico
