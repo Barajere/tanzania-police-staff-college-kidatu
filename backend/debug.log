@@ -3638,3 +3638,5 @@ INFO 2026-02-18 10:53:43,712 autoreload 14592 7920 Watching for file changes wit
 INFO 2026-02-18 10:54:50,793 autoreload 14584 6180 Watching for file changes with StatReloader
 INFO 2026-02-18 10:56:08,545 autoreload 6880 7412 Watching for file changes with StatReloader
 INFO 2026-02-18 10:57:12,913 autoreload 11196 16356 Watching for file changes with StatReloader
+WARNING 2026-02-18 10:57:35,543 log 11196 14508 Unauthorized: /api/auth/token/
+INFO 2026-02-19 08:13:06,194 autoreload 9688 2604 Watching for file changes with StatReloader
