@@ -8002,11 +8002,7 @@ body,
     padding: 1.5rem;
   }
 }
-/* ============================================================
-   MOBILE NAVBAR PATCH — paste this at the BOTTOM of index.css
-   (it overrides the earlier mobile rules that hide top-bar
-   and main-header on small screens)
-   ============================================================ */
+
 
 /* ---- Hamburger bar: hidden on desktop ---- */
 .mobile-hamburger-bar {
@@ -8039,10 +8035,10 @@ body,
     display: none;
   }
 
-  /* 2. Keep main-header visible, stack it vertically */
+  /* 2. Keep main-header visible, stack it horizontaly */
   .main-header {
     display: flex !important;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 0.6rem;
     padding: 0.8rem 1rem;
@@ -8166,6 +8162,5 @@ body,
     font-size: 0.88rem;
   }
 
-  /* Desktop nav hidden by default on mobile (hamburger controls it) */
-  /* (the .main-nav rule above handles this already) */
+
 }

@@ -3830,3 +3830,6 @@ INFO 2026-02-19 10:39:46,884 autoreload 13064 10532 C:\xampp\htdocs\djangoProjec
 INFO 2026-02-19 10:39:58,811 autoreload 5960 5076 Watching for file changes with StatReloader
 >>>>>>> c79150d9092a0d65ca6632a0bf5b18c359ca1676
 INFO 2026-02-19 22:03:27,543 autoreload 17424 17896 Watching for file changes with StatReloader
+INFO 2026-02-22 08:01:30,685 autoreload 5976 2180 Watching for file changes with StatReloader
+INFO 2026-02-22 08:05:57,415 autoreload 5976 2180 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\police_academy_backend\settings.py changed, reloading.
+INFO 2026-02-22 08:06:37,611 autoreload 10904 10260 Watching for file changes with StatReloader
