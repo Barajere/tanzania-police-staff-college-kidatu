@@ -1,8 +1,9 @@
-# Python virtual environment
 venv/
-.env/
-staticfiles/
-policeenv/
 __pycache__/
 *.pyc
-./backend/staticfiles
+db.sqlite3
+.env
+.env.*
+*.log
+media/
+node_modules/

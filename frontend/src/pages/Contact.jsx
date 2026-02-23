@@ -50,7 +50,7 @@ export default function Contact() {
         <div className="overlay"></div>
         <div className="hero-content-contact">
           <h1>Contact Us</h1>
-          <p>Dar es Salaam Police Academy</p>
+          <p>Zanzibar Police College</p>
         </div>
       </section>
 
@@ -70,9 +70,9 @@ export default function Contact() {
       <h4>Address</h4>
       <p>
         {contactInfo?.address ||
-          "Dar es Salaam Police Academy, Kurasini, Dar es Salaam, Tanzania"}
+          "Zanzibar Police College, Ziwani-Unguja, Zanzibar"}
       </p>
-      <p><strong>P.O. Box:</strong> 2503, Dar es Salaam</p>
+      <p><strong>P.O. Box:</strong> 2503, Zanzibar</p>
     </div>
   </div>
 
@@ -90,7 +90,7 @@ export default function Contact() {
     <Mail />
     <div>
       <h4>Email</h4>
-      <p>{contactInfo?.email || "info@domain.com"}</p>
+      <p>{contactInfo?.email || "info@zpc.go.tz"}</p>
     </div>
   </div>
 
@@ -142,7 +142,7 @@ export default function Contact() {
           {/* MAP */}
           <div className="map-card">
             <iframe
-              title="Dar es Salaam Police Academy Location"
+              title="Zanzibar police college Location"
               src="https://www.google.com/maps?q=Dar%20es%20Salaam%20Police%20Academy&output=embed"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

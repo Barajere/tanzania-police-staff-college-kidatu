@@ -8,7 +8,7 @@ export default function Course() {
   return (
     <div className="course-page">
       <div className="course-container">
-        <h1 className="course-title">Course Offered at DPA
+        <h1 className="course-title">Course Offered at ZPC
            {slug === "academic" && "Academic Programmes"}
         {slug === "promotional" && "Promotional Programmes"}
         {slug === "proficiency" && "Proficiency Programmes"}
@@ -20,7 +20,7 @@ export default function Course() {
             <div className="course-image-wrapper">
               <img 
                 src={modernDormitoriesImage} 
-                alt="DPA Modern Dormitories" 
+                alt="ZPC Modern Dormitories" 
                 className="course-image"
               />
             </div>
@@ -35,11 +35,11 @@ export default function Course() {
               <div className="course-section-content">
                 <h2 className="course-section-title">Academic Programmes</h2>
                 <ul className="course-list">
-                  <li>Bachelor degree in police science</li>
+                  <li>Technician Certificate in Police Science (NTA Level 5) </li>
                   <li>Ordinary Diploma in criminal Investigation</li>
-                  <li>Ordinary Diploma in medical laboratory science</li>
+                 
                   <li>Ordinary Diploma in police science</li>
-                  <li>Basic Technician certificate in medical laboratory science</li>
+                 
                   <li>Basic Technician certificate in Criminal Investigation</li>
                   <li>Basic technician certificate in police communication</li>
                   <li>Basic Technician certificate in law</li>
@@ -61,7 +61,7 @@ export default function Course() {
                   <li>Instructors Training Programme</li>
                   <li>Driving Training Programme</li>
                   <li>Raiders' Training Programme</li>
-                  <li>Statistics Training Programme</li>
+                 
                   <li>Proficiency Training Programme</li>
                 </ul>
               </div>

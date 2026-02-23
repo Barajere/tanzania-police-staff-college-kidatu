@@ -16,7 +16,7 @@ export default function Footer() {
                 alt="Dar es Salaam Police Academy Logo"
                 className="tptc-footer-logo-img"
               />
-              <h2 className="tptc-footer-title">Dar es Salaam Police Academy</h2>
+              <h2 className="tptc-footer-title">Zanzibar Police College</h2>
             </div>
             <p className="tptc-footer-description">
               Dedicated to excellence in law enforcement education and training, 
@@ -44,12 +44,12 @@ export default function Footer() {
           <div className="tptc-footer-section">
             <h3 className="tptc-footer-heading">Contact Information</h3>
             <ul className="tptc-contact-list">
-              <li><i className="fas fa-map-marker-alt"></i> Dar es Salaam Police Academy,</li>
+              <li><i className="fas fa-map-marker-alt"></i> Zanzibar police College,</li>
               <li className="tptc-contact-indent">P.O. Box 2503,</li>
-              <li className="tptc-contact-indent">Kurasini,</li>
-              <li className="tptc-contact-indent">Dar es Salaam, Tanzania.</li>
+              <li className="tptc-contact-indent">Ziwani Area,</li>
+              <li className="tptc-contact-indent"> Unguja Island, Zanzibar.</li>
               <li><i className="fas fa-phone-alt"></i>  (+255) 0222850067</li>
-              <li><i className="fas fa-envelope"></i> Email: <a href="Email: info@domain.com" className="tptc-email-link">info@dpacademy.go.tz</a></li>
+              <li><i className="fas fa-envelope"></i> Email: <a href="Email: info@domain.com" className="tptc-email-link">info@zpc.go.tz</a></li>
             </ul>
           </div>
 
@@ -115,7 +115,7 @@ export default function Footer() {
 
         <div className="tptc-footer-bottom">
           <p className="tptc-copyright">
-            &copy; {new Date().getFullYear()} Dar es Salaam Police Academy. All rights reserved.
+            &copy; {new Date().getFullYear()} Zanzibar police college. All rights reserved.
           </p>
         </div>
       </div>

@@ -44,7 +44,7 @@ export default function Department() {
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <h1 className="hero-title">Academic Wing</h1>
-          <p className="hero-subtitle">Dar Es Salaam Police Academy</p>
+          <p className="hero-subtitle">Zanzibar police college</p>
         </div>
       </div>
 
@@ -60,7 +60,7 @@ export default function Department() {
             />
             <div className="image-caption">
               <span className="caption-icon">📚</span>
-              <span className="caption-text">DPA Main Library</span>
+              <span className="caption-text">ZPC Main Library</span>
             </div>
           </div>
         </div>

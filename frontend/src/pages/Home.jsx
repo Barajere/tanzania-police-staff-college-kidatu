@@ -113,9 +113,9 @@ export default function Home() {
       description:
         "Advanced educational programs offering undergraduate degrees and specialized certifications.",
       images: [
-        "/images/academic.jpg",
-        "/images/promotional.jpg",
-        "/images/academic.jpg",
+        "/images/academic1.jpg",
+        "/images/slider4.jpg",
+        "/images/academic2.jpg",
       ],
       color: "#065f46",
     },
@@ -126,8 +126,8 @@ export default function Home() {
         "Leadership and skill enhancement training designed to prepare officers for higher ranks.",
       images: [
         "/images/promotional.jpg",
-        "/images/academic.jpg",
-        "/images/promotional.jpg",
+        "/images/promotional1.jpg",
+        "/images/promotional2.jpg",
       ],
       color: "#5b21b6",
     },
@@ -137,9 +137,9 @@ export default function Home() {
       description:
         "Specialized training programs focusing on technical skills and tactical operations.",
       images: [
-        "/images/promotional.jpg",
-        "/images/campus4.jpg",
-        "/images/campus2.jpg",
+        "/images/profiency.jpg",
+        "/images/profiency1.jpg",
+        "/images/profiency2.jpg",
       ],
       color: "#9a3412",
     },
@@ -154,9 +154,9 @@ export default function Home() {
         "Smart learning environments equipped with modern teaching technology.",
       link: "/facilities/library",
       images: [
-        "/images/campus4.jpg",
-        "/images/campus2.jpg",
-        "/images/campus3.jpg",
+        "/images/academic1.jpg",
+        "/images/academic.jpg",
+        "/images/academic2.jpg",
       ],
     },
     {
@@ -167,9 +167,9 @@ export default function Home() {
         "Professional outdoor training environments for practical exercises.",
       link: "/facilities/range",
       images: [
-        "/images/promotional.jpg",
-        "/images/academic.jpg",
-        "/images/campus2.jpg",
+        "/images/parade.jpg",
+        "/images/parade1.jpg",
+        "/images/parade2.jpg",
       ],
     },
     {
@@ -179,26 +179,26 @@ export default function Home() {
       description: "Comfortable and secure accommodation for all cadets.",
       link: "/facilities/classes-accommodation",
       images: [
-        "/images/promotional.jpg",
-        "/images/academic.jpg",
-        "/images/campus3.jpg",
+        "/images/hostel.jpg",
+        "/images/slider1.jpg",
+        "/images/hostel1.jpg",
       ],
     },
   ];
 
   const slides = [
     {
-      image: "/images/campus2.jpg",
+      image: "/images/slider2.jpg",
       title: "Welcome to the Center of Excellence",
       subtitle: "Where Discipline Meets Leadership",
     },
     {
-      image: "/images/campus3.jpg",
+      image: "/images/slider4.jpg",
       title: "Shape the Future of Law Enforcement",
       subtitle: "Join Tanzania Police Academy",
     },
     {
-      image: "/images/campus4.jpg",
+      image: "/images/slider3.jpg",
       title: "Excellence in Training, Integrity in Service",
       subtitle: "Building Professional Officers",
     },
@@ -264,7 +264,7 @@ export default function Home() {
               <div className="slide-overlay">
                 <div className="slide-content">
                   <span className="slide-tag">
-                    Dar es salaam Police Academy
+                    Zanzibar Police College
                   </span>
                   <h2>{slide.title}</h2>
                   <p>{slide.subtitle}</p>
@@ -303,8 +303,8 @@ export default function Home() {
             {/* Commandant Image */}
             <div className="hero-image" data-aos="fade-right">
               <img
-                src="/images/mambosasa.jpg"
-                alt="Dr. Lazaro B. Mambosasa-DCP - Commandant"
+                src="/images/CO-ZPC.jpg"
+                alt="Augustino Senga-ACP - Commandant"
               />
               <div className="commandant-badge">
                 <Award size={24} />
@@ -321,15 +321,15 @@ export default function Home() {
               </h1>
 
               <blockquote>
-                “At Dar es Salaam Police Academy, we shape officers of integrity
+                “At Zanzibar police college, we shape officers of integrity
                 and excellence. Our commitment extends beyond academic
                 excellence to character building, ensuring our graduates serve
                 with honor, courage, and unwavering dedication to justice.”
               </blockquote>
 
               <div className="commandant-info">
-                <h3>Dr. Lazaro B. Mambosasa, DCP</h3>
-                <p>Deputy Commissioner of Police · Commandant</p>
+                <h3>Augustino Senga, ACP</h3>
+                <p>Assistant Commissioner of Police · Commandant</p>
               </div>
             </div>
           </div>

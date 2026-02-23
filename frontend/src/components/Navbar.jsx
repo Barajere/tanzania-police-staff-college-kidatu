@@ -85,7 +85,7 @@ export default function Navbar() {
         <div className="contact-info">
           <span>
             <Mail size={14} className="contact-icon" />
-            barua@dpacademy.go.tz
+            info@zpc.go.tz
           </span>
           <span>
             <PhoneCall size={14} className="contact-icon" />
@@ -114,8 +114,8 @@ export default function Navbar() {
         />
         <div className="school-name">
           <h1>THE UNITED REPUBLIC OF TANZANIA</h1>
-          <h2>DAR ES SALAAM POLICE ACADEMY</h2>
-          <p>"The Center of Excellence"</p>
+          <h2>ZANZIBAR POLICE COLLEGE</h2>
+          <p>"Training Creativity for Ethical Policing"</p>
         </div>
         <img
           src="/images/police-academy-logo.png"

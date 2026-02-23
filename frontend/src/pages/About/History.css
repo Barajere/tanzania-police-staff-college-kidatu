@@ -13,14 +13,15 @@
   }
   
   .history-card {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 40px;
-    background: #ffffff;
-    padding: 35px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  }
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 40px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+  align-items: start;
+}
   
   .history-image img {
     width: 100%;
@@ -58,3 +59,157 @@
     }
   }
   
+  .history-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Vision, Mission, Objectives Container */
+.history-tags {
+  display: flex;
+  gap: 30px;
+  
+}
+
+/* Individual Tag Cards */
+.tag-card {
+  padding: 20px 22px;
+  border-radius: 10px;
+  background: #f8f9fc;
+  border-left: 5px solid #002855;
+  transition: 0.3s ease;
+}
+
+.tag-card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #002855;
+}
+
+.tag-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.tag-card ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.tag-card li {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+/* Color Variations */
+.tag-card.vision {
+  border-left-color: #0a8754;
+}
+
+.tag-card.mission {
+  border-left-color: #0056b3;
+}
+
+.tag-card.objectives {
+  border-left-color: #ff8c00;
+}
+
+/* Hover effect */
+.tag-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+/* ===== Tabs Container ===== */
+
+.history-tabs {
+  margin-top: 20px;
+}
+
+/* Centered Buttons */
+.tab-buttons.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  border-bottom: 2px solid #e5e5e5;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+/* Button Style */
+.tab-buttons button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  color: #666;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+/* Icon */
+.tab-icon {
+  font-size: 16px;
+}
+
+/* Hover */
+.tab-buttons button:hover {
+  color: #002855;
+}
+
+/* Active */
+.tab-buttons button.active {
+  color: #002855;
+}
+
+.tab-buttons button.active::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #002855;
+  border-radius: 2px;
+}
+
+/* Content Box */
+.tab-content {
+  background: #f9f9fc;
+  padding: 30px;
+  border-radius: 12px;
+  animation: fadeIn 0.3s ease-in-out;
+  max-width: 800px;
+  margin: 0 auto; /* center content */
+}
+
+.tab-content h3 {
+  margin-bottom: 15px;
+  color: #002855;
+}
+
+.tab-content p {
+  line-height: 1.7;
+}
+
+.tab-content ul {
+  padding-left: 20px;
+}
+
+.tab-content li {
+  margin-bottom: 8px;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}

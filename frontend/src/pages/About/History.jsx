@@ -1,11 +1,13 @@
 import './History.css';
 import { useEffect, useState } from 'react';
 import api from '../../utils/api';
+import { FaEye, FaBullseye, FaListUl } from "react-icons/fa";
 
 export default function History() {
   const [content, setContent] = useState(null);
   const [loading, setLoading] = useState(true);
-
+  const [activeTab, setActiveTab] = useState("vision");
+  
   useEffect(() => {
     api.get('pages/history/')
       .then(res => {
@@ -23,40 +25,109 @@ export default function History() {
   if (!content) {
     return (
       <section className="history-section">
-        <h1 className="history-title">Our History</h1>
+  <h1 className="history-title">Our History</h1>
 
-        <div className="history-card">
-          <div className="history-image">
-            <img src="/images/mambosasa.jpg" alt="Dar es Salaam Police Academy" />
-          </div>
+  <div className="history-card">
 
-          <div className="history-text">
-            <p>
-              Dar es Salaam Police Academy formerly known as Police College
-              Dar es Salaam was established in 1961. It is situated at Kurasini
-              along the Kilwa Road in Dar es Salaam about five kilometers from
-              the city Centre, it covers an area of about 10 acres.
-            </p>
+    <div className="history-image">
+      <img src="/images/hostel.jpg" alt="Zanzibar Police College" />
+    </div>
 
-            <p>
-              Dar es Salaam Policy Academy is an educational institution dedicated
-              to providing high-quality training in policy studies, governance,
-              and leadership.
-            </p>
+    <div className="history-content">
 
-            <p>
-              Dar es Salaam Policy Academy was established to equip students with
-              the knowledge and skills needed to contribute effectively to national
-              and international development.
-            </p>
+      <div className="history-text">
+        <p>
+          Zanzibar Police College (ZPC) is located at Ziwani area - Unguja Island in Zanzibar.
+          It was established during the British colonial domination in 1956. The Institution
+          was known as Zanzibar Police Training School (ZPTS) and its main purpose was to train
+          Police Officers in order to serve the colonial regime.
+        </p>
 
-            <p>
-              The academy focuses on academic excellence, research, and practical
-              learning to prepare future leaders and professionals.
-            </p>
-          </div>
-        </div>
-      </section>
+        <p>
+          In 1963 the British handed over administration to the Sultanate of Zanzibar.
+          After the 1964 Revolution, the college evolved to meet post-independence
+          standards and changing crime trends.
+        </p>
+
+        <p>
+          ZPC obtained Registration number REG/PWF/035 from NACTE on 29th October 2009
+          and started offering NTA Level 5 in Police Science in 2010/2011.
+        </p>
+      </div>
+
+      {/* Vision, Mission & Objectives */}
+      <div className="history-tabs">
+
+  {/* Centered Tab Buttons */}
+  <div className="tab-buttons centered">
+
+    <button
+      className={activeTab === "vision" ? "active" : ""}
+      onClick={() => setActiveTab("vision")}
+    >
+      <FaEye className="tab-icon" />
+      Vision
+    </button>
+
+    <button
+      className={activeTab === "mission" ? "active" : ""}
+      onClick={() => setActiveTab("mission")}
+    >
+      <FaBullseye className="tab-icon" />
+      Mission
+    </button>
+
+    <button
+      className={activeTab === "objectives" ? "active" : ""}
+      onClick={() => setActiveTab("objectives")}
+    >
+      <FaListUl className="tab-icon" />
+      Objectives
+    </button>
+
+  </div>
+
+  <div className="tab-content">
+    {activeTab === "vision" && (
+      <div>
+        <h3>Our Vision</h3>
+        <p>
+          To become an outstanding training Institution for Law Enforcement Officers
+          in various skills that enable an officer to deal with crime threats at
+          national, regional and international levels.
+        </p>
+      </div>
+    )}
+
+    {activeTab === "mission" && (
+      <div>
+        <h3>Our Mission</h3>
+        <p>
+          To offer training courses on police professionalism, techniques and skills
+          in crime detection, prevention, crime solving, apprehension of offenders,
+          and maintenance of peace and security in the United Republic of Tanzania
+          and beyond.
+        </p>
+      </div>
+    )}
+
+    {activeTab === "objectives" && (
+      <div>
+        <h3>Our Objectives</h3>
+        <ul>
+          <li>Develop law enforcement competencies</li>
+          <li>Ensure maintenance of law and order</li>
+          <li>Develop skills in policing operations</li>
+          <li>Improve college facilities for training excellence</li>
+        </ul>
+      </div>
+    )}
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
     );
   }
 
