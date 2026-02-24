@@ -3491,7 +3491,6 @@ WARNING 2026-02-12 12:09:27,915 log 12752 9992 Unauthorized: /api/auth/token/
 WARNING 2026-02-12 12:09:51,782 log 12752 9992 Unauthorized: /api/auth/token/
 WARNING 2026-02-12 12:10:11,674 log 12752 9992 Unauthorized: /api/auth/token/
 INFO 2026-02-13 05:13:26,680 autoreload 7104 17484 Watching for file changes with StatReloader
-<<<<<<< HEAD
 INFO 2026-02-13 13:45:45,000 autoreload 16220 14796 Watching for file changes with StatReloader
 INFO 2026-02-13 13:55:26,096 autoreload 16220 14796 C:\Users\USER\Documents\dpa_college_website\backend\police_academy_backend\settings.py changed, reloading.
 INFO 2026-02-13 14:03:32,132 autoreload 10108 8972 Watching for file changes with StatReloader
@@ -3510,7 +3509,6 @@ WARNING 2026-02-16 07:51:19,945 log 19764 1184 Unauthorized: /api/users/
 INFO 2026-02-18 10:20:03,915 autoreload 15292 13456 Watching for file changes with StatReloader
 INFO 2026-02-18 10:21:44,338 autoreload 7096 14244 Watching for file changes with StatReloader
 WARNING 2026-02-18 10:21:54,818 log 7096 13692 Not Found: /favicon.ico
-=======
 INFO 2026-02-11 12:43:31,951 autoreload 22227 135458475741312 Watching for file changes with StatReloader
 INFO 2026-02-11 12:46:01,762 autoreload 22453 125718808469632 Watching for file changes with StatReloader
 INFO 2026-02-11 12:46:34,876 autoreload 22453 125718808469632 /home/tpf/dar-es-salaam-police-academy/backend/police_academy_backend/__init__.py changed, reloading.
@@ -3633,15 +3631,12 @@ INFO 2026-02-17 13:05:29,434 autoreload 109259 128698086072448 /home/tpf/dar-es-
 INFO 2026-02-17 13:05:29,729 autoreload 109345 129420219150464 Watching for file changes with StatReloader
 INFO 2026-02-17 13:09:20,864 autoreload 109345 129420219150464 /home/tpf/dar-es-salaam-police-academy/backend/academy/models.py changed, reloading.
 INFO 2026-02-17 13:09:21,155 autoreload 110935 139964691570816 Watching for file changes with StatReloader
-<<<<<<< HEAD
->>>>>>> 3aa02f6f02639b882f2621ce70d3af0e0d695e06
 INFO 2026-02-18 10:53:43,712 autoreload 14592 7920 Watching for file changes with StatReloader
 INFO 2026-02-18 10:54:50,793 autoreload 14584 6180 Watching for file changes with StatReloader
 INFO 2026-02-18 10:56:08,545 autoreload 6880 7412 Watching for file changes with StatReloader
 INFO 2026-02-18 10:57:12,913 autoreload 11196 16356 Watching for file changes with StatReloader
 WARNING 2026-02-18 10:57:35,543 log 11196 14508 Unauthorized: /api/auth/token/
 INFO 2026-02-19 08:13:06,194 autoreload 9688 2604 Watching for file changes with StatReloader
-=======
 INFO 2026-02-18 08:10:45,399 autoreload 8424 12304 Watching for file changes with StatReloader
 INFO 2026-02-18 08:13:39,606 autoreload 12068 9760 Watching for file changes with StatReloader
 INFO 2026-02-18 08:23:52,507 autoreload 12068 9760 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\police_academy_backend\__init__.py changed, reloading.
@@ -3804,8 +3799,6 @@ Traceback (most recent call last):
     ...<2 lines>...
     )
 django.db.utils.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10054] An existing connection was forcibly closed by the remote host)')
-<<<<<<< HEAD
->>>>>>> 295affe697e2842634d865f580624fc94e786df4
 INFO 2026-02-19 08:26:00,198 autoreload 10584 18324 Watching for file changes with StatReloader
 INFO 2026-02-19 08:26:39,343 autoreload 10584 18324 C:\Users\USER\Documents\dpa_college_website\backend\police_academy_backend\settings.py changed, reloading.
 INFO 2026-02-19 08:26:41,718 autoreload 13172 2388 Watching for file changes with StatReloader
@@ -3819,7 +3812,6 @@ WARNING 2026-02-19 15:18:40,378 log 13172 13624 Not Found: /api/pages/history/
 WARNING 2026-02-19 15:18:40,445 log 13172 18372 Not Found: /api/pages/history/
 WARNING 2026-02-19 15:55:32,282 log 13172 18740 Not Found: /api/pages/history/
 WARNING 2026-02-19 15:55:32,295 log 13172 7872 Not Found: /api/pages/history/
-=======
 WARNING 2026-02-18 20:13:53,309 log 11172 7156 Not Found: /posts/2/
 WARNING 2026-02-18 20:13:55,674 log 11172 7156 Not Found: /favicon.ico
 INFO 2026-02-19 09:59:27,760 autoreload 13012 3556 Watching for file changes with StatReloader
@@ -3828,7 +3820,6 @@ INFO 2026-02-19 10:19:59,566 autoreload 7724 2408 Watching for file changes with
 INFO 2026-02-19 10:29:30,820 autoreload 13064 10532 Watching for file changes with StatReloader
 INFO 2026-02-19 10:39:46,884 autoreload 13064 10532 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\police_academy_backend\settings.py changed, reloading.
 INFO 2026-02-19 10:39:58,811 autoreload 5960 5076 Watching for file changes with StatReloader
->>>>>>> c79150d9092a0d65ca6632a0bf5b18c359ca1676
 INFO 2026-02-19 22:03:27,543 autoreload 17424 17896 Watching for file changes with StatReloader
 INFO 2026-02-22 08:01:30,685 autoreload 5976 2180 Watching for file changes with StatReloader
 INFO 2026-02-22 08:05:57,415 autoreload 5976 2180 C:\xampp\htdocs\djangoProjects\dar-es-salaam-police-academy\backend\police_academy_backend\settings.py changed, reloading.
@@ -4013,3 +4004,48 @@ WARNING 2026-02-24 12:53:01,895 log 3828 18080 Not Found: /api/pages/organizatio
 WARNING 2026-02-24 12:53:01,909 log 3828 892 Not Found: /api/pages/organization/
 WARNING 2026-02-24 12:53:08,873 log 3828 892 Not Found: /api/public/pages/by-page/
 WARNING 2026-02-24 12:53:08,881 log 3828 18080 Not Found: /api/public/pages/by-page/
+INFO 2026-02-24 08:21:10,952 autoreload 11196 6320 Watching for file changes with StatReloader
+WARNING 2026-02-24 08:26:20,124 log 11196 5916 Not Found: /api/pages/history/
+WARNING 2026-02-24 08:26:20,266 log 11196 5916 Not Found: /api/pages/history/
+WARNING 2026-02-24 08:26:27,365 log 11196 13116 Not Found: /api/pages/organization/
+WARNING 2026-02-24 08:26:27,398 log 11196 13116 Not Found: /api/pages/organization/
+WARNING 2026-02-24 08:26:36,481 log 11196 13116 Not Found: /api/public/pages/by-page/
+WARNING 2026-02-24 08:26:36,518 log 11196 13116 Not Found: /api/public/pages/by-page/
+WARNING 2026-02-24 09:12:04,533 log 11196 10268 Not Found: /api/public/pages/by-page/
+WARNING 2026-02-24 09:12:04,756 log 11196 10268 Not Found: /api/public/pages/by-page/
+WARNING 2026-02-24 09:14:56,875 log 11196 10268 Not Found: /api/pages/history/
+WARNING 2026-02-24 09:14:56,899 log 11196 10268 Not Found: /api/pages/history/
+WARNING 2026-02-24 09:15:06,685 log 11196 10268 Not Found: /api/public/pages/by-page/
+WARNING 2026-02-24 09:15:06,736 log 11196 10268 Not Found: /api/public/pages/by-page/
+WARNING 2026-02-24 09:15:10,680 log 11196 10268 Not Found: /api/pages/organization/
+WARNING 2026-02-24 09:15:10,764 log 11196 10268 Not Found: /api/pages/organization/
+WARNING 2026-02-24 09:15:45,298 log 11196 10268 Not Found: /api/public/pages/by-page/
+WARNING 2026-02-24 09:15:45,354 log 11196 10268 Not Found: /api/public/pages/by-page/
+WARNING 2026-02-24 09:25:51,525 log 11196 7152 Not Found: /api/public/pages/by-page/
+WARNING 2026-02-24 09:25:51,640 log 11196 7152 Not Found: /api/public/pages/by-page/
+WARNING 2026-02-24 09:33:49,708 log 11196 13068 Not Found: /api/pages/history/
+WARNING 2026-02-24 09:33:49,757 log 11196 13068 Not Found: /api/pages/history/
+WARNING 2026-02-24 09:33:52,815 log 11196 13068 Not Found: /api/pages/organization/
+WARNING 2026-02-24 09:33:52,998 log 11196 13068 Not Found: /api/pages/organization/
+WARNING 2026-02-24 09:35:09,127 log 11196 13068 Not Found: /api/public/pages/by-page/
+WARNING 2026-02-24 09:35:09,301 log 11196 13068 Not Found: /api/public/pages/by-page/
+WARNING 2026-02-24 09:42:36,609 log 11196 7628 Not Found: /api/pages/organization/
+WARNING 2026-02-24 09:42:36,733 log 11196 7628 Not Found: /api/pages/organization/
+WARNING 2026-02-24 10:02:52,831 log 11196 12168 Not Found: /api/driving-images
+WARNING 2026-02-24 10:02:52,852 log 11196 8704 Not Found: /api/driving-features
+WARNING 2026-02-24 10:02:53,013 log 11196 12168 Not Found: /api/driving-images
+WARNING 2026-02-24 10:02:53,036 log 11196 8704 Not Found: /api/driving-features
+WARNING 2026-02-24 10:05:54,661 log 11196 8704 Not Found: /api/driving-features
+WARNING 2026-02-24 10:05:54,684 log 11196 12168 Not Found: /api/driving-images
+WARNING 2026-02-24 10:05:54,882 log 11196 8704 Not Found: /api/driving-features
+WARNING 2026-02-24 10:05:54,981 log 11196 12168 Not Found: /api/driving-images
+WARNING 2026-02-24 10:06:24,155 log 11196 12168 Not Found: /api/driving-features
+WARNING 2026-02-24 10:06:24,157 log 11196 8704 Not Found: /api/driving-images
+WARNING 2026-02-24 10:06:24,704 log 11196 12168 Not Found: /api/driving-features
+WARNING 2026-02-24 10:06:24,797 log 11196 8704 Not Found: /api/driving-images
+WARNING 2026-02-24 10:07:59,930 log 11196 12168 Not Found: /api/driving-images
+WARNING 2026-02-24 10:07:59,937 log 11196 8704 Not Found: /api/driving-features
+WARNING 2026-02-24 10:08:00,356 log 11196 12168 Not Found: /api/driving-images
+WARNING 2026-02-24 10:08:00,466 log 11196 8704 Not Found: /api/driving-features
+INFO 2026-02-24 10:14:46,833 autoreload 11444 4580 Watching for file changes with StatReloader
+
