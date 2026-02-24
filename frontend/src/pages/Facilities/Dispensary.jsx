@@ -136,12 +136,12 @@ export default function Dispensary() {
                 <div className="image-main">
                   <img
                     src={"/images/dispensary.png"}
-                    alt="DPA Dispensary"
+                    alt="ZPC Dispensary"
                   />
                 </div>
 
                 <div className="image-overlay">
-                  <h6>DPA DISPENSARY</h6>
+                  <h6>ZPC DISPENSARY</h6>
                   <p>
                     A charitable public facility providing medical supplies,
                     treatment, and professional care.
@@ -155,7 +155,7 @@ export default function Dispensary() {
               <h1 className="dispensary-title">DISPENSARY</h1>
 
               <p className="dispensary-text">
-                The DPA Dispensary is a fully equipped medical facility at the Dar es Salaam Police Academy, dedicated to providing high-quality healthcare services for students, staff, and the academy community. It ensures timely access to medications, essential medical supplies, and professional healthcare support in a secure and organized environment.
+                The ZPC Dispensary is a fully equipped medical facility at the Dar es Salaam Police Academy, dedicated to providing high-quality healthcare services for students, staff, and the academy community. It ensures timely access to medications, essential medical supplies, and professional healthcare support in a secure and organized environment.
               </p>
 
               <p className="dispensary-text">

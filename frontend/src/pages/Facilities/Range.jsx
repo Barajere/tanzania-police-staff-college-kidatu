@@ -193,7 +193,7 @@ export default function Range() {
                 >
                   <SwiperSlide>
                     <div className="image-main">
-                      <img src="/images/range1.jpg" alt="Field training" />
+                      <img src="/images/range.jpg" alt="Field training" />
                       <div className="image-caption">
                         Fieldcraft training focusing on observation, concealment, and movement.
                       </div>
@@ -202,7 +202,7 @@ export default function Range() {
 
                   <SwiperSlide>
                     <div className="image-main">
-                      <img src="/images/range2.jpg" alt="Weapon training" />
+                      <img src="/images/profiency1.jpg" alt="Weapon training" />
                       <div className="image-caption">
                         Weapon handling and tactical exercises in controlled environments.
                       </div>
@@ -217,7 +217,7 @@ export default function Range() {
               <h1 className="range-title"> RANGE</h1>
 
               <p className="range-text">
-                The DPA Range provides structured training in field operations, military observation,
+                The ZPC Range provides structured training in field operations, military observation,
                 and tactical movement. Trainees engage in realistic outdoor scenarios designed to
                 develop discipline, awareness, and operational readiness.
               </p>
