@@ -25,7 +25,7 @@ export default function Course() {
                 className="course-image"
               />
             </div>
-            <p className="course-image-caption">"Our Modern Dormitories."</p>
+            <p className="course-image-caption">"Our Modern Classes."</p>
           </div>
 
           {/* Right Column - All Text Content */}

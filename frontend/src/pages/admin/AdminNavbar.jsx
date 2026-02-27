@@ -30,7 +30,7 @@ export default function AdminNavbar() {
 
   return (
     <nav style={{
-      backgroundColor: '#4338ca',
+      backgroundColor: 'green',
       padding: '12px 24px',
       display: 'flex',
       alignItems: 'center',
@@ -39,7 +39,7 @@ export default function AdminNavbar() {
       boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
     }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
-        <div style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>DPA Admin</div>
+        <div style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>TPSC Admin</div>
         <div style={{ display: 'flex', gap: '8px' }}>
           {adminNavItems.map(item => {
             const IconComponent = item.icon;

@@ -262,7 +262,7 @@ const AdminNavbar = () => {
     <nav className="admin-navbar">
       <div className="admin-nav-container">
         <div className="admin-nav-brand">
-          <h1>DPA Admin</h1>
+          <h1>TPSC Admin</h1>
         </div>
         
         <div className="admin-nav-menu">

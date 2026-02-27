@@ -1324,7 +1324,7 @@ body,
 }
 
 .admin-navbar {
-  background: #1c236d;
+  background: green;
   color: white;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -1459,7 +1459,7 @@ body,
 }
 
 .admin-navbar {
-  background: #1c236d;
+  background: green;
   color: white;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -3125,7 +3125,7 @@ body,
 
 /* Admin Navbar */
 .admin-navbar {
-  background: #1c236d;
+  background:green;
   color: white;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -5748,7 +5748,7 @@ body,
 }
 
 .admin-navbar {
-  background: #1c236d;
+  background: green;
   color: white;
   padding: 0 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
