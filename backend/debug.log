@@ -4073,6 +4073,7 @@ WARNING 2026-02-25 08:28:51,317 log 2540 10004 Not Found: /api/pages/history/
 WARNING 2026-02-25 08:28:51,333 log 2540 16580 Not Found: /api/pages/history/
 WARNING 2026-02-25 08:33:04,370 log 2540 16580 Not Found: /api/pages/history/
 WARNING 2026-02-25 08:33:04,402 log 2540 10004 Not Found: /api/pages/history/
+<<<<<<< HEAD
 INFO 2026-02-27 07:48:22,503 autoreload 2536 13604 Watching for file changes with StatReloader
 INFO 2026-02-27 07:48:58,365 autoreload 8736 11520 Watching for file changes with StatReloader
 INFO 2026-02-27 07:50:44,262 autoreload 7488 11132 Watching for file changes with StatReloader
@@ -4080,3 +4081,7 @@ INFO 2026-02-27 07:52:12,152 autoreload 7488 11132 C:\Users\USER\Documents\tanza
 INFO 2026-02-27 07:52:15,298 autoreload 11488 5660 Watching for file changes with StatReloader
 INFO 2026-02-27 07:52:19,416 autoreload 11488 5660 C:\Users\USER\Documents\tanzania-police-staff-college-kidatu\backend\police_academy_backend\settings.py changed, reloading.
 INFO 2026-02-27 07:52:21,622 autoreload 5736 17308 Watching for file changes with StatReloader
+=======
+INFO 2026-02-26 12:40:15,026 autoreload 127398 130615020028032 Watching for file changes with StatReloader
+INFO 2026-02-26 14:27:47,610 autoreload 138471 139412309508224 Watching for file changes with StatReloader
+>>>>>>> 6c73a8cf3fdf8e5893db744683fdb76839dd31c0
