@@ -4086,3 +4086,13 @@ INFO 2026-02-27 08:21:39,904 autoreload 16504 1956 Watching for file changes wit
 INFO 2026-02-27 08:22:03,328 autoreload 10932 6276 Watching for file changes with StatReloader
 INFO 2026-02-27 08:24:15,989 autoreload 155988 137230126694528 Watching for file changes with StatReloader
 INFO 2026-02-27 08:31:47,309 autoreload 157454 135223328481408 Watching for file changes with StatReloaderINFO 2026-02-27 11:19:32,551 autoreload 178610 134568699162752 Watching for file changes with StatReloader
+INFO 2026-02-27 13:01:24,743 autoreload 13828 19764 Watching for file changes with StatReloader
+INFO 2026-02-27 13:02:23,122 autoreload 13828 19764 C:\Users\USER\Documents\tanzania-police-staff-college-kidatu\backend\police_academy_backend\settings.py changed, reloading.
+INFO 2026-02-27 13:02:25,030 autoreload 18208 19152 Watching for file changes with StatReloader
+INFO 2026-02-27 13:02:33,374 autoreload 19092 7924 Watching for file changes with StatReloader
+INFO 2026-02-27 13:03:14,405 autoreload 19092 7924 C:\Users\USER\Documents\tanzania-police-staff-college-kidatu\backend\police_academy_backend\settings.py changed, reloading.
+INFO 2026-02-27 13:03:16,746 autoreload 3732 16972 Watching for file changes with StatReloader
+INFO 2026-02-27 13:03:20,412 autoreload 3732 16972 C:\Users\USER\Documents\tanzania-police-staff-college-kidatu\backend\police_academy_backend\settings.py changed, reloading.
+INFO 2026-02-27 13:03:22,692 autoreload 6044 1632 Watching for file changes with StatReloader
+INFO 2026-02-27 13:11:24,533 autoreload 1356 13300 Watching for file changes with StatReloader
+INFO 2026-02-27 13:53:41,084 autoreload 13776 13740 Watching for file changes with StatReloader
