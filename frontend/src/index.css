@@ -1977,7 +1977,7 @@ body,
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 2rem;
-  background: grey;
+  background: green;
   color: white;
   font-size: 0.95rem;
 }
@@ -2111,7 +2111,7 @@ body,
   justify-content: space-between;
   align-items: center;
   padding: 0.6rem 2rem;
-  background: grey;
+  background: green;
   color: white;
   font-size: 0.9rem;
 }
@@ -2619,7 +2619,7 @@ body,
   justify-content: space-between;
   align-items: center;
   padding: 0.6rem 2rem;
-  background: grey;
+  background: green;
   color: white;
   font-size: 0.9rem;
 }
@@ -2722,7 +2722,7 @@ body,
 
 /* Enhanced Main Navigation */
 .main-nav {
-  background: grey;
+  background: green;
   padding: 0;
 }
 
@@ -3582,18 +3582,18 @@ body,
 }
 
 .page-actions .btn-primary {
-  background: grey;
+  background: green;
   color: white;
   border: none;
 }
 
 .page-actions .btn-primary:hover {
-  background:grey;
+  background:green;
 }
 
 .page-actions .btn-secondary {
   background: transparent;
-  color: #666;
+  color: #059669;
   border: 1px solid #ddd;
 }
 
@@ -4313,7 +4313,7 @@ body,
 }
 
 .filter-btn.active {
-  background: var(--primary-color);
+  background:green;
   color: white;
   border-color: var(--primary-color);
 }
@@ -5906,7 +5906,7 @@ body,
 }
 
 .btn-primary {
-  background: #1c236d;
+  background: green;
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -5920,7 +5920,7 @@ body,
 }
 
 .btn-primary:hover {
-  background: #151a52;
+  background: green;
 }
 
 .btn-secondary {
@@ -6007,7 +6007,7 @@ body,
 
 .btn-primary {
   padding: 0.9rem 2rem;
-  background: linear-gradient(135deg, #2563eb, #1e40af);
+  background: green;
   border: none;
   color: white;
   border-radius: 50px;
@@ -6232,7 +6232,7 @@ body,
 
 .section-tag {
   display: inline-block;
-  background-color: grey;
+  background-color: green;
   padding: 0.5rem 1.2rem;
   border-radius: 999px;
   font-size: 0.8rem;

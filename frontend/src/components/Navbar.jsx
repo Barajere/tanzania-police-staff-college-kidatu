@@ -85,11 +85,11 @@ export default function Navbar() {
         <div className="contact-info">
           <span>
             <Mail size={14} className="contact-icon" />
-            info@zpc.go.tz
+            info@tpsc.go.tz
           </span>
           <span>
             <PhoneCall size={14} className="contact-icon" />
-            +255 (0) 22 123 4567
+            +255 (0) 73 900 9974
           </span>
         </div>
         <nav className="quick-links">
@@ -114,7 +114,7 @@ export default function Navbar() {
         />
         <div className="school-name">
           <h1>THE UNITED REPUBLIC OF TANZANIA</h1>
-          <h2>ZANZIBAR POLICE COLLEGE</h2>
+          <h2>TANZANIA POLICE STAFF COLLEGE</h2>
           <p>"Training Creativity for Ethical Policing"</p>
         </div>
         <img
