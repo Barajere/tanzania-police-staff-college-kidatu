@@ -42,7 +42,7 @@ export default function AdminLogin() {
   return (
     <div className="login-container">
       <div className="login-card">
-        <h2>Admin Panel</h2>
+        
         <div className="logo-wrapper">
           <img
             src="/images/police-academy-logo.png"
@@ -50,6 +50,8 @@ export default function AdminLogin() {
             className="police-logo"
           />
         </div>
+        <h2>Admin Panel</h2>
+        
         <p className="subtitle">Sign in to manage the academy</p>
 
         {error && <div className="error-message">{error}</div>}

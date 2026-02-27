@@ -474,7 +474,7 @@ body,
 
 /* =============== Footer Fix =============== */
 .tptc-footer {
-  background-color: #1c236d;
+  background-color:green;
   color: white;
   padding: 0 0 1rem;
   position: static; /* ✅ Remove any fixed/absolute positioning */
@@ -484,7 +484,7 @@ body,
 
 /* TPTC Modern Footer Styles */
 .tptc-footer {
-  background-color: #1c236d; /* Rangi mpya ya footer */
+  background-color: green; /* Rangi mpya ya footer */
   color: white;
   padding: 0 0 1rem;
   position: relative;
@@ -2783,7 +2783,7 @@ body,
   position: absolute;
   top: 100%;
   left: 0;
-  background: #1c236d;
+  background:green;
   color: white;
   list-style: none;
   padding: 0.5rem 0;
@@ -7318,7 +7318,7 @@ body,
 
 .contact-form-card button {
   padding: 0.9rem 1.5rem;
-  background: #2563eb;
+  background: green;
   color: white;
   border: none;
   border-radius: 12px;
@@ -7328,7 +7328,7 @@ body,
 }
 
 .contact-form-card button:hover {
-  background: #1e40af;
+  background: green;
 }
 
 .form-status {
