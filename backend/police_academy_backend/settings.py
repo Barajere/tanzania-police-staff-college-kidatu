@@ -114,7 +114,7 @@ TEMPLATES = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'zanzibar',
+        'NAME': 'kidatu-staff-college',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': '127.0.0.1',
