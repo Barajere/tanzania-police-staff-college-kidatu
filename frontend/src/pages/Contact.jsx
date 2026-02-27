@@ -50,7 +50,7 @@ export default function Contact() {
         <div className="overlay"></div>
         <div className="hero-content-contact">
           <h1>Contact Us</h1>
-          <p>Zanzibar Police College</p>
+          <p>Tanzania Police Staff College</p>
         </div>
       </section>
 
@@ -70,9 +70,9 @@ export default function Contact() {
       <h4>Address</h4>
       <p>
         {contactInfo?.address ||
-          "Zanzibar Police College, Ziwani-Unguja, Zanzibar"}
+          "Zanzibar Police College, Kidatu, Morogoro"}
       </p>
-      <p><strong>P.O. Box:</strong> 2503, Zanzibar</p>
+      <p><strong>P.O. Box:</strong> 400, Tanzania</p>
     </div>
   </div>
 
@@ -81,7 +81,7 @@ export default function Contact() {
     <Phone />
     <div>
       <h4>Phone</h4>
-      <p>{contactInfo?.phone || "+255 22 285 0067"}</p>
+      <p>{contactInfo?.phone || "+255 73 900 9974"}</p>
     </div>
   </div>
 
@@ -90,7 +90,7 @@ export default function Contact() {
     <Mail />
     <div>
       <h4>Email</h4>
-      <p>{contactInfo?.email || "info@zpc.go.tz"}</p>
+      <p>{contactInfo?.email || "info@tpsc.go.tz"}</p>
     </div>
   </div>
 

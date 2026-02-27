@@ -188,19 +188,24 @@ export default function Home() {
 
   const slides = [
     {
-      image: "/images/slider2.jpg",
+      image: "/images/tpsc6.JPG",
       title: "Welcome to the Center of Excellence",
       subtitle: "Where Discipline Meets Leadership",
     },
     {
-      image: "/images/slider4.jpg",
+      image: "/images/tpsc1.JPG",
       title: "Shape the Future of Law Enforcement",
       subtitle: "Join Tanzania Police Academy",
     },
     {
-      image: "/images/slider3.jpg",
+      image: "/images/tpsc5.JPG",
       title: "Excellence in Training, Integrity in Service",
       subtitle: "Building Professional Officers",
+    },
+    {
+      image: "/images/tpsc2.jpg",
+      title: "Shape the Future of Law Enforcement",
+      subtitle: "Join Tanzania Police Academy",
     },
   ];
 
@@ -264,7 +269,7 @@ export default function Home() {
               <div className="slide-overlay">
                 <div className="slide-content">
                   <span className="slide-tag">
-                    Zanzibar Police College
+                    Tanzania Police Staff College
                   </span>
                   <h2>{slide.title}</h2>
                   <p>{slide.subtitle}</p>
@@ -300,7 +305,7 @@ export default function Home() {
             {/* Commandant Image */}
             <div className="hero-image" data-aos="fade-right">
               <img
-                src="/images/CO-ZPC.jpg"
+                src="/images/CO-TPSC.png"
                 alt="Augustino Senga-ACP - Commandant"
               />
               <div className="commandant-badge">
@@ -318,14 +323,14 @@ export default function Home() {
               </h1>
 
               <blockquote>
-                “At Zanzibar police college, we shape officers of integrity
+                “At Tanzania police Staff College, we shape officers of integrity
                 and excellence. Our commitment extends beyond academic
                 excellence to character building, ensuring our graduates serve
                 with honor, courage, and unwavering dedication to justice.”
               </blockquote>
 
               <div className="commandant-info">
-                <h3>Augustino Senga, ACP</h3>
+                <h3>Zarau H Mpangule, ACP</h3>
                 <p>Assistant Commissioner of Police · Commandant</p>
               </div>
             </div>

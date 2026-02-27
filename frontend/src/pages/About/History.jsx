@@ -37,20 +37,13 @@ export default function History() {
 
       <div className="history-text">
         <p>
-          Zanzibar Police College (ZPC) is located at Ziwani area - Unguja Island in Zanzibar.
-          It was established during the British colonial domination in 1956. The Institution
-          was known as Zanzibar Police Training School (ZPTS) and its main purpose was to train
-          Police Officers in order to serve the colonial regime.
+          Tanzania Police Staff College (TPSC) is located at Kidatu - Morogoro, Tanzania.
+          It was established during the British colonial domination in 1956. The Institution main purpose was to train
+          Police Officers in Leadership Promotion Courses nad Profesional courses likes Investigation Courses.
         </p>
 
         <p>
-          In 1963 the British handed over administration to the Sultanate of Zanzibar.
-          After the 1964 Revolution, the college evolved to meet post-independence
-          standards and changing crime trends.
-        </p>
-
-        <p>
-          ZPC obtained Registration number REG/PWF/035 from NACTE on 29th October 2009
+          TPSC obtained Registration number REG/PWF/035 from NACTE on 29th October 2009
           and started offering NTA Level 5 in Police Science in 2010/2011.
         </p>
       </div>

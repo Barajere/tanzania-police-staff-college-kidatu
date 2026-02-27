@@ -16,7 +16,7 @@ export default function Footer() {
                 alt="Dar es Salaam Police Academy Logo"
                 className="tptc-footer-logo-img"
               />
-              <h2 className="tptc-footer-title">Zanzibar Police College</h2>
+              <h2 className="tptc-footer-title">Tanzania Police Staff College</h2>
             </div>
             <p className="tptc-footer-description">
               Dedicated to excellence in law enforcement education and training, 
@@ -44,12 +44,12 @@ export default function Footer() {
           <div className="tptc-footer-section">
             <h3 className="tptc-footer-heading">Contact Information</h3>
             <ul className="tptc-contact-list">
-              <li><i className="fas fa-map-marker-alt"></i> Zanzibar police College,</li>
+              <li><i className="fas fa-map-marker-alt"></i> Tanzania police Staff College,</li>
               <li className="tptc-contact-indent">P.O. Box 2503,</li>
-              <li className="tptc-contact-indent">Ziwani Area,</li>
-              <li className="tptc-contact-indent"> Unguja Island, Zanzibar.</li>
+              <li className="tptc-contact-indent">Kidatu Morogoro,</li>
+              <li className="tptc-contact-indent"> Tanzania.</li>
               <li><i className="fas fa-phone-alt"></i>  (+255) 0222850067</li>
-              <li><i className="fas fa-envelope"></i> Email: <a href="Email: info@domain.com" className="tptc-email-link">info@zpc.go.tz</a></li>
+              <li><i className="fas fa-envelope"></i> Email: <a href="Email: info@domain.com" className="tptc-email-link">info@tpsc.go.tz</a></li>
             </ul>
           </div>
 
@@ -105,8 +105,8 @@ export default function Footer() {
                 </a>
               </li>
                <li>
-                <a href="https://tpsc.ac.tz/" className="tptc-external-link" target="_blank" rel="noopener">
-                  <i className="fas fa-chevron-right"></i> Tanzania Police Staff College
+                <a href="https://zpc.ac.tz/" className="tptc-external-link" target="_blank" rel="noopener">
+                  <i className="fas fa-chevron-right"></i> Zanzibar Police  College
                 </a>
               </li>
             </ul>
