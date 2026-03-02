@@ -4139,3 +4139,28 @@ INFO 2026-03-02 10:18:23,144 autoreload 38136 133296140927104 /home/nason/Deskto
 INFO 2026-03-02 10:18:23,487 autoreload 38206 135307470647424 Watching for file changes with StatReloader
 INFO 2026-03-02 12:16:58,601 autoreload 43537 140386909331584 Watching for file changes with StatReloader
 >>>>>>> 02dbedba3e214512fb1744b5b1755686d0bebe54
+INFO 2026-03-02 13:18:36,106 autoreload 13536 17300 Watching for file changes with StatReloader
+INFO 2026-03-02 13:19:02,238 autoreload 13536 17300 C:\Users\USER\Documents\tanzania-police-staff-college-kidatu\backend\police_academy_backend\settings.py changed, reloading.
+INFO 2026-03-02 13:19:04,926 autoreload 14596 18352 Watching for file changes with StatReloader
+INFO 2026-03-02 13:19:29,449 autoreload 14596 18352 C:\Users\USER\Documents\tanzania-police-staff-college-kidatu\backend\police_academy_backend\settings.py changed, reloading.
+INFO 2026-03-02 13:19:32,143 autoreload 16424 14432 Watching for file changes with StatReloader
+INFO 2026-03-02 13:19:34,515 autoreload 16424 14432 C:\Users\USER\Documents\tanzania-police-staff-college-kidatu\backend\police_academy_backend\settings.py changed, reloading.
+INFO 2026-03-02 13:19:36,694 autoreload 6116 11540 Watching for file changes with StatReloader
+INFO 2026-03-02 13:19:58,267 autoreload 6116 11540 C:\Users\USER\Documents\tanzania-police-staff-college-kidatu\backend\police_academy_backend\settings.py changed, reloading.
+INFO 2026-03-02 13:19:59,867 autoreload 1944 19052 Watching for file changes with StatReloader
+WARNING 2026-03-02 13:20:55,734 log 1944 18648 Not Found: /api/pages/history/
+WARNING 2026-03-02 13:20:55,743 log 1944 11668 Not Found: /api/pages/history/
+WARNING 2026-03-02 13:21:00,107 log 1944 11668 Not Found: /api/pages/organization/
+WARNING 2026-03-02 13:21:00,118 log 1944 18648 Not Found: /api/pages/organization/
+WARNING 2026-03-02 13:21:06,202 log 1944 18648 Not Found: /api/public/pages/by-page/
+WARNING 2026-03-02 13:21:06,213 log 1944 11668 Not Found: /api/public/pages/by-page/
+WARNING 2026-03-02 13:22:47,367 log 1944 5240 Not Found: /api/pages/organization/
+WARNING 2026-03-02 13:22:47,377 log 1944 18648 Not Found: /api/pages/organization/
+WARNING 2026-03-02 13:22:54,696 log 1944 18648 Not Found: /api/public/pages/by-page/
+WARNING 2026-03-02 13:22:54,716 log 1944 5240 Not Found: /api/public/pages/by-page/
+WARNING 2026-03-02 13:24:10,983 log 1944 18648 Not Found: /api/driving-features
+WARNING 2026-03-02 13:24:10,987 log 1944 5240 Not Found: /api/driving-images
+WARNING 2026-03-02 13:24:11,038 log 1944 18000 Not Found: /api/driving-features
+WARNING 2026-03-02 13:24:11,043 log 1944 18648 Not Found: /api/driving-images
+INFO 2026-03-02 13:32:22,092 autoreload 15016 18872 Watching for file changes with StatReloader
+INFO 2026-03-02 19:28:27,668 autoreload 16836 360 Watching for file changes with StatReloader
