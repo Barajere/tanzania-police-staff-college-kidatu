@@ -4096,6 +4096,7 @@ INFO 2026-02-27 13:03:20,412 autoreload 3732 16972 C:\Users\USER\Documents\tanza
 INFO 2026-02-27 13:03:22,692 autoreload 6044 1632 Watching for file changes with StatReloader
 INFO 2026-02-27 13:11:24,533 autoreload 1356 13300 Watching for file changes with StatReloader
 INFO 2026-02-27 13:53:41,084 autoreload 13776 13740 Watching for file changes with StatReloader
+<<<<<<< HEAD
 INFO 2026-03-02 08:00:09,408 autoreload 13720 4528 Watching for file changes with StatReloader
 INFO 2026-03-02 08:06:30,988 autoreload 16020 16116 Watching for file changes with StatReloader
 WARNING 2026-03-02 08:06:43,715 log 16020 4416 Unauthorized: /api/public/posts/
@@ -4130,3 +4131,11 @@ WARNING 2026-03-02 12:37:33,261 log 13452 17652 Not Found: /api/pages/history/
 WARNING 2026-03-02 12:38:40,874 log 13452 17652 Not Found: /api/pages/history/
 WARNING 2026-03-02 12:38:40,877 log 13452 16360 Not Found: /api/pages/history/
 INFO 2026-03-02 12:47:11,528 autoreload 13392 16168 Watching for file changes with StatReloader
+=======
+INFO 2026-03-02 10:11:54,114 autoreload 37867 126873679519872 Watching for file changes with StatReloader
+INFO 2026-03-02 10:18:11,475 autoreload 37867 126873679519872 /home/nason/Desktop/tanzania-police-staff-college-kidatu/backend/police_academy_backend/settings.py changed, reloading.
+INFO 2026-03-02 10:18:11,815 autoreload 38136 133296140927104 Watching for file changes with StatReloader
+INFO 2026-03-02 10:18:23,144 autoreload 38136 133296140927104 /home/nason/Desktop/tanzania-police-staff-college-kidatu/backend/police_academy_backend/settings.py changed, reloading.
+INFO 2026-03-02 10:18:23,487 autoreload 38206 135307470647424 Watching for file changes with StatReloader
+INFO 2026-03-02 12:16:58,601 autoreload 43537 140386909331584 Watching for file changes with StatReloader
+>>>>>>> 02dbedba3e214512fb1744b5b1755686d0bebe54

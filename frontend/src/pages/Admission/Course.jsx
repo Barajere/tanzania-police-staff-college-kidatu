@@ -21,7 +21,7 @@ export default function Course() {
             <div className="course-image-wrapper">
               <img 
                 src={modernDormitoriesImage} 
-                alt="ZPC Modern Dormitories" 
+                alt="TPSC Modern Dormitories" 
                 className="course-image"
               />
             </div>
@@ -38,9 +38,9 @@ export default function Course() {
                   Promotion course for Non Commissioned Officer in the Police force
                 </h2>
                 <ul className="course-list">
-                  <li>CPLC</li>
-                  <li>SGTC</li>
-                  <li>SSGTC</li>
+                  <li>SSGT</li>
+                  <li>SGT</li>
+                  <li>CPL</li>
                 </ul>
                 {/* Unaweza kuongeza maelezo zaidi hapa ikiwa unayo */}
               </div>
@@ -55,8 +55,8 @@ export default function Course() {
                   <h2 className="course-section-title">Professional Programmes</h2>
                   <ul className="course-list">
                     <li>Traffic Courses</li>
-                    <li>Charge room course</li>
-                  </ul>
+                    <li>Charge room course</li>                    
+                    </ul>
                 </div>
               </div>
 
@@ -80,6 +80,7 @@ export default function Course() {
                 <h2 className="course-section-title">Academic Programmes</h2>
                 <ul className="course-list">
                   <li>Technician Certificate in Police Science (NTA Level 5)</li>
+                  <li>Certificate in Criminal Inverstigation</li>
                 </ul>
               </div>
             </div>

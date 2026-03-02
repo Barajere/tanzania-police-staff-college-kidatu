@@ -31,7 +31,7 @@ const FeeStructure = () => {
       <div className="fee-structure-wrapper">
         <div className="header-section">
           <h1 className="main-title">Fees Structure</h1>
-          <p className="subtitle">Zanzibar Police College</p>
+          <p className="subtitle">Tanzania Police Staff College</p>
         </div>
 
         <div className="table-container">
