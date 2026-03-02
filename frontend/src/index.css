@@ -187,7 +187,7 @@ body,
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   z-index: 1001;
-  display: none;
+  display: flex;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -2792,7 +2792,7 @@ body,
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   z-index: 1001;
-  display: none;
+  display: flex;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -6119,6 +6119,7 @@ body,
 
 /* Commandant Section */
 /* HERO SECTION */
+/*
 .hero-commandant {
   position: relative;
   height: 100vh;
@@ -6129,6 +6130,42 @@ body,
   justify-content: center;
   perspective: 1200px;
   font-family: "Inter", sans-serif;
+}*/
+/*picha ionekane kwenye hamburegr */
+/* Badilisha hii kwenye CSS yako */
+@media (max-width: 768px) {
+  .hero-commandant {
+    height: auto;
+    min-height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .hero-card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .hero-image img {
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top; /* inaonyesha uso wa komandant */
+    border-radius: 16px;
+  }
+
+  .hero-message {
+    transform: none;
+  }
+
+  .hero-message h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-message blockquote {
+    font-size: 1rem;
+    max-width: 100%;
+  }
 }
 
 /* Dark overlay */
@@ -6251,14 +6288,18 @@ body,
 .typing-text {
   display: inline-block;
   position: relative;
-  color: grey;
+  color: black;
+}
+  /*inaweka mstari kulia
   border-right: 3px solid #2563eb;
   padding-right: 5px;
+  */
 
   /* No width animation */
+  /*inaweka animation
   clip-path: inset(0 100% 0 0);
   animation: typingReveal 4s ease-in-out infinite, blink 0.8s step-end infinite;
-}
+}*/
 
 @keyframes typingReveal {
   0% {

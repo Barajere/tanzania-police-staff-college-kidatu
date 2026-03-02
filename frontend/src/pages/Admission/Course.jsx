@@ -9,7 +9,7 @@ export default function Course() {
     <div className="course-page">
       <div className="course-container">
         <h1 className="course-title">
-          Courses Offered at ZPC
+          Courses Offered at TPSC
           {slug === "academic" && " - Academic Programme"}
           {slug === "promotional" && " - Promotional Programmes"}
           {slug === "proficiency" && " - Proficiency Programmes"}
@@ -40,7 +40,7 @@ export default function Course() {
                 <ul className="course-list">
                   <li>CPLC</li>
                   <li>SGTC</li>
-                  <li>INSC</li>
+                  <li>SSGTC</li>
                 </ul>
                 {/* Unaweza kuongeza maelezo zaidi hapa ikiwa unayo */}
               </div>

@@ -4096,3 +4096,37 @@ INFO 2026-02-27 13:03:20,412 autoreload 3732 16972 C:\Users\USER\Documents\tanza
 INFO 2026-02-27 13:03:22,692 autoreload 6044 1632 Watching for file changes with StatReloader
 INFO 2026-02-27 13:11:24,533 autoreload 1356 13300 Watching for file changes with StatReloader
 INFO 2026-02-27 13:53:41,084 autoreload 13776 13740 Watching for file changes with StatReloader
+INFO 2026-03-02 08:00:09,408 autoreload 13720 4528 Watching for file changes with StatReloader
+INFO 2026-03-02 08:06:30,988 autoreload 16020 16116 Watching for file changes with StatReloader
+WARNING 2026-03-02 08:06:43,715 log 16020 4416 Unauthorized: /api/public/posts/
+WARNING 2026-03-02 08:06:43,717 log 16020 6584 Unauthorized: /api/public/home-feed/
+WARNING 2026-03-02 08:06:43,761 log 16020 4416 Unauthorized: /api/public/home-feed/
+WARNING 2026-03-02 08:06:43,766 log 16020 6584 Unauthorized: /api/public/posts/
+WARNING 2026-03-02 08:06:43,886 log 16020 16268 Unauthorized: /api/public/gallery/
+WARNING 2026-03-02 08:06:44,018 log 16020 12168 Unauthorized: /api/public/gallery/
+WARNING 2026-03-02 09:48:04,095 log 16020 17724 Not Found: /api/pages/history/
+WARNING 2026-03-02 09:48:04,112 log 16020 16364 Not Found: /api/pages/history/
+WARNING 2026-03-02 10:02:31,537 log 16020 2880 Not Found: /api/pages/history/
+WARNING 2026-03-02 10:02:31,557 log 16020 16032 Not Found: /api/pages/history/
+WARNING 2026-03-02 10:06:39,981 log 16020 16944 Not Found: /api/pages/history/
+WARNING 2026-03-02 10:06:40,001 log 16020 10820 Not Found: /api/pages/history/
+WARNING 2026-03-02 10:06:56,756 log 16020 10820 Not Found: /api/pages/history/
+WARNING 2026-03-02 10:06:56,794 log 16020 16944 Not Found: /api/pages/history/
+WARNING 2026-03-02 10:13:02,370 log 16020 8296 Not Found: /api/pages/history/
+WARNING 2026-03-02 10:13:02,398 log 16020 8296 Not Found: /api/pages/history/
+WARNING 2026-03-02 10:13:14,225 log 16020 8296 Not Found: /api/pages/organization/
+WARNING 2026-03-02 10:13:14,246 log 16020 17216 Not Found: /api/pages/organization/
+WARNING 2026-03-02 10:13:25,227 log 16020 8296 Not Found: /api/public/pages/by-page/
+WARNING 2026-03-02 10:13:25,296 log 16020 17216 Not Found: /api/public/pages/by-page/
+WARNING 2026-03-02 10:16:57,642 log 16020 3720 Not Found: /api/driving-features
+WARNING 2026-03-02 10:16:57,649 log 16020 17216 Not Found: /api/driving-images
+WARNING 2026-03-02 10:16:57,730 log 16020 8296 Not Found: /api/driving-features
+WARNING 2026-03-02 10:16:57,765 log 16020 256 Not Found: /api/driving-images
+INFO 2026-03-02 12:36:10,023 autoreload 13452 1876 Watching for file changes with StatReloader
+WARNING 2026-03-02 12:36:48,799 log 13452 16360 Not Found: /api/pages/history/
+WARNING 2026-03-02 12:36:48,814 log 13452 18068 Not Found: /api/pages/history/
+WARNING 2026-03-02 12:37:33,251 log 13452 16360 Not Found: /api/pages/history/
+WARNING 2026-03-02 12:37:33,261 log 13452 17652 Not Found: /api/pages/history/
+WARNING 2026-03-02 12:38:40,874 log 13452 17652 Not Found: /api/pages/history/
+WARNING 2026-03-02 12:38:40,877 log 13452 16360 Not Found: /api/pages/history/
+INFO 2026-03-02 12:47:11,528 autoreload 13392 16168 Watching for file changes with StatReloader
