@@ -11,19 +11,19 @@ const ApplicationProcess = () => {
 
           <h3>Get in Touch</h3>
           <p>
-            All enquiries about admission to Zanzibar police college should
+            All enquiries about admission to Tanzania police Staff college should
             be addressed to the Commandant office.
           </p>
 
           <div className="address-card">
             <h4>Address</h4>
-            <p><strong>The Commandant – ZPC</strong></p>
-            <p>P.O. Box 2503, Zanzibar</p>
-            <p>Tel: +255 022 285 0067</p>
+            <p><strong>The Commandant – TPSC</strong></p>
+            <p>P.O. Box 400, Tanzania</p>
+            <p>Tel: +255 73 900 9974</p>
             <p>Fax: +255 022 285 0514</p>
             <p>
               E-mail:{" "}
-              <a href="mailto:co.dpa@pf.go.tz">co.zpc@pf.go.tz</a>
+              <a href="mailto:co.tpsc@pf.go.tz">co.tpsc@pf.go.tz</a>
             </p>
           </div>
         </div>
@@ -33,7 +33,7 @@ const ApplicationProcess = () => {
           <div className="image-wrapper">
             <img src={commandant} alt="Commandant ZPC" />
             <p className="image-caption">
-              Commandant – Zanzibar police college
+              Commandant – Tanzania police Staff college
             </p>
           </div>
         </div>
