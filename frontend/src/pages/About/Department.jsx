@@ -55,7 +55,7 @@ export default function Department() {
             />
             <div className="image-caption">
               <span className="caption-icon">📚</span>
-              <span className="caption-text">ZPC Main Library</span>
+              <span className="caption-text">TPSC Main Library</span>
             </div>
           </div>
         </div>
@@ -66,7 +66,7 @@ export default function Department() {
           <div className="department-card">
             <div className="card-header">
               <span className="card-icon">🎖️</span>
-              <h2 className="card-title">Inspectorate And Gazetted Officers Promotion Wing</h2>
+              <h2 className="card-title">Rank and file Promotion Wing</h2>
             </div>
             <div className="card-content">
               <ul className="wing-list">

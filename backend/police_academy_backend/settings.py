@@ -308,8 +308,8 @@ SILENCED_SYSTEM_CHECKS = ["security.W019"]
 
 # Admin branding
 ADMIN_INTERFACE = {
-    'THEMENAME': 'DPA Admin',
-    'HEADER_COLOR': '#1c236d',
+    'THEMENAME': 'TPSC Admin',
+    'HEADER_COLOR': "green",
     'HEADER_TEXT_COLOR': '#ffffff',
     'MODULES_COLORS': {
         'background': '#ffffff',
@@ -326,12 +326,12 @@ HIJACK_ALLOW_GET_REQUESTS = True
 CONSTANCE_BACKEND = 'constance.backends.database.DatabaseBackend'
 
 CONSTANCE_CONFIG = {
-    'SITE_TITLE': ('Dar es Salaam Police Academy', 'Site title'),
-    'THEME_COLOR': ('#1c236d', 'Primary theme color'),
+    'SITE_TITLE': ('Tanzania police staff college', 'Site title'),
+    'THEME_COLOR': ('green', 'Primary theme color'),
     'MAINTENANCE_MODE': (False, 'Enable maintenance mode'),
     'NOTIFICATIONS_ENABLED': (True, 'Enable notifications'),
-    'CONTACT_EMAIL': ('info@policeacademy.go.tz', 'Contact email address'),
-    'CONTACT_PHONE': ('+255 22 123 4567', 'Contact phone number'),
+    'CONTACT_EMAIL': ('co.kpsc@tpf.go.tz', 'Contact email address'),
+    'CONTACT_PHONE': ('+255 739 009 974', 'Contact phone number'),
 }
 
 CONSTANCE_CONFIG_FIELDSETS = {

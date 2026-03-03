@@ -1,4 +1,4 @@
-// src/pages/admin/PostsList.jsx - COMPLETELY FIXED
+// src/pages/admin/PostsList.jsx
 import { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { 
@@ -48,10 +48,8 @@ export default function PostsList() {
       
       const res = await api.get('public/posts/');
       
-      // 🔥 COMPLETE FIX: Handle all possible API response formats
       let postsData = [];
       if (res.data && Array.isArray(res.data[1])) {
-        // Filter out invalid data and ensure proper objects
         postsData = res.data[1]
           .filter(item => 
             item && 
@@ -60,7 +58,6 @@ export default function PostsList() {
             item.id !== null
           )
           .map(item => ({
-            // Ensure all required properties with safe defaults
             id: item.id || 0,
             title: item.title || 'Untitled Post',
             content: item.content || '',
@@ -76,14 +73,12 @@ export default function PostsList() {
             updated_at: item.updated_at || new Date().toISOString(),
             is_published: item.is_published !== undefined ? Boolean(item.is_published) : true,
             views: item.views || 0,
-            // 🔥 FIX: Safe derived properties
             shortContent: String(item.content || '').substring(0, 150) + '...',
             formattedDate: formatDate(item.created_at),
             typeLabel: getTypeLabel(item.post_type),
             statusLabel: item.is_published ? 'Published' : 'Draft'
           }));
       } else if (res.data && typeof res.data === 'object') {
-        // Handle object response - convert to array
         const postsArray = Object.values(res.data);
         postsData = postsArray
           .filter(item => 
@@ -114,7 +109,6 @@ export default function PostsList() {
           }));
       } else {
         console.warn('Unexpected posts data format:', res.data);
-        // Fallback to empty array
         postsData = [];
       }
       
@@ -124,19 +118,17 @@ export default function PostsList() {
     } catch (err) {
       console.error('Failed to load posts:', err);
       setError('Failed to load posts. Please try again.');
-      setPosts([]); // Ensure empty array on error
+      setPosts([]);
     } finally {
       setLoading(false);
     }
   };
 
-  // 🔥 FIXED: Completely safe search filter
   const filteredPosts = posts.filter(post => {
     if (!post || typeof post !== 'object') return false;
     
     const searchLower = searchTerm.toLowerCase();
     
-    // Safe property access with string conversion
     const title = String(post.title || '');
     const content = String(post.content || '');
     const excerpt = String(post.excerpt || '');
@@ -203,7 +195,6 @@ export default function PostsList() {
     }
   };
 
-  // Helper functions
   const getTypeLabel = (type) => {
     const typeLabels = {
       'news': 'News',
@@ -255,7 +246,6 @@ export default function PostsList() {
           </div>
         </div>
 
-        {/* Error Display */}
         {error && (
           <div className="error-banner" style={{
             background: '#ffebee',
@@ -286,7 +276,6 @@ export default function PostsList() {
           </div>
         )}
 
-        {/* Filters and Search */}
         <div className="posts-filters" style={{
           display: 'flex',
           gap: '1rem',
@@ -336,14 +325,12 @@ export default function PostsList() {
           </select>
         </div>
 
-        {/* Posts Grid */}
         <div className="posts-container">
           {loading ? (
             <div className="loading">Loading posts...</div>
           ) : filteredPosts.length > 0 ? (
             <div className="posts-grid">
               {filteredPosts.map(post => (
-                // 🔥 FIX: Proper key prop and safe rendering
                 <PostCard 
                   key={post.id} 
                   post={post} 
@@ -380,10 +367,9 @@ export default function PostsList() {
   );
 }
 
-// 🔥 NEW: Extract PostCard component for better error handling
 const PostCard = ({ post, onEdit, onDelete, onTogglePublish, onView }) => {
   if (!post || typeof post !== 'object') {
-    return null; // Skip invalid posts
+    return null;
   }
 
   const typeColor = getTypeColor(post.post_type);
@@ -395,8 +381,40 @@ const PostCard = ({ post, onEdit, onDelete, onTogglePublish, onView }) => {
       padding: '1.5rem',
       boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
       border: '1px solid #e0e0e0',
-      transition: 'all 0.3s ease'
+      transition: 'all 0.3s ease',
+      display: 'flex',
+      flexDirection: 'column'
     }}>
+      {/* Post Image – added here */}
+      {post.image && (
+        <div style={{
+          width: '100%',
+          height: '180px',
+          marginBottom: '1.25rem',
+          borderRadius: '8px',
+          overflow: 'hidden',
+          backgroundColor: '#f8f9fa'
+        }}>
+          <img 
+            src={post.image}
+            alt={post.title || 'Post image'}
+            loading="lazy"
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              objectPosition: 'center',
+              display: 'block'
+            }}
+            onError={(e) => {
+              e.target.onerror = null;
+              e.target.src = 'https://via.placeholder.com/400x180?text=Image+Not+Found';
+              e.target.alt = 'Image failed to load';
+            }}
+          />
+        </div>
+      )}
+
       <div className="post-header" style={{
         display: 'flex',
         alignItems: 'flex-start',
@@ -494,7 +512,7 @@ const PostCard = ({ post, onEdit, onDelete, onTogglePublish, onView }) => {
         </div>
       </div>
 
-      <div className="post-content" style={{ marginBottom: '1.5rem' }}>
+      <div className="post-content" style={{ marginBottom: '1.5rem', flex: 1 }}>
         <p style={{ 
           margin: '0 0 1rem 0',
           color: '#555',
@@ -593,7 +611,7 @@ const PostCard = ({ post, onEdit, onDelete, onTogglePublish, onView }) => {
   );
 };
 
-// Helper functions
+// Helper functions (moved outside component for cleaner code)
 const getTypeColor = (type) => {
   const typeColors = {
     'news': '#1976d2',
@@ -602,58 +620,3 @@ const getTypeColor = (type) => {
   };
   return typeColors[type] || '#666';
 };
-
-// AdminNavbar component
-// const AdminNavbar = () => {
-//   const navigate = useNavigate();
-
-//   const handleLogout = () => {
-//     localStorage.removeItem('access_token');
-//     localStorage.removeItem('refresh_token');
-//     localStorage.removeItem('user');
-//     navigate('/');
-//   };
-
-//   const adminNavItems = [
-//     { name: 'Dashboard', path: '/admin/dashboard', icon: LayoutDashboard },
-//     { name: 'Pages', path: '/admin/pages', icon: FileText },
-//     { name: 'News', path: '/admin/news', icon: Newspaper },
-//     { name: 'Posts', path: '/admin/posts', icon: FileText },
-//     { name: 'Contact', path: '/admin/contact', icon: Phone },
-//     { name: 'Users', path: '/admin/users', icon: UsersIcon },
-//   ];
-
-//   return (
-//     <nav className="admin-navbar">
-//       <div className="admin-nav-container">
-//         <div className="admin-nav-brand">
-//           <h1>DPA Admin</h1>
-//         </div>
-        
-//         <div className="admin-nav-menu">
-//           {adminNavItems.map(item => {
-//             const IconComponent = item.icon;
-//             return (
-//               <Link 
-//                 key={item.path} 
-//                 to={item.path} 
-//                 className="admin-nav-link"
-//               >
-//                 <IconComponent size={18} />
-//                 {item.name}
-//               </Link>
-//             );
-//           })}
-//         </div>
-
-//         <div className="admin-user-menu">
-//           <span>Welcome, Admin</span>
-//           <button onClick={handleLogout} className="logout-btn">
-//             <LogOut size={18} />
-//             Logout
-//           </button>
-//         </div>
-//       </div>
-//     </nav>
-//   );
-//};

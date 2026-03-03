@@ -34,7 +34,7 @@ export default function Organization() {
       <div className="org-header">
         <div className="org-header-decoration"></div>
         <h1 className="org-title">Organization Structure</h1>
-        <p className="org-subtitle">Zanzibar Police College</p>
+        <p className="org-subtitle">Tanzania Police Staff College</p>
       </div>
 
       {/* Organization Chart - Always shows */}
@@ -45,7 +45,7 @@ export default function Organization() {
           <div className="org-level level-1">
             <div className="org-box commandant">
               <div className="box-icon">⭐</div>
-              <h3>COMMANDANT ZPC</h3>
+              <h3>COMMANDANT TPSC</h3>
             </div>
           </div>
 

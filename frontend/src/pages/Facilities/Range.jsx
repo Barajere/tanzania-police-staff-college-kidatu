@@ -217,7 +217,7 @@ export default function Range() {
               <h1 className="range-title"> RANGE</h1>
 
               <p className="range-text">
-                The ZPC Range provides structured training in field operations, military observation,
+                The TPSC Range provides structured training in field operations, military observation,
                 and tactical movement. Trainees engage in realistic outdoor scenarios designed to
                 develop discipline, awareness, and operational readiness.
               </p>

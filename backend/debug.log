@@ -4164,3 +4164,19 @@ WARNING 2026-03-02 13:24:11,038 log 1944 18000 Not Found: /api/driving-features
 WARNING 2026-03-02 13:24:11,043 log 1944 18648 Not Found: /api/driving-images
 INFO 2026-03-02 13:32:22,092 autoreload 15016 18872 Watching for file changes with StatReloader
 INFO 2026-03-02 19:28:27,668 autoreload 16836 360 Watching for file changes with StatReloader
+INFO 2026-03-02 20:26:34,693 autoreload 360 11756 Watching for file changes with StatReloader
+WARNING 2026-03-02 20:31:43,406 log 360 14804 Not Found: /api/pages/history/
+WARNING 2026-03-02 20:31:43,505 log 360 1712 Not Found: /api/pages/history/
+WARNING 2026-03-02 20:31:48,465 log 360 14804 Not Found: /api/pages/organization/
+WARNING 2026-03-02 20:31:48,515 log 360 1712 Not Found: /api/pages/organization/
+WARNING 2026-03-02 20:33:37,777 log 360 1712 Not Found: /api/pages/organization/
+WARNING 2026-03-02 20:33:37,813 log 360 14804 Not Found: /api/pages/organization/
+WARNING 2026-03-02 20:33:59,963 log 360 1712 Not Found: /api/public/pages/by-page/
+WARNING 2026-03-02 20:34:00,021 log 360 14804 Not Found: /api/public/pages/by-page/
+WARNING 2026-03-02 20:49:41,815 log 360 18108 Not Found: /api/driving-features
+WARNING 2026-03-02 20:49:41,823 log 360 17072 Not Found: /api/driving-images
+WARNING 2026-03-02 20:49:41,928 log 360 16460 Not Found: /api/driving-features
+WARNING 2026-03-02 20:49:41,963 log 360 18108 Not Found: /api/driving-images
+INFO 2026-03-03 07:48:57,326 autoreload 15792 15796 Watching for file changes with StatReloader
+INFO 2026-03-03 07:49:40,436 autoreload 16776 16772 Watching for file changes with StatReloader
+WARNING 2026-03-03 08:02:05,144 log 16776 880 Not Found: /favicon.ico

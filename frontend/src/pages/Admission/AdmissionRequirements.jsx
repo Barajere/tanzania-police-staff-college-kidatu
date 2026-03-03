@@ -609,7 +609,7 @@ const AdmissionRequirement = () => {
 
         <div className="hero-inner">
           <div className="hero-left">
-            <div className="hero-badge"><Shield size={16} /><span>Zanzibar Police College</span></div>
+            <div className="hero-badge"><Shield size={16} /><span>Tanzania Police Staff College</span></div>
             <h1 className="hero-title">
               <span className="hero-title-main">Admission</span>
               <span className="hero-title-accent">Requirements</span>
@@ -624,7 +624,7 @@ const AdmissionRequirement = () => {
               at one of East Africa's premier training institutions.
             </p>
             <div className="hero-cta-row">
-              <button className="hero-btn-primary" onClick={() => window.open('https://dpa.tpf.go.tz/apply','_blank')}>
+              <button className="hero-btn-primary" onClick={() => window.open('https://kidatu.tpf.go.tz/apply','_blank')}>
                 Apply Now <ChevronRight size={18} />
               </button>
              
@@ -638,7 +638,7 @@ const AdmissionRequirement = () => {
               <Shield size={64} strokeWidth={1.5} />
               <span>ZPC</span>
             </div>
-            <div className="stat-chip stat-chip-top"><Award size={14} /><span>Zanzibar</span></div>
+            <div className="stat-chip stat-chip-top"><Award size={14} /><span>Morogoro</span></div>
             <div className="stat-chip stat-chip-bottom"><GraduationCap size={14} /><span>NTA Accredited</span></div>
           </div>
         </div>
@@ -717,7 +717,7 @@ const AdmissionRequirement = () => {
                     <div className="meta-item"><Calendar size={16} /><span>{program.intake}</span></div>
                   </div>
                   <div className="card-actions">
-                    <button className="btn-apply" onClick={() => window.open('https://dpa.tpf.go.tz/apply','_blank')}>
+                    <button className="btn-apply" onClick={() => window.open('https://kidatu.tpf.go.tz/apply','_blank')}>
                       APPLY NOW <ChevronRight size={18} />
                     </button>
                    
@@ -774,7 +774,7 @@ const AdmissionRequirement = () => {
           <h2>Ready to Start Your Journey?</h2>
           <p>Take the first step towards a rewarding career in law enforcement</p>
           <div className="cta-buttons">
-            <button className="btn-primary" onClick={() => window.open('https://dpa.tpf.go.tz/apply','_blank')}>
+            <button className="btn-primary" onClick={() => window.open('https://kidatu.tpf.go.tz/apply','_blank')}>
               Apply Now
             </button>
             
